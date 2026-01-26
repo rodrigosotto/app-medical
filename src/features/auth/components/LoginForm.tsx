@@ -28,7 +28,7 @@ export function LoginForm() {
         justifyContent: 'center',
         position: 'relative',
         overflow: 'hidden',
-        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
       }}
     >
       {/* Animated Background Blobs */}
@@ -39,7 +39,7 @@ export function LoginForm() {
           left: '-5%',
           width: '300px',
           height: '300px',
-          background: 'rgba(99, 102, 241, 0.5)',
+          background: 'rgba(156, 175, 136, 0.5)',
           borderRadius: '50%',
           filter: 'blur(80px)',
           animation: 'blob 7s infinite',
@@ -52,7 +52,7 @@ export function LoginForm() {
           right: '-5%',
           width: '300px',
           height: '300px',
-          background: 'rgba(236, 72, 153, 0.5)',
+          background: 'rgba(168, 187, 160, 0.5)',
           borderRadius: '50%',
           filter: 'blur(80px)',
           animation: 'blob 7s infinite 2s',
@@ -65,7 +65,7 @@ export function LoginForm() {
           left: '20%',
           width: '300px',
           height: '300px',
-          background: 'rgba(168, 85, 247, 0.5)',
+          background: 'rgba(122, 155, 118, 0.5)',
           borderRadius: '50%',
           filter: 'blur(80px)',
           animation: 'blob 7s infinite 4s',
@@ -101,7 +101,7 @@ export function LoginForm() {
                 justifyContent: 'center',
                 width: '64px',
                 height: '64px',
-                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
                 borderRadius: '16px',
                 marginBottom: '1rem',
                 boxShadow: '0 4px 15px rgba(0, 0, 0, 0.2)',
@@ -345,7 +345,7 @@ export function LoginForm() {
               style={{
                 width: '100%',
                 padding: '0.75rem 1rem',
-                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
                 color: 'white',
                 fontWeight: '600',
                 borderRadius: '12px',
