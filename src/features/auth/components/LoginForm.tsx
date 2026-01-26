@@ -65,7 +65,7 @@ export function LoginForm() {
           left: '20%',
           width: '300px',
           height: '300px',
-          background: 'rgba(122, 155, 118, 0.5)',
+          background: 'rgba(156, 175, 136, 0.5)',
           borderRadius: '50%',
           filter: 'blur(80px)',
           animation: 'blob 7s infinite 4s',
