@@ -2,10 +2,10 @@
  * Types relacionados à autenticação
  */
 export interface User {
-  id: string;
+  id: number;
   name: string;
   email: string;
-  role: "admin" | "doctor" | "patient";
+  type: 'medico' | 'paciente';
   createdAt: string;
 }
 
@@ -24,7 +24,7 @@ export interface RegisterData {
 export interface AuthResponse {
   user: User;
   token: string;
-  refreshToken: string;
+  refreshToken?: string;
 }
 
 export interface AuthState {

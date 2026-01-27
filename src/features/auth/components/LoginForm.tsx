@@ -1,5 +1,8 @@
 import { useState, FormEvent } from 'react';
 import { useLogin } from '../hooks/useLogin';
+import { useToast } from '@/hooks/useToast';
+import { getErrorMessage } from '@/types/errors.types';
+import { RegisterForm } from './RegisterForm';
 
 /**
  * Componente de formulário de login com design moderno e glass morphism
@@ -8,14 +11,24 @@ export function LoginForm() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [rememberMe, setRememberMe] = useState(false);
-  const { login, isLoading, error } = useLogin();
+  const [localError, setLocalError] = useState<string>('');
+  const [showRegisterModal, setShowRegisterModal] = useState(false);
+  const { login, isLoading } = useLogin();
+  const toast = useToast();
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+    setLocalError('');
+
     const result = await login({ email, password });
 
     if (result.success) {
-      console.log('Login realizado com sucesso!');
+      toast.success('Login realizado com sucesso!');
+      // Redirecionar ou atualizar estado
+    } else {
+      const errorMessage = result.errorMessage || getErrorMessage(result.error);
+      setLocalError(errorMessage);
+      toast.error(errorMessage);
     }
   };
 
@@ -137,7 +150,7 @@ export function LoginForm() {
           </div>
 
           {/* Error Message */}
-          {error && (
+          {localError && (
             <div
               style={{
                 marginBottom: '1.5rem',
@@ -148,7 +161,7 @@ export function LoginForm() {
                 backdropFilter: 'blur(10px)',
               }}
             >
-              <p style={{ color: '#fecaca', fontSize: '0.875rem' }}>{error.message}</p>
+              <p style={{ color: '#fecaca', fontSize: '0.875rem', margin: 0 }}>{localError}</p>
             </div>
           )}
 
@@ -410,11 +423,16 @@ export function LoginForm() {
               Não tem uma conta?{' '}
               <a
                 href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setShowRegisterModal(true);
+                }}
                 style={{
                   color: 'white',
                   fontWeight: '600',
                   textDecoration: 'none',
                   transition: 'all 0.2s',
+                  cursor: 'pointer',
                 }}
                 onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
                 onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
@@ -437,6 +455,9 @@ export function LoginForm() {
           © 2025 Medical App. Todos os direitos reservados.
         </p>
       </div>
+
+      {/* Register Modal */}
+      {showRegisterModal && <RegisterForm onClose={() => setShowRegisterModal(false)} />}
     </div>
   );
 }

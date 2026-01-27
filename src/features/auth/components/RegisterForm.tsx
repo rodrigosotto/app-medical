@@ -1,84 +1,46 @@
-import { useState, FormEvent } from "react";
-import { useRegister } from "../hooks/useRegister";
+import { useState } from 'react';
+import { useNavigate } from '@tanstack/react-router';
+import { UserTypeSelectionModal } from './UserTypeSelectionModal';
+
+export interface RegisterFormProps {
+  onClose?: () => void;
+}
 
 /**
  * Componente de formulário de registro
  */
-export function RegisterForm() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
-  const { register, isLoading, error } = useRegister();
+export function RegisterForm({ onClose }: RegisterFormProps) {
+  const [showTypeSelection, setShowTypeSelection] = useState(true);
+  const navigate = useNavigate();
 
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
+  const handleSelectType = (type: 'medico' | 'paciente') => {
+    setShowTypeSelection(false);
 
-    if (password !== confirmPassword) {
-      alert("As senhas não coincidem!");
-      return;
+    // Navegar para a página correspondente
+    if (type === 'medico') {
+      navigate({ to: '/register/doctor' });
+    } else {
+      navigate({ to: '/register/patient' });
     }
 
-    const result = await register({ name, email, password, confirmPassword });
-
-    if (result.success) {
-      console.log("Registro realizado com sucesso!");
+    // Fechar a modal de registro se existir
+    if (onClose) {
+      onClose();
     }
   };
 
-  return (
-    <form onSubmit={handleSubmit}>
-      <h2>Criar Conta</h2>
+  const handleClose = () => {
+    if (onClose) {
+      onClose();
+    }
+  };
 
-      {error && <div>Erro: {error.message}</div>}
+  // Se a modal de seleção está aberta, renderiza ela
+  if (showTypeSelection) {
+    return (
+      <UserTypeSelectionModal isOpen={true} onClose={handleClose} onSelectType={handleSelectType} />
+    );
+  }
 
-      <div>
-        <label htmlFor="name">Nome:</label>
-        <input
-          id="name"
-          type="text"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          required
-        />
-      </div>
-
-      <div>
-        <label htmlFor="email">Email:</label>
-        <input
-          id="email"
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-      </div>
-
-      <div>
-        <label htmlFor="password">Senha:</label>
-        <input
-          id="password"
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
-      </div>
-
-      <div>
-        <label htmlFor="confirmPassword">Confirmar Senha:</label>
-        <input
-          id="confirmPassword"
-          type="password"
-          value={confirmPassword}
-          onChange={(e) => setConfirmPassword(e.target.value)}
-          required
-        />
-      </div>
-
-      <button type="submit" disabled={isLoading}>
-        {isLoading ? "Criando conta..." : "Criar Conta"}
-      </button>
-    </form>
-  );
+  return null;
 }

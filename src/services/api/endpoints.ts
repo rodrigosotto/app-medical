@@ -3,24 +3,24 @@
  */
 export const endpoints = {
   auth: {
-    login: "/auth/login",
-    register: "/auth/register",
-    logout: "/auth/logout",
-    refresh: "/auth/refresh",
-    profile: "/auth/profile",
-    forgotPassword: "/auth/forgot-password",
-    resetPassword: "/auth/reset-password",
+    login: '/api/auth/login',
+    register: '/api/auth/register',
+    logout: '/api/auth/logout',
+    refresh: '/api/auth/refresh',
+    profile: '/api/auth/profile',
+    forgotPassword: '/api/auth/forgot-password',
+    resetPassword: '/api/auth/reset-password',
   },
   users: {
-    base: "/users",
-    byId: (id: string) => `/users/${id}`,
+    base: '/api/users',
+    byId: (id: string) => `/api/users/${id}`,
   },
   patients: {
-    base: "/patients",
-    byId: (id: string) => `/patients/${id}`,
+    base: '/api/patients',
+    byId: (id: string) => `/api/patients/${id}`,
   },
   appointments: {
-    base: "/appointments",
-    byId: (id: string) => `/appointments/${id}`,
+    base: '/api/appointments',
+    byId: (id: string) => `/api/appointments/${id}`,
   },
 } as const;
