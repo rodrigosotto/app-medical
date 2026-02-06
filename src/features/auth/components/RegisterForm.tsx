@@ -172,7 +172,6 @@ export function RegisterForm() {
                   flex: 1,
                   padding: '1rem',
                   borderRadius: '16px',
-                  border: 'none',
                   fontSize: '0.875rem',
                   fontWeight: '600',
                   cursor: 'pointer',
@@ -187,9 +186,7 @@ export function RegisterForm() {
                   border: `2px solid ${
                     userType === 'patient' ? 'transparent' : 'rgba(255, 255, 255, 0.2)'
                   }`,
-                  boxShadow: userType === 'patient' 
-                    ? '0 4px 15px rgba(0, 0, 0, 0.2)' 
-                    : 'none',
+                  boxShadow: userType === 'patient' ? '0 4px 15px rgba(0, 0, 0, 0.2)' : 'none',
                   transform: userType === 'patient' ? 'translateY(-2px)' : 'translateY(0)',
                 }}
                 onMouseEnter={(e) => {
@@ -227,7 +224,6 @@ export function RegisterForm() {
                   flex: 1,
                   padding: '1rem',
                   borderRadius: '16px',
-                  border: 'none',
                   fontSize: '0.875rem',
                   fontWeight: '600',
                   cursor: 'pointer',
@@ -242,9 +238,7 @@ export function RegisterForm() {
                   border: `2px solid ${
                     userType === 'doctor' ? 'transparent' : 'rgba(255, 255, 255, 0.2)'
                   }`,
-                  boxShadow: userType === 'doctor' 
-                    ? '0 4px 15px rgba(0, 0, 0, 0.2)' 
-                    : 'none',
+                  boxShadow: userType === 'doctor' ? '0 4px 15px rgba(0, 0, 0, 0.2)' : 'none',
                   transform: userType === 'doctor' ? 'translateY(-2px)' : 'translateY(0)',
                 }}
                 onMouseEnter={(e) => {
@@ -619,7 +613,13 @@ export function RegisterForm() {
                     cursor: 'pointer',
                   }}
                 />
-                <span style={{ fontSize: '0.875rem', color: 'rgba(255, 255, 255, 0.8)', lineHeight: '1.4' }}>
+                <span
+                  style={{
+                    fontSize: '0.875rem',
+                    color: 'rgba(255, 255, 255, 0.8)',
+                    lineHeight: '1.4',
+                  }}
+                >
                   Eu aceito os{' '}
                   <a
                     href="#"
@@ -659,7 +659,7 @@ export function RegisterForm() {
               style={{
                 width: '100%',
                 padding: '0.75rem 1rem',
-                background: 
+                background:
                   isLoading || passwordMismatch || !termsAccepted
                     ? 'rgba(255, 255, 255, 0.2)'
                     : 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
@@ -668,10 +668,7 @@ export function RegisterForm() {
                 borderRadius: '12px',
                 border: 'none',
                 fontSize: '1rem',
-                cursor: 
-                  isLoading || passwordMismatch || !termsAccepted 
-                    ? 'not-allowed' 
-                    : 'pointer',
+                cursor: isLoading || passwordMismatch || !termsAccepted ? 'not-allowed' : 'pointer',
                 opacity: isLoading || passwordMismatch || !termsAccepted ? 0.5 : 1,
                 display: 'flex',
                 alignItems: 'center',

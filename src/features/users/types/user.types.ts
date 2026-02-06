@@ -1,7 +1,11 @@
+import { ReactNode } from 'react';
+
 /**
  * Types relacionados a usuários
  */
 export interface User {
+  role: ReactNode;
+  phone: any;
   id: number;
   name: string;
   email: string;
