@@ -75,30 +75,30 @@ export function MyAppointments() {
     switch (status) {
       case 'upcoming':
         return {
-          bg: 'rgba(33, 150, 243, 0.2)',
-          border: 'rgba(33, 150, 243, 0.5)',
-          text: '#2196F3',
+          bg: 'var(--color-info-bg)',
+          border: 'var(--color-info-bg-strong)',
+          text: 'var(--color-info)',
           label: 'Agendada',
         };
       case 'completed':
         return {
-          bg: 'rgba(76, 175, 80, 0.2)',
-          border: 'rgba(76, 175, 80, 0.5)',
-          text: '#4CAF50',
+          bg: 'var(--color-success-bg)',
+          border: 'var(--color-success-bg-strong)',
+          text: 'var(--color-success)',
           label: 'Realizada',
         };
       case 'cancelled':
         return {
-          bg: 'rgba(244, 67, 54, 0.2)',
-          border: 'rgba(244, 67, 54, 0.5)',
-          text: '#F44336',
+          bg: 'var(--badge-expired-bg)',
+          border: 'var(--color-danger-bg-strong)',
+          text: 'var(--badge-expired-text)',
           label: 'Cancelada',
         };
       default:
         return {
           bg: 'rgba(158, 158, 158, 0.2)',
           border: 'rgba(158, 158, 158, 0.5)',
-          text: '#9E9E9E',
+          text: 'var(--color-gray-400)',
           label: 'Desconhecido',
         };
     }
@@ -108,7 +108,7 @@ export function MyAppointments() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -121,7 +121,7 @@ export function MyAppointments() {
               display: 'inline-flex',
               alignItems: 'center',
               gap: '0.5rem',
-              color: '#ffffff',
+              color: 'var(--page-text)',
               textDecoration: 'none',
               marginBottom: '1rem',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -133,7 +133,7 @@ export function MyAppointments() {
             style={{
               fontSize: '2.5rem',
               fontWeight: 700,
-              color: '#ffffff',
+              color: 'var(--page-text)',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
             }}
           >
@@ -142,7 +142,7 @@ export function MyAppointments() {
           <p
             style={{
               fontSize: '1.125rem',
-              color: 'rgba(255, 255, 255, 0.9)',
+              color: 'var(--glass-text-faint)',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
             }}
           >
@@ -153,9 +153,9 @@ export function MyAppointments() {
         {/* Barra de Busca e Filtros */}
         <div
           style={{
-            background: 'rgba(255, 255, 255, 0.1)',
+            background: 'var(--glass-bg)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)',
+            border: '1px solid var(--glass-border)',
             borderRadius: '16px',
             padding: '1.5rem',
             marginBottom: '2rem',
@@ -171,10 +171,10 @@ export function MyAppointments() {
                 flex: 1,
                 minWidth: '250px',
                 padding: '0.75rem 1rem',
-                background: 'rgba(255, 255, 255, 0.1)',
-                border: '1px solid rgba(255, 255, 255, 0.3)',
+                background: 'var(--glass-bg)',
+                border: '1px solid var(--glass-border-strong)',
                 borderRadius: '8px',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 fontSize: '1rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -183,10 +183,10 @@ export function MyAppointments() {
               to="/patient/appointment-booking"
               style={{
                 padding: '0.75rem 1.5rem',
-                background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+                background: 'var(--page-bg)',
                 border: 'none',
                 borderRadius: '8px',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 fontSize: '1rem',
                 fontWeight: 600,
                 cursor: 'pointer',
@@ -215,9 +215,9 @@ export function MyAppointments() {
                     filter === filterOption.value
                       ? 'rgba(255, 255, 255, 0.25)'
                       : 'rgba(255, 255, 255, 0.1)',
-                  border: `1px solid ${filter === filterOption.value ? '#ffffff' : 'rgba(255, 255, 255, 0.2)'}`,
+                  border: `1px solid ${filter === filterOption.value ? 'var(--page-text)' : 'rgba(255, 255, 255, 0.2)'}`,
                   borderRadius: '8px',
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontSize: '0.875rem',
                   fontWeight: filter === filterOption.value ? 600 : 400,
                   cursor: 'pointer',
@@ -235,9 +235,9 @@ export function MyAppointments() {
           {filteredAppointments.length === 0 ? (
             <div
               style={{
-                background: 'rgba(255, 255, 255, 0.1)',
+                background: 'var(--glass-bg)',
                 backdropFilter: 'blur(20px)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
+                border: '1px solid var(--glass-border)',
                 borderRadius: '16px',
                 padding: '3rem',
                 textAlign: 'center',
@@ -246,7 +246,7 @@ export function MyAppointments() {
               <p
                 style={{
                   fontSize: '1.125rem',
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
               >
@@ -260,9 +260,9 @@ export function MyAppointments() {
                 <div
                   key={appointment.id}
                   style={{
-                    background: 'rgba(255, 255, 255, 0.1)',
+                    background: 'var(--glass-bg)',
                     backdropFilter: 'blur(20px)',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    border: '1px solid var(--glass-border)',
                     borderRadius: '16px',
                     padding: '1.5rem',
                   }}
@@ -289,7 +289,7 @@ export function MyAppointments() {
                           style={{
                             fontSize: '1.25rem',
                             fontWeight: 600,
-                            color: '#ffffff',
+                            color: 'var(--page-text)',
                             fontFamily: '"Plus Jakarta Sans", sans-serif',
                           }}
                         >
@@ -317,7 +317,7 @@ export function MyAppointments() {
                           gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
                           gap: '0.75rem',
                           fontSize: '0.875rem',
-                          color: 'rgba(255, 255, 255, 0.8)',
+                          color: 'var(--glass-text-soft)',
                         }}
                       >
                         <div>
@@ -352,10 +352,10 @@ export function MyAppointments() {
                         to={`/patient/appointments/${appointment.id}`}
                         style={{
                           padding: '0.5rem 1rem',
-                          background: 'rgba(255, 255, 255, 0.1)',
-                          border: '1px solid rgba(255, 255, 255, 0.3)',
+                          background: 'var(--glass-bg)',
+                          border: '1px solid var(--glass-border-strong)',
                           borderRadius: '8px',
-                          color: '#ffffff',
+                          color: 'var(--page-text)',
                           fontSize: '0.875rem',
                           fontWeight: 600,
                           textDecoration: 'none',
@@ -369,10 +369,10 @@ export function MyAppointments() {
                         <button
                           style={{
                             padding: '0.5rem 1rem',
-                            background: 'rgba(244, 67, 54, 0.2)',
+                            background: 'var(--badge-expired-bg)',
                             border: '1px solid rgba(244, 67, 54, 0.5)',
                             borderRadius: '8px',
-                            color: '#F44336',
+                            color: 'var(--badge-expired-text)',
                             fontSize: '0.875rem',
                             fontWeight: 600,
                             cursor: 'pointer',

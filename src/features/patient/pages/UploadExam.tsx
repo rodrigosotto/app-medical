@@ -27,7 +27,7 @@ export function UploadExam() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -36,7 +36,7 @@ export function UploadExam() {
           to="/patient/exams"
           style={{
             display: 'inline-flex',
-            color: '#ffffff',
+            color: 'var(--page-text)',
             textDecoration: 'none',
             marginBottom: '1rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -48,7 +48,7 @@ export function UploadExam() {
           style={{
             fontSize: '2.5rem',
             fontWeight: 700,
-            color: '#ffffff',
+            color: 'var(--page-text)',
             marginBottom: '2rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
           }}
@@ -59,9 +59,9 @@ export function UploadExam() {
         <form onSubmit={handleSubmit}>
           <div
             style={{
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'var(--glass-bg)',
               backdropFilter: 'blur(20px)',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
+              border: '1px solid var(--glass-border)',
               borderRadius: '20px',
               padding: '2rem',
             }}
@@ -73,7 +73,7 @@ export function UploadExam() {
               onDragLeave={handleDrag}
               onDrop={handleDrop}
               style={{
-                border: `2px dashed ${dragActive ? '#ffffff' : 'rgba(255, 255, 255, 0.3)'}`,
+                border: `2px dashed ${dragActive ? 'var(--page-text)' : 'rgba(255, 255, 255, 0.3)'}`,
                 borderRadius: '12px',
                 padding: '3rem',
                 textAlign: 'center',
@@ -87,7 +87,7 @@ export function UploadExam() {
                 style={{
                   fontSize: '1.125rem',
                   fontWeight: 600,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   marginBottom: '0.5rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -97,7 +97,7 @@ export function UploadExam() {
               <div
                 style={{
                   fontSize: '0.875rem',
-                  color: 'rgba(255, 255, 255, 0.7)',
+                  color: 'var(--glass-text-muted)',
                   marginBottom: '1rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -116,7 +116,7 @@ export function UploadExam() {
                   padding: '0.75rem 1.5rem',
                   background: 'rgba(255, 255, 255, 0.2)',
                   borderRadius: '8px',
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontWeight: 600,
                   cursor: 'pointer',
                   display: 'inline-block',
@@ -144,7 +144,7 @@ export function UploadExam() {
                   display: 'block',
                   fontSize: '0.875rem',
                   fontWeight: 600,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   marginBottom: '0.5rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -158,10 +158,10 @@ export function UploadExam() {
                 style={{
                   width: '100%',
                   padding: '0.75rem',
-                  background: 'rgba(255, 255, 255, 0.1)',
-                  border: '1px solid rgba(255, 255, 255, 0.3)',
+                  background: 'var(--glass-bg)',
+                  border: '1px solid var(--glass-border-strong)',
                   borderRadius: '8px',
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontSize: '1rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -181,7 +181,7 @@ export function UploadExam() {
                   display: 'block',
                   fontSize: '0.875rem',
                   fontWeight: 600,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   marginBottom: '0.5rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -196,10 +196,10 @@ export function UploadExam() {
                 style={{
                   width: '100%',
                   padding: '0.75rem',
-                  background: 'rgba(255, 255, 255, 0.1)',
-                  border: '1px solid rgba(255, 255, 255, 0.3)',
+                  background: 'var(--glass-bg)',
+                  border: '1px solid var(--glass-border-strong)',
                   borderRadius: '8px',
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontSize: '1rem',
                   resize: 'vertical',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -216,11 +216,11 @@ export function UploadExam() {
                 padding: '1rem',
                 background:
                   !file || !category
-                    ? 'rgba(136, 171, 142, 0.3)'
-                    : 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+                    ? 'var(--color-brand-muted)'
+                    : 'var(--page-bg)',
                 border: 'none',
                 borderRadius: '12px',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 fontSize: '1.125rem',
                 fontWeight: 600,
                 cursor: !file || !category ? 'not-allowed' : 'pointer',

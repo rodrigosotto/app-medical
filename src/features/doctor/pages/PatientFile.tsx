@@ -20,7 +20,7 @@ export function PatientFile() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -29,7 +29,7 @@ export function PatientFile() {
           to={'/doctor/consultations' as string}
           style={{
             display: 'inline-flex',
-            color: '#ffffff',
+            color: 'var(--page-text)',
             textDecoration: 'none',
             marginBottom: '1rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -41,7 +41,7 @@ export function PatientFile() {
           style={{
             fontSize: '2.5rem',
             fontWeight: 700,
-            color: '#ffffff',
+            color: 'var(--page-text)',
             marginBottom: '2rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
           }}
@@ -51,9 +51,9 @@ export function PatientFile() {
 
         <div
           style={{
-            background: 'rgba(255, 255, 255, 0.1)',
+            background: 'var(--glass-bg)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)',
+            border: '1px solid var(--glass-border)',
             borderRadius: '20px',
             padding: '2rem',
           }}
@@ -78,7 +78,7 @@ export function PatientFile() {
                 style={{
                   fontSize: '2rem',
                   fontWeight: 700,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   marginBottom: '0.5rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -88,7 +88,7 @@ export function PatientFile() {
               <div
                 style={{
                   fontSize: '1rem',
-                  color: 'rgba(255, 255, 255, 0.9)',
+                  color: 'var(--glass-text-faint)',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
               >
@@ -101,7 +101,7 @@ export function PatientFile() {
           <div style={{ display: 'grid', gap: '1.5rem' }}>
             <div
               style={{
-                background: 'rgba(255, 255, 255, 0.1)',
+                background: 'var(--glass-bg)',
                 borderRadius: '12px',
                 padding: '1.5rem',
               }}
@@ -110,7 +110,7 @@ export function PatientFile() {
                 style={{
                   fontSize: '1.125rem',
                   fontWeight: 600,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   marginBottom: '1rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -120,7 +120,7 @@ export function PatientFile() {
               <div
                 style={{
                   fontSize: '0.938rem',
-                  color: 'rgba(255, 255, 255, 0.9)',
+                  color: 'var(--glass-text-faint)',
                   lineHeight: 2,
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -143,7 +143,7 @@ export function PatientFile() {
                 style={{
                   fontSize: '1.125rem',
                   fontWeight: 600,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   marginBottom: '1rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -153,7 +153,7 @@ export function PatientFile() {
               <div
                 style={{
                   fontSize: '0.938rem',
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
               >
@@ -173,7 +173,7 @@ export function PatientFile() {
                 style={{
                   fontSize: '1.125rem',
                   fontWeight: 600,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   marginBottom: '1rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -183,7 +183,7 @@ export function PatientFile() {
               <div
                 style={{
                   fontSize: '0.938rem',
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
               >
@@ -198,10 +198,10 @@ export function PatientFile() {
               style={{
                 flex: 1,
                 padding: '1rem',
-                background: 'rgba(255, 255, 255, 0.1)',
-                border: '1px solid rgba(255, 255, 255, 0.3)',
+                background: 'var(--glass-bg)',
+                border: '1px solid var(--glass-border-strong)',
                 borderRadius: '12px',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 textAlign: 'center',
                 textDecoration: 'none',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -214,10 +214,10 @@ export function PatientFile() {
               style={{
                 flex: 1,
                 padding: '1rem',
-                background: 'rgba(255, 255, 255, 0.1)',
-                border: '1px solid rgba(255, 255, 255, 0.3)',
+                background: 'var(--glass-bg)',
+                border: '1px solid var(--glass-border-strong)',
                 borderRadius: '12px',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 textAlign: 'center',
                 textDecoration: 'none',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',

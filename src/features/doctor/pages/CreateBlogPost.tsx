@@ -15,7 +15,7 @@ export function CreateBlogPost() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -24,7 +24,7 @@ export function CreateBlogPost() {
           style={{
             fontSize: '2.5rem',
             fontWeight: 700,
-            color: '#ffffff',
+            color: 'var(--page-text)',
             marginBottom: '2rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
           }}
@@ -35,9 +35,9 @@ export function CreateBlogPost() {
         <form
           onSubmit={handleSubmit}
           style={{
-            background: 'rgba(255, 255, 255, 0.1)',
+            background: 'var(--glass-bg)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)',
+            border: '1px solid var(--glass-border)',
             borderRadius: '20px',
             padding: '2rem',
           }}
@@ -48,7 +48,7 @@ export function CreateBlogPost() {
                 display: 'block',
                 fontSize: '1rem',
                 fontWeight: 600,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 marginBottom: '0.5rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -64,10 +64,10 @@ export function CreateBlogPost() {
               style={{
                 width: '100%',
                 padding: '0.75rem',
-                background: 'rgba(255, 255, 255, 0.1)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
+                background: 'var(--glass-bg)',
+                border: '1px solid var(--glass-border)',
                 borderRadius: '12px',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 fontSize: '1rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -80,7 +80,7 @@ export function CreateBlogPost() {
                 display: 'block',
                 fontSize: '1rem',
                 fontWeight: 600,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 marginBottom: '0.5rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -93,10 +93,10 @@ export function CreateBlogPost() {
               style={{
                 width: '100%',
                 padding: '0.75rem',
-                background: 'rgba(255, 255, 255, 0.1)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
+                background: 'var(--glass-bg)',
+                border: '1px solid var(--glass-border)',
                 borderRadius: '12px',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 fontSize: '1rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -115,7 +115,7 @@ export function CreateBlogPost() {
                 display: 'block',
                 fontSize: '1rem',
                 fontWeight: 600,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 marginBottom: '0.5rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -125,7 +125,7 @@ export function CreateBlogPost() {
             <div
               style={{
                 padding: '2rem',
-                background: 'rgba(255, 255, 255, 0.05)',
+                background: 'var(--glass-shadow)',
                 border: '2px dashed rgba(255, 255, 255, 0.3)',
                 borderRadius: '12px',
                 textAlign: 'center',
@@ -136,7 +136,7 @@ export function CreateBlogPost() {
               <div
                 style={{
                   fontSize: '0.938rem',
-                  color: 'rgba(255, 255, 255, 0.7)',
+                  color: 'var(--glass-text-muted)',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
               >
@@ -152,7 +152,7 @@ export function CreateBlogPost() {
                 display: 'block',
                 fontSize: '1rem',
                 fontWeight: 600,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 marginBottom: '0.5rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -168,10 +168,10 @@ export function CreateBlogPost() {
                 width: '100%',
                 height: '400px',
                 padding: '0.75rem',
-                background: 'rgba(255, 255, 255, 0.1)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
+                background: 'var(--glass-bg)',
+                border: '1px solid var(--glass-border)',
                 borderRadius: '12px',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 fontSize: '1rem',
                 resize: 'vertical',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -186,10 +186,10 @@ export function CreateBlogPost() {
               style={{
                 flex: 1,
                 padding: '1rem',
-                background: 'rgba(255, 255, 255, 0.1)',
-                border: '1px solid rgba(255, 255, 255, 0.3)',
+                background: 'var(--glass-bg)',
+                border: '1px solid var(--glass-border-strong)',
                 borderRadius: '12px',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 fontSize: '1rem',
                 fontWeight: 600,
                 cursor: 'pointer',
@@ -203,10 +203,10 @@ export function CreateBlogPost() {
               style={{
                 flex: 1,
                 padding: '1rem',
-                background: 'linear-gradient(135deg, #4CAF50, #45a049)',
+                background: 'var(--gradient-success)',
                 border: 'none',
                 borderRadius: '12px',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 fontSize: '1rem',
                 fontWeight: 700,
                 cursor: 'pointer',

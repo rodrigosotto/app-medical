@@ -30,7 +30,7 @@ export function AvailabilitySettings() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -39,7 +39,7 @@ export function AvailabilitySettings() {
           style={{
             fontSize: '2.5rem',
             fontWeight: 700,
-            color: '#ffffff',
+            color: 'var(--page-text)',
             marginBottom: '2rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
           }}
@@ -50,9 +50,9 @@ export function AvailabilitySettings() {
         <form
           onSubmit={handleSubmit}
           style={{
-            background: 'rgba(255, 255, 255, 0.1)',
+            background: 'var(--glass-bg)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)',
+            border: '1px solid var(--glass-border)',
             borderRadius: '20px',
             padding: '2rem',
           }}
@@ -61,7 +61,7 @@ export function AvailabilitySettings() {
             style={{
               fontSize: '1.25rem',
               fontWeight: 600,
-              color: '#ffffff',
+              color: 'var(--page-text)',
               marginBottom: '1.5rem',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
             }}
@@ -77,7 +77,7 @@ export function AvailabilitySettings() {
                 alignItems: 'center',
                 gap: '1rem',
                 padding: '1rem',
-                background: 'rgba(255, 255, 255, 0.05)',
+                background: 'var(--glass-shadow)',
                 borderRadius: '12px',
                 marginBottom: '1rem',
               }}
@@ -95,7 +95,7 @@ export function AvailabilitySettings() {
                   flex: 1,
                   fontSize: '1rem',
                   fontWeight: 600,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
               >
@@ -108,23 +108,23 @@ export function AvailabilitySettings() {
                     value={config.start}
                     style={{
                       padding: '0.5rem',
-                      background: 'rgba(255, 255, 255, 0.1)',
-                      border: '1px solid rgba(255, 255, 255, 0.2)',
+                      background: 'var(--glass-bg)',
+                      border: '1px solid var(--glass-border)',
                       borderRadius: '8px',
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
                   />
-                  <span style={{ color: '#ffffff' }}>até</span>
+                  <span style={{ color: 'var(--page-text)' }}>até</span>
                   <input
                     type="time"
                     value={config.end}
                     style={{
                       padding: '0.5rem',
-                      background: 'rgba(255, 255, 255, 0.1)',
-                      border: '1px solid rgba(255, 255, 255, 0.2)',
+                      background: 'var(--glass-bg)',
+                      border: '1px solid var(--glass-border)',
                       borderRadius: '8px',
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
                   />
@@ -137,7 +137,7 @@ export function AvailabilitySettings() {
             style={{
               marginTop: '2rem',
               padding: '1.5rem',
-              background: 'rgba(255, 255, 255, 0.05)',
+              background: 'var(--glass-shadow)',
               borderRadius: '12px',
             }}
           >
@@ -146,7 +146,7 @@ export function AvailabilitySettings() {
                 display: 'block',
                 fontSize: '1rem',
                 fontWeight: 600,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 marginBottom: '0.75rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -157,10 +157,10 @@ export function AvailabilitySettings() {
               style={{
                 width: '100%',
                 padding: '0.75rem',
-                background: 'rgba(255, 255, 255, 0.1)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
+                background: 'var(--glass-bg)',
+                border: '1px solid var(--glass-border)',
                 borderRadius: '8px',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 fontSize: '1rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -177,10 +177,10 @@ export function AvailabilitySettings() {
               width: '100%',
               padding: '1rem',
               marginTop: '2rem',
-              background: 'linear-gradient(135deg, #4CAF50, #45a049)',
+              background: 'var(--gradient-success)',
               border: 'none',
               borderRadius: '12px',
-              color: '#ffffff',
+              color: 'var(--page-text)',
               fontSize: '1.125rem',
               fontWeight: 700,
               cursor: 'pointer',

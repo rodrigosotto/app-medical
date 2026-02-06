@@ -33,7 +33,7 @@ export function OrdersManagement() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -42,7 +42,7 @@ export function OrdersManagement() {
           style={{
             fontSize: '2.5rem',
             fontWeight: 700,
-            color: '#ffffff',
+            color: 'var(--page-text)',
             marginBottom: '2rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
           }}
@@ -57,10 +57,10 @@ export function OrdersManagement() {
               onClick={() => setFilter(f)}
               style={{
                 padding: '0.75rem 1rem',
-                background: filter === f ? 'rgba(255, 255, 255, 0.3)' : 'rgba(255, 255, 255, 0.1)',
-                border: '1px solid rgba(255, 255, 255, 0.3)',
+                background: filter === f ? 'var(--glass-bg-active)' : 'var(--glass-bg)',
+                border: '1px solid var(--glass-border-strong)',
                 borderRadius: '12px',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 fontWeight: 600,
                 cursor: 'pointer',
                 whiteSpace: 'nowrap',
@@ -77,9 +77,9 @@ export function OrdersManagement() {
 
         <div
           style={{
-            background: 'rgba(255, 255, 255, 0.1)',
+            background: 'var(--glass-bg)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)',
+            border: '1px solid var(--glass-border)',
             borderRadius: '20px',
             padding: '2rem',
           }}
@@ -92,8 +92,8 @@ export function OrdersManagement() {
                     style={{
                       padding: '1rem',
                       textAlign: 'left',
-                      borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                      color: '#ffffff',
+                      borderBottom: '1px solid var(--glass-border)',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -104,8 +104,8 @@ export function OrdersManagement() {
                     style={{
                       padding: '1rem',
                       textAlign: 'left',
-                      borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                      color: '#ffffff',
+                      borderBottom: '1px solid var(--glass-border)',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -116,8 +116,8 @@ export function OrdersManagement() {
                     style={{
                       padding: '1rem',
                       textAlign: 'center',
-                      borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                      color: '#ffffff',
+                      borderBottom: '1px solid var(--glass-border)',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -128,8 +128,8 @@ export function OrdersManagement() {
                     style={{
                       padding: '1rem',
                       textAlign: 'center',
-                      borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                      color: '#ffffff',
+                      borderBottom: '1px solid var(--glass-border)',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -140,8 +140,8 @@ export function OrdersManagement() {
                     style={{
                       padding: '1rem',
                       textAlign: 'center',
-                      borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                      color: '#ffffff',
+                      borderBottom: '1px solid var(--glass-border)',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -152,8 +152,8 @@ export function OrdersManagement() {
                     style={{
                       padding: '1rem',
                       textAlign: 'center',
-                      borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                      color: '#ffffff',
+                      borderBottom: '1px solid var(--glass-border)',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -164,8 +164,8 @@ export function OrdersManagement() {
                     style={{
                       padding: '1rem',
                       textAlign: 'center',
-                      borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                      color: '#ffffff',
+                      borderBottom: '1px solid var(--glass-border)',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -180,8 +180,8 @@ export function OrdersManagement() {
                     <td
                       style={{
                         padding: '1rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
-                        color: '#ffffff',
+                        borderBottom: '1px solid var(--glass-divider)',
+                        color: 'var(--page-text)',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
                     >
@@ -190,8 +190,8 @@ export function OrdersManagement() {
                     <td
                       style={{
                         padding: '1rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
-                        color: '#ffffff',
+                        borderBottom: '1px solid var(--glass-divider)',
+                        color: 'var(--page-text)',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
                     >
@@ -200,9 +200,9 @@ export function OrdersManagement() {
                     <td
                       style={{
                         padding: '1rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+                        borderBottom: '1px solid var(--glass-divider)',
                         textAlign: 'center',
-                        color: '#ffffff',
+                        color: 'var(--page-text)',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
                     >
@@ -211,9 +211,9 @@ export function OrdersManagement() {
                     <td
                       style={{
                         padding: '1rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+                        borderBottom: '1px solid var(--glass-divider)',
                         textAlign: 'center',
-                        color: '#ffffff',
+                        color: 'var(--page-text)',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
                     >
@@ -222,9 +222,9 @@ export function OrdersManagement() {
                     <td
                       style={{
                         padding: '1rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+                        borderBottom: '1px solid var(--glass-divider)',
                         textAlign: 'center',
-                        color: '#4CAF50',
+                        color: 'var(--color-success)',
                         fontWeight: 600,
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
@@ -234,7 +234,7 @@ export function OrdersManagement() {
                     <td
                       style={{
                         padding: '1rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+                        borderBottom: '1px solid var(--glass-divider)',
                         textAlign: 'center',
                       }}
                     >
@@ -246,16 +246,16 @@ export function OrdersManagement() {
                           fontWeight: 600,
                           background:
                             order.status === 'em-transito'
-                              ? 'rgba(33, 150, 243, 0.2)'
+                              ? 'var(--color-info-bg)'
                               : order.status === 'entregue'
-                                ? 'rgba(76, 175, 80, 0.2)'
-                                : 'rgba(255, 193, 7, 0.2)',
+                                ? 'var(--badge-active-bg)'
+                                : 'var(--color-warning-bg)',
                           color:
                             order.status === 'em-transito'
-                              ? '#2196F3'
+                              ? 'var(--color-info)'
                               : order.status === 'entregue'
-                                ? '#4CAF50'
-                                : '#FFC107',
+                                ? 'var(--badge-active-text)'
+                                : 'var(--color-warning)',
                           fontFamily: '"Plus Jakarta Sans", sans-serif',
                         }}
                       >
@@ -268,17 +268,17 @@ export function OrdersManagement() {
                     <td
                       style={{
                         padding: '1rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+                        borderBottom: '1px solid var(--glass-divider)',
                         textAlign: 'center',
                       }}
                     >
                       <button
                         style={{
-                          background: 'rgba(33, 150, 243, 0.2)',
+                          background: 'var(--color-info-bg)',
                           border: 'none',
                           borderRadius: '6px',
                           padding: '0.5rem',
-                          color: '#2196F3',
+                          color: 'var(--color-info)',
                           cursor: 'pointer',
                           fontSize: '1rem',
                         }}

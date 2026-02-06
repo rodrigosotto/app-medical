@@ -44,7 +44,7 @@ export function ChatWithDoctor() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         display: 'flex',
         flexDirection: 'column',
       }}
@@ -52,7 +52,7 @@ export function ChatWithDoctor() {
       {/* Header */}
       <div
         style={{
-          background: 'rgba(0, 0, 0, 0.2)',
+          background: 'var(--shadow-overlay, rgba(0, 0, 0, 0.2))',
           padding: '1rem 2rem',
           display: 'flex',
           alignItems: 'center',
@@ -61,7 +61,7 @@ export function ChatWithDoctor() {
       >
         <Link
           to="/patient/dashboard"
-          style={{ color: '#ffffff', fontSize: '1.5rem', textDecoration: 'none' }}
+          style={{ color: 'var(--page-text)', fontSize: '1.5rem', textDecoration: 'none' }}
         >
           ←
         </Link>
@@ -85,7 +85,7 @@ export function ChatWithDoctor() {
               style={{
                 fontSize: '1.125rem',
                 fontWeight: 600,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
             >
@@ -94,7 +94,7 @@ export function ChatWithDoctor() {
             <div
               style={{
                 fontSize: '0.875rem',
-                color: 'rgba(255, 255, 255, 0.8)',
+                color: 'var(--glass-text-soft)',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
             >
@@ -131,7 +131,7 @@ export function ChatWithDoctor() {
                 <div
                   style={{
                     fontSize: '0.75rem',
-                    color: 'rgba(255, 255, 255, 0.8)',
+                    color: 'var(--glass-text-soft)',
                     marginBottom: '0.25rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -149,7 +149,7 @@ export function ChatWithDoctor() {
                   padding: '0.75rem 1rem',
                   borderRadius:
                     msg.sender === 'patient' ? '16px 16px 4px 16px' : '16px 16px 16px 4px',
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontSize: '0.938rem',
                   lineHeight: 1.5,
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -160,7 +160,7 @@ export function ChatWithDoctor() {
               <div
                 style={{
                   fontSize: '0.75rem',
-                  color: 'rgba(255, 255, 255, 0.7)',
+                  color: 'var(--glass-text-muted)',
                   marginTop: '0.25rem',
                   textAlign: msg.sender === 'patient' ? 'right' : 'left',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -174,7 +174,7 @@ export function ChatWithDoctor() {
       </div>
 
       {/* Input Area */}
-      <div style={{ background: 'rgba(0, 0, 0, 0.2)', padding: '1rem 2rem' }}>
+      <div style={{ background: 'var(--shadow-overlay, rgba(0, 0, 0, 0.2))', padding: '1rem 2rem' }}>
         <div
           style={{
             maxWidth: '800px',
@@ -189,9 +189,9 @@ export function ChatWithDoctor() {
               width: '40px',
               height: '40px',
               borderRadius: '50%',
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'var(--glass-bg)',
               border: 'none',
-              color: '#ffffff',
+              color: 'var(--page-text)',
               fontSize: '1.25rem',
               cursor: 'pointer',
             }}
@@ -206,10 +206,10 @@ export function ChatWithDoctor() {
             style={{
               flex: 1,
               padding: '0.75rem 1rem',
-              background: 'rgba(255, 255, 255, 0.1)',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
+              background: 'var(--glass-bg)',
+              border: '1px solid var(--glass-border)',
               borderRadius: '24px',
-              color: '#ffffff',
+              color: 'var(--page-text)',
               fontSize: '1rem',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
             }}
@@ -219,9 +219,9 @@ export function ChatWithDoctor() {
               width: '40px',
               height: '40px',
               borderRadius: '50%',
-              background: 'linear-gradient(135deg, #88AB8E, #6B9A75)',
+              background: 'var(--gradient-brand)',
               border: 'none',
-              color: '#ffffff',
+              color: 'var(--page-text)',
               fontSize: '1.25rem',
               cursor: 'pointer',
             }}

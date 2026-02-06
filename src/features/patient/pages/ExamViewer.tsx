@@ -28,7 +28,7 @@ export function ExamViewer() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -37,7 +37,7 @@ export function ExamViewer() {
           to="/patient/exams"
           style={{
             display: 'inline-flex',
-            color: '#ffffff',
+            color: 'var(--page-text)',
             textDecoration: 'none',
             marginBottom: '1rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -49,7 +49,7 @@ export function ExamViewer() {
           style={{
             fontSize: '2.5rem',
             fontWeight: 700,
-            color: '#ffffff',
+            color: 'var(--page-text)',
             marginBottom: '2rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
           }}
@@ -59,9 +59,9 @@ export function ExamViewer() {
 
         <div
           style={{
-            background: 'rgba(255, 255, 255, 0.1)',
+            background: 'var(--glass-bg)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)',
+            border: '1px solid var(--glass-border)',
             borderRadius: '20px',
             padding: '2rem',
             marginBottom: '2rem',
@@ -79,7 +79,7 @@ export function ExamViewer() {
               <div
                 style={{
                   fontSize: '0.875rem',
-                  color: 'rgba(255, 255, 255, 0.7)',
+                  color: 'var(--glass-text-muted)',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
               >
@@ -89,7 +89,7 @@ export function ExamViewer() {
                 style={{
                   fontSize: '1.125rem',
                   fontWeight: 600,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
               >
@@ -100,7 +100,7 @@ export function ExamViewer() {
               <div
                 style={{
                   fontSize: '0.875rem',
-                  color: 'rgba(255, 255, 255, 0.7)',
+                  color: 'var(--glass-text-muted)',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
               >
@@ -110,7 +110,7 @@ export function ExamViewer() {
                 style={{
                   fontSize: '1.125rem',
                   fontWeight: 600,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
               >
@@ -121,7 +121,7 @@ export function ExamViewer() {
               <div
                 style={{
                   fontSize: '0.875rem',
-                  color: 'rgba(255, 255, 255, 0.7)',
+                  color: 'var(--glass-text-muted)',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
               >
@@ -131,7 +131,7 @@ export function ExamViewer() {
                 style={{
                   fontSize: '1.125rem',
                   fontWeight: 600,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
               >
@@ -144,7 +144,7 @@ export function ExamViewer() {
             style={{
               fontSize: '1.25rem',
               fontWeight: 700,
-              color: '#ffffff',
+              color: 'var(--page-text)',
               marginBottom: '1rem',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
             }}
@@ -156,7 +156,7 @@ export function ExamViewer() {
               <div
                 key={index}
                 style={{
-                  background: 'rgba(255, 255, 255, 0.1)',
+                  background: 'var(--glass-bg)',
                   borderRadius: '8px',
                   padding: '1rem',
                   display: 'flex',
@@ -169,7 +169,7 @@ export function ExamViewer() {
                     style={{
                       fontSize: '1rem',
                       fontWeight: 600,
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
                   >
@@ -178,7 +178,7 @@ export function ExamViewer() {
                   <div
                     style={{
                       fontSize: '0.875rem',
-                      color: 'rgba(255, 255, 255, 0.7)',
+                      color: 'var(--glass-text-muted)',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
                   >
@@ -190,7 +190,7 @@ export function ExamViewer() {
                     style={{
                       fontSize: '1.125rem',
                       fontWeight: 600,
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
                   >
@@ -198,12 +198,12 @@ export function ExamViewer() {
                   </div>
                   <span
                     style={{
-                      background: 'rgba(76, 175, 80, 0.2)',
+                      background: 'var(--color-success-bg)',
                       border: '1px solid rgba(76, 175, 80, 0.5)',
                       borderRadius: '6px',
                       padding: '0.25rem 0.5rem',
                       fontSize: '0.75rem',
-                      color: '#4CAF50',
+                      color: 'var(--color-success)',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
                   >
@@ -220,10 +220,10 @@ export function ExamViewer() {
             style={{
               flex: 1,
               padding: '1rem',
-              background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+              background: 'var(--page-bg)',
               border: 'none',
               borderRadius: '12px',
-              color: '#ffffff',
+              color: 'var(--page-text)',
               fontSize: '1rem',
               fontWeight: 600,
               cursor: 'pointer',
@@ -236,10 +236,10 @@ export function ExamViewer() {
             style={{
               flex: 1,
               padding: '1rem',
-              background: 'rgba(255, 255, 255, 0.1)',
-              border: '1px solid rgba(255, 255, 255, 0.3)',
+              background: 'var(--glass-bg)',
+              border: '1px solid var(--glass-border-strong)',
               borderRadius: '12px',
-              color: '#ffffff',
+              color: 'var(--page-text)',
               fontSize: '1rem',
               fontWeight: 600,
               cursor: 'pointer',

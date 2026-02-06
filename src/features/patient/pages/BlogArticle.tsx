@@ -44,7 +44,7 @@ Lembre-se: estas dicas complementam, mas não substituem o tratamento médico pr
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -53,7 +53,7 @@ Lembre-se: estas dicas complementam, mas não substituem o tratamento médico pr
           to="/patient/blog"
           style={{
             display: 'inline-flex',
-            color: '#ffffff',
+            color: 'var(--page-text)',
             textDecoration: 'none',
             marginBottom: '1rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -64,9 +64,9 @@ Lembre-se: estas dicas complementam, mas não substituem o tratamento médico pr
 
         <div
           style={{
-            background: 'rgba(255, 255, 255, 0.1)',
+            background: 'var(--glass-bg)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)',
+            border: '1px solid var(--glass-border)',
             borderRadius: '20px',
             overflow: 'hidden',
           }}
@@ -92,12 +92,12 @@ Lembre-se: estas dicas complementam, mas não substituem o tratamento médico pr
             <div style={{ marginBottom: '1.5rem' }}>
               <span
                 style={{
-                  background: 'rgba(136, 171, 142, 0.3)',
+                  background: 'var(--color-brand-muted)',
                   padding: '0.25rem 0.75rem',
                   borderRadius: '6px',
                   fontSize: '0.875rem',
                   fontWeight: 600,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
               >
@@ -110,7 +110,7 @@ Lembre-se: estas dicas complementam, mas não substituem o tratamento médico pr
               style={{
                 fontSize: '2.5rem',
                 fontWeight: 700,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 marginBottom: '1rem',
                 lineHeight: 1.2,
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -127,7 +127,7 @@ Lembre-se: estas dicas complementam, mas não substituem o tratamento médico pr
                 gap: '1rem',
                 paddingBottom: '1.5rem',
                 marginBottom: '2rem',
-                borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
+                borderBottom: '1px solid var(--glass-border)',
               }}
             >
               <div
@@ -149,7 +149,7 @@ Lembre-se: estas dicas complementam, mas não substituem o tratamento médico pr
                   style={{
                     fontSize: '1rem',
                     fontWeight: 600,
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
                 >
@@ -158,7 +158,7 @@ Lembre-se: estas dicas complementam, mas não substituem o tratamento médico pr
                 <div
                   style={{
                     fontSize: '0.875rem',
-                    color: 'rgba(255, 255, 255, 0.7)',
+                    color: 'var(--glass-text-muted)',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
                 >
@@ -171,7 +171,7 @@ Lembre-se: estas dicas complementam, mas não substituem o tratamento médico pr
             <div
               style={{
                 fontSize: '1.125rem',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 lineHeight: 1.8,
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -184,7 +184,7 @@ Lembre-se: estas dicas complementam, mas não substituem o tratamento médico pr
                       style={{
                         fontSize: '1.5rem',
                         fontWeight: 700,
-                        color: '#ffffff',
+                        color: 'var(--page-text)',
                         marginTop: '2rem',
                         marginBottom: '1rem',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -212,7 +212,7 @@ Lembre-se: estas dicas complementam, mas não substituem o tratamento médico pr
             >
               <div
                 style={{
-                  background: 'rgba(255, 255, 255, 0.1)',
+                  background: 'var(--glass-bg)',
                   borderRadius: '12px',
                   padding: '1.5rem',
                   display: 'flex',
@@ -240,7 +240,7 @@ Lembre-se: estas dicas complementam, mas não substituem o tratamento médico pr
                     style={{
                       fontSize: '1.25rem',
                       fontWeight: 600,
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       marginBottom: '0.25rem',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -250,7 +250,7 @@ Lembre-se: estas dicas complementam, mas não substituem o tratamento médico pr
                   <div
                     style={{
                       fontSize: '0.938rem',
-                      color: 'rgba(255, 255, 255, 0.8)',
+                      color: 'var(--glass-text-soft)',
                       marginBottom: '0.25rem',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -260,7 +260,7 @@ Lembre-se: estas dicas complementam, mas não substituem o tratamento médico pr
                   <div
                     style={{
                       fontSize: '0.875rem',
-                      color: 'rgba(255, 255, 255, 0.7)',
+                      color: 'var(--glass-text-muted)',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
                   >

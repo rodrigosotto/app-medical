@@ -10,7 +10,7 @@ export function OperationalReports() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -19,7 +19,7 @@ export function OperationalReports() {
           style={{
             fontSize: '2.5rem',
             fontWeight: 700,
-            color: '#ffffff',
+            color: 'var(--page-text)',
             marginBottom: '2rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
           }}
@@ -40,23 +40,23 @@ export function OperationalReports() {
               label: 'Total de Consultas',
               value: stats.totalConsultations,
               icon: '📅',
-              color: '#2196F3',
+              color: 'var(--color-info)',
             },
-            { label: 'Usuários Ativos', value: stats.activeUsers, icon: '👥', color: '#4CAF50' },
-            { label: 'Avaliação Média', value: stats.averageRating, icon: '⭐', color: '#FFC107' },
+            { label: 'Usuários Ativos', value: stats.activeUsers, icon: '👥', color: 'var(--color-success)' },
+            { label: 'Avaliação Média', value: stats.averageRating, icon: '⭐', color: 'var(--color-warning)' },
             {
               label: 'Tempo Médio de Resposta',
               value: stats.responseTime,
               icon: '⏱️',
-              color: '#FF5722',
+              color: 'var(--color-orange)',
             },
           ].map((stat, index) => (
             <div
               key={index}
               style={{
-                background: 'rgba(255, 255, 255, 0.1)',
+                background: 'var(--glass-bg)',
                 backdropFilter: 'blur(20px)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
+                border: '1px solid var(--glass-border)',
                 borderRadius: '20px',
                 padding: '1.5rem',
               }}
@@ -65,7 +65,7 @@ export function OperationalReports() {
               <div
                 style={{
                   fontSize: '0.875rem',
-                  color: 'rgba(255, 255, 255, 0.7)',
+                  color: 'var(--glass-text-muted)',
                   marginBottom: '0.5rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -89,9 +89,9 @@ export function OperationalReports() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '2rem' }}>
           <div
             style={{
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'var(--glass-bg)',
               backdropFilter: 'blur(20px)',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
+              border: '1px solid var(--glass-border)',
               borderRadius: '20px',
               padding: '2rem',
             }}
@@ -100,7 +100,7 @@ export function OperationalReports() {
               style={{
                 fontSize: '1.25rem',
                 fontWeight: 600,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 marginBottom: '1.5rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -121,7 +121,7 @@ export function OperationalReports() {
                       justifyContent: 'space-between',
                       marginBottom: '0.5rem',
                       fontSize: '0.938rem',
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
                   >
@@ -133,7 +133,7 @@ export function OperationalReports() {
                   <div
                     style={{
                       height: '8px',
-                      background: 'rgba(255, 255, 255, 0.1)',
+                      background: 'var(--glass-bg)',
                       borderRadius: '8px',
                       overflow: 'hidden',
                     }}
@@ -154,9 +154,9 @@ export function OperationalReports() {
 
           <div
             style={{
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'var(--glass-bg)',
               backdropFilter: 'blur(20px)',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
+              border: '1px solid var(--glass-border)',
               borderRadius: '20px',
               padding: '2rem',
             }}
@@ -165,7 +165,7 @@ export function OperationalReports() {
               style={{
                 fontSize: '1.25rem',
                 fontWeight: 600,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 marginBottom: '1.5rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -185,7 +185,7 @@ export function OperationalReports() {
                 style={{
                   fontSize: '5rem',
                   fontWeight: 700,
-                  color: '#4CAF50',
+                  color: 'var(--color-success)',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
               >
@@ -194,7 +194,7 @@ export function OperationalReports() {
               <div
                 style={{
                   fontSize: '1.125rem',
-                  color: 'rgba(255, 255, 255, 0.9)',
+                  color: 'var(--glass-text-faint)',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
               >

@@ -16,7 +16,7 @@ export function MedicationRegistration() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -25,7 +25,7 @@ export function MedicationRegistration() {
           style={{
             fontSize: '2.5rem',
             fontWeight: 700,
-            color: '#ffffff',
+            color: 'var(--page-text)',
             marginBottom: '2rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
           }}
@@ -36,9 +36,9 @@ export function MedicationRegistration() {
         <div style={{ display: 'grid', gridTemplateColumns: '400px 1fr', gap: '2rem' }}>
           <div
             style={{
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'var(--glass-bg)',
               backdropFilter: 'blur(20px)',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
+              border: '1px solid var(--glass-border)',
               borderRadius: '20px',
               padding: '2rem',
               height: 'fit-content',
@@ -48,7 +48,7 @@ export function MedicationRegistration() {
               style={{
                 fontSize: '1.25rem',
                 fontWeight: 600,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 marginBottom: '1.5rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -62,7 +62,7 @@ export function MedicationRegistration() {
                     display: 'block',
                     fontSize: '0.875rem',
                     fontWeight: 600,
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     marginBottom: '0.5rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -76,10 +76,10 @@ export function MedicationRegistration() {
                   style={{
                     width: '100%',
                     padding: '0.75rem',
-                    background: 'rgba(255, 255, 255, 0.1)',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    background: 'var(--glass-bg)',
+                    border: '1px solid var(--glass-border)',
                     borderRadius: '8px',
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     fontSize: '0.938rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -91,7 +91,7 @@ export function MedicationRegistration() {
                     display: 'block',
                     fontSize: '0.875rem',
                     fontWeight: 600,
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     marginBottom: '0.5rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -103,10 +103,10 @@ export function MedicationRegistration() {
                   style={{
                     width: '100%',
                     padding: '0.75rem',
-                    background: 'rgba(255, 255, 255, 0.1)',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    background: 'var(--glass-bg)',
+                    border: '1px solid var(--glass-border)',
                     borderRadius: '8px',
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     fontSize: '0.938rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -124,7 +124,7 @@ export function MedicationRegistration() {
                     display: 'block',
                     fontSize: '0.875rem',
                     fontWeight: 600,
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     marginBottom: '0.5rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -138,10 +138,10 @@ export function MedicationRegistration() {
                   style={{
                     width: '100%',
                     padding: '0.75rem',
-                    background: 'rgba(255, 255, 255, 0.1)',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    background: 'var(--glass-bg)',
+                    border: '1px solid var(--glass-border)',
                     borderRadius: '8px',
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     fontSize: '0.938rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -153,7 +153,7 @@ export function MedicationRegistration() {
                     display: 'block',
                     fontSize: '0.875rem',
                     fontWeight: 600,
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     marginBottom: '0.5rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -167,10 +167,10 @@ export function MedicationRegistration() {
                   style={{
                     width: '100%',
                     padding: '0.75rem',
-                    background: 'rgba(255, 255, 255, 0.1)',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    background: 'var(--glass-bg)',
+                    border: '1px solid var(--glass-border)',
                     borderRadius: '8px',
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     fontSize: '0.938rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -181,10 +181,10 @@ export function MedicationRegistration() {
                 style={{
                   width: '100%',
                   padding: '0.75rem',
-                  background: 'linear-gradient(135deg, #4CAF50, #45a049)',
+                  background: 'var(--gradient-success)',
                   border: 'none',
                   borderRadius: '8px',
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontWeight: 600,
                   cursor: 'pointer',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -197,9 +197,9 @@ export function MedicationRegistration() {
 
           <div
             style={{
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'var(--glass-bg)',
               backdropFilter: 'blur(20px)',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
+              border: '1px solid var(--glass-border)',
               borderRadius: '20px',
               padding: '2rem',
             }}
@@ -208,7 +208,7 @@ export function MedicationRegistration() {
               style={{
                 fontSize: '1.25rem',
                 fontWeight: 600,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 marginBottom: '1.5rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -223,8 +223,8 @@ export function MedicationRegistration() {
                       style={{
                         padding: '0.75rem',
                         textAlign: 'left',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                        color: '#ffffff',
+                        borderBottom: '1px solid var(--glass-border)',
+                        color: 'var(--page-text)',
                         fontWeight: 600,
                         fontSize: '0.875rem',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -236,8 +236,8 @@ export function MedicationRegistration() {
                       style={{
                         padding: '0.75rem',
                         textAlign: 'left',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                        color: '#ffffff',
+                        borderBottom: '1px solid var(--glass-border)',
+                        color: 'var(--page-text)',
                         fontWeight: 600,
                         fontSize: '0.875rem',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -249,8 +249,8 @@ export function MedicationRegistration() {
                       style={{
                         padding: '0.75rem',
                         textAlign: 'center',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                        color: '#ffffff',
+                        borderBottom: '1px solid var(--glass-border)',
+                        color: 'var(--page-text)',
                         fontWeight: 600,
                         fontSize: '0.875rem',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -262,8 +262,8 @@ export function MedicationRegistration() {
                       style={{
                         padding: '0.75rem',
                         textAlign: 'center',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                        color: '#ffffff',
+                        borderBottom: '1px solid var(--glass-border)',
+                        color: 'var(--page-text)',
                         fontWeight: 600,
                         fontSize: '0.875rem',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -279,8 +279,8 @@ export function MedicationRegistration() {
                       <td
                         style={{
                           padding: '0.75rem',
-                          borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
-                          color: '#ffffff',
+                          borderBottom: '1px solid var(--glass-divider)',
+                          color: 'var(--page-text)',
                           fontSize: '0.938rem',
                           fontFamily: '"Plus Jakarta Sans", sans-serif',
                         }}
@@ -290,8 +290,8 @@ export function MedicationRegistration() {
                       <td
                         style={{
                           padding: '0.75rem',
-                          borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
-                          color: '#ffffff',
+                          borderBottom: '1px solid var(--glass-divider)',
+                          color: 'var(--page-text)',
                           fontSize: '0.938rem',
                           fontFamily: '"Plus Jakarta Sans", sans-serif',
                         }}
@@ -301,9 +301,9 @@ export function MedicationRegistration() {
                       <td
                         style={{
                           padding: '0.75rem',
-                          borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+                          borderBottom: '1px solid var(--glass-divider)',
                           textAlign: 'center',
-                          color: '#ffffff',
+                          color: 'var(--page-text)',
                           fontSize: '0.938rem',
                           fontFamily: '"Plus Jakarta Sans", sans-serif',
                         }}
@@ -313,8 +313,8 @@ export function MedicationRegistration() {
                             padding: '0.25rem 0.75rem',
                             borderRadius: '8px',
                             background:
-                              med.stock < 100 ? 'rgba(255, 193, 7, 0.2)' : 'rgba(76, 175, 80, 0.2)',
-                            color: med.stock < 100 ? '#FFC107' : '#4CAF50',
+                              med.stock < 100 ? 'var(--color-warning-bg)' : 'var(--color-success-bg)',
+                            color: med.stock < 100 ? 'var(--color-warning)' : 'var(--color-success)',
                             fontWeight: 600,
                           }}
                         >
@@ -324,17 +324,17 @@ export function MedicationRegistration() {
                       <td
                         style={{
                           padding: '0.75rem',
-                          borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+                          borderBottom: '1px solid var(--glass-divider)',
                           textAlign: 'center',
                         }}
                       >
                         <button
                           style={{
-                            background: 'rgba(33, 150, 243, 0.2)',
+                            background: 'var(--color-info-bg)',
                             border: 'none',
                             borderRadius: '6px',
                             padding: '0.5rem',
-                            color: '#2196F3',
+                            color: 'var(--color-info)',
                             cursor: 'pointer',
                             fontSize: '1rem',
                             marginRight: '0.5rem',
@@ -344,11 +344,11 @@ export function MedicationRegistration() {
                         </button>
                         <button
                           style={{
-                            background: 'rgba(244, 67, 54, 0.2)',
+                            background: 'var(--badge-expired-bg)',
                             border: 'none',
                             borderRadius: '6px',
                             padding: '0.5rem',
-                            color: '#F44336',
+                            color: 'var(--badge-expired-text)',
                             cursor: 'pointer',
                             fontSize: '1rem',
                           }}

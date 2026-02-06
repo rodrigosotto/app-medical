@@ -38,7 +38,7 @@ export function BlogArticles() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -47,7 +47,7 @@ export function BlogArticles() {
           to="/patient/dashboard"
           style={{
             display: 'inline-flex',
-            color: '#ffffff',
+            color: 'var(--page-text)',
             textDecoration: 'none',
             marginBottom: '1rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -59,7 +59,7 @@ export function BlogArticles() {
           style={{
             fontSize: '2.5rem',
             fontWeight: 700,
-            color: '#ffffff',
+            color: 'var(--page-text)',
             marginBottom: '2rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
           }}
@@ -69,9 +69,9 @@ export function BlogArticles() {
 
         <div
           style={{
-            background: 'rgba(255, 255, 255, 0.1)',
+            background: 'var(--glass-bg)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)',
+            border: '1px solid var(--glass-border)',
             borderRadius: '16px',
             padding: '1.5rem',
             marginBottom: '2rem',
@@ -86,9 +86,9 @@ export function BlogArticles() {
                   padding: '0.5rem 1rem',
                   background:
                     category === cat ? 'rgba(255, 255, 255, 0.25)' : 'rgba(255, 255, 255, 0.1)',
-                  border: `1px solid ${category === cat ? '#ffffff' : 'rgba(255, 255, 255, 0.2)'}`,
+                  border: `1px solid ${category === cat ? 'var(--page-text)' : 'rgba(255, 255, 255, 0.2)'}`,
                   borderRadius: '8px',
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontSize: '0.875rem',
                   fontWeight: category === cat ? 600 : 400,
                   cursor: 'pointer',
@@ -113,9 +113,9 @@ export function BlogArticles() {
               key={article.id}
               to={`/patient/blog/${article.id}`}
               style={{
-                background: 'rgba(255, 255, 255, 0.1)',
+                background: 'var(--glass-bg)',
                 backdropFilter: 'blur(20px)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
+                border: '1px solid var(--glass-border)',
                 borderRadius: '16px',
                 overflow: 'hidden',
                 textDecoration: 'none',
@@ -140,12 +140,12 @@ export function BlogArticles() {
               <div style={{ padding: '1.5rem' }}>
                 <span
                   style={{
-                    background: 'rgba(136, 171, 142, 0.3)',
+                    background: 'var(--color-brand-muted)',
                     padding: '0.25rem 0.75rem',
                     borderRadius: '6px',
                     fontSize: '0.75rem',
                     fontWeight: 600,
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
                 >
@@ -155,7 +155,7 @@ export function BlogArticles() {
                   style={{
                     fontSize: '1.25rem',
                     fontWeight: 600,
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     margin: '1rem 0 0.5rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -165,7 +165,7 @@ export function BlogArticles() {
                 <p
                   style={{
                     fontSize: '0.875rem',
-                    color: 'rgba(255, 255, 255, 0.8)',
+                    color: 'var(--glass-text-soft)',
                     lineHeight: 1.6,
                     marginBottom: '1rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -178,7 +178,7 @@ export function BlogArticles() {
                     display: 'flex',
                     justifyContent: 'space-between',
                     fontSize: '0.75rem',
-                    color: 'rgba(255, 255, 255, 0.7)',
+                    color: 'var(--glass-text-muted)',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
                 >

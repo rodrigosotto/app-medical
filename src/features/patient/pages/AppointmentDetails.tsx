@@ -38,7 +38,7 @@ export function AppointmentDetails() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -51,7 +51,7 @@ export function AppointmentDetails() {
               display: 'inline-flex',
               alignItems: 'center',
               gap: '0.5rem',
-              color: '#ffffff',
+              color: 'var(--page-text)',
               textDecoration: 'none',
               marginBottom: '1rem',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -63,7 +63,7 @@ export function AppointmentDetails() {
             style={{
               fontSize: '2.5rem',
               fontWeight: 700,
-              color: '#ffffff',
+              color: 'var(--page-text)',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
             }}
           >
@@ -75,9 +75,9 @@ export function AppointmentDetails() {
           {/* Card Principal - Info da Consulta */}
           <div
             style={{
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'var(--glass-bg)',
               backdropFilter: 'blur(20px)',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
+              border: '1px solid var(--glass-border)',
               borderRadius: '20px',
               padding: '2rem',
             }}
@@ -95,7 +95,7 @@ export function AppointmentDetails() {
                   style={{
                     fontSize: '1.75rem',
                     fontWeight: 700,
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     marginBottom: '0.5rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -104,13 +104,13 @@ export function AppointmentDetails() {
                 </h2>
                 <span
                   style={{
-                    background: 'rgba(76, 175, 80, 0.2)',
+                    background: 'var(--color-success-bg)',
                     border: '1px solid rgba(76, 175, 80, 0.5)',
                     borderRadius: '8px',
                     padding: '0.25rem 0.75rem',
                     fontSize: '0.875rem',
                     fontWeight: 600,
-                    color: '#4CAF50',
+                    color: 'var(--color-success)',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
                 >
@@ -130,7 +130,7 @@ export function AppointmentDetails() {
                 <div
                   style={{
                     fontSize: '0.875rem',
-                    color: 'rgba(255, 255, 255, 0.7)',
+                    color: 'var(--glass-text-muted)',
                     marginBottom: '0.25rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -141,7 +141,7 @@ export function AppointmentDetails() {
                   style={{
                     fontSize: '1.125rem',
                     fontWeight: 600,
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
                 >
@@ -152,7 +152,7 @@ export function AppointmentDetails() {
                 <div
                   style={{
                     fontSize: '0.875rem',
-                    color: 'rgba(255, 255, 255, 0.7)',
+                    color: 'var(--glass-text-muted)',
                     marginBottom: '0.25rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -163,7 +163,7 @@ export function AppointmentDetails() {
                   style={{
                     fontSize: '1.125rem',
                     fontWeight: 600,
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
                 >
@@ -174,7 +174,7 @@ export function AppointmentDetails() {
                 <div
                   style={{
                     fontSize: '0.875rem',
-                    color: 'rgba(255, 255, 255, 0.7)',
+                    color: 'var(--glass-text-muted)',
                     marginBottom: '0.25rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -185,7 +185,7 @@ export function AppointmentDetails() {
                   style={{
                     fontSize: '1.125rem',
                     fontWeight: 600,
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
                 >
@@ -198,9 +198,9 @@ export function AppointmentDetails() {
           {/* Informações do Médico */}
           <div
             style={{
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'var(--glass-bg)',
               backdropFilter: 'blur(20px)',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
+              border: '1px solid var(--glass-border)',
               borderRadius: '20px',
               padding: '2rem',
             }}
@@ -209,7 +209,7 @@ export function AppointmentDetails() {
               style={{
                 fontSize: '1.25rem',
                 fontWeight: 700,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 marginBottom: '1.5rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -236,7 +236,7 @@ export function AppointmentDetails() {
                   style={{
                     fontSize: '1.5rem',
                     fontWeight: 600,
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     marginBottom: '0.25rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -246,7 +246,7 @@ export function AppointmentDetails() {
                 <div
                   style={{
                     fontSize: '1rem',
-                    color: 'rgba(255, 255, 255, 0.8)',
+                    color: 'var(--glass-text-soft)',
                     marginBottom: '0.25rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -256,7 +256,7 @@ export function AppointmentDetails() {
                 <div
                   style={{
                     fontSize: '0.875rem',
-                    color: 'rgba(255, 255, 255, 0.7)',
+                    color: 'var(--glass-text-muted)',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
                 >
@@ -269,9 +269,9 @@ export function AppointmentDetails() {
           {/* Motivo e Observações */}
           <div
             style={{
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'var(--glass-bg)',
               backdropFilter: 'blur(20px)',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
+              border: '1px solid var(--glass-border)',
               borderRadius: '20px',
               padding: '2rem',
             }}
@@ -280,7 +280,7 @@ export function AppointmentDetails() {
               style={{
                 fontSize: '1.25rem',
                 fontWeight: 700,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 marginBottom: '1.5rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -293,7 +293,7 @@ export function AppointmentDetails() {
                   style={{
                     fontSize: '0.875rem',
                     fontWeight: 600,
-                    color: 'rgba(255, 255, 255, 0.8)',
+                    color: 'var(--glass-text-soft)',
                     marginBottom: '0.5rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -303,7 +303,7 @@ export function AppointmentDetails() {
                 <div
                   style={{
                     fontSize: '1rem',
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
                 >
@@ -315,7 +315,7 @@ export function AppointmentDetails() {
                   style={{
                     fontSize: '0.875rem',
                     fontWeight: 600,
-                    color: 'rgba(255, 255, 255, 0.8)',
+                    color: 'var(--glass-text-soft)',
                     marginBottom: '0.5rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -325,7 +325,7 @@ export function AppointmentDetails() {
                 <div
                   style={{
                     fontSize: '1rem',
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
                 >
@@ -337,7 +337,7 @@ export function AppointmentDetails() {
                   style={{
                     fontSize: '0.875rem',
                     fontWeight: 600,
-                    color: 'rgba(255, 255, 255, 0.8)',
+                    color: 'var(--glass-text-soft)',
                     marginBottom: '0.5rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -347,7 +347,7 @@ export function AppointmentDetails() {
                 <div
                   style={{
                     fontSize: '1rem',
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
                 >
@@ -369,10 +369,10 @@ export function AppointmentDetails() {
               <button
                 style={{
                   padding: '1rem',
-                  background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+                  background: 'var(--page-bg)',
                   border: 'none',
                   borderRadius: '12px',
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontSize: '1rem',
                   fontWeight: 600,
                   cursor: 'pointer',
@@ -385,10 +385,10 @@ export function AppointmentDetails() {
             <button
               style={{
                 padding: '1rem',
-                background: 'rgba(255, 255, 255, 0.1)',
-                border: '1px solid rgba(255, 255, 255, 0.3)',
+                background: 'var(--glass-bg)',
+                border: '1px solid var(--glass-border-strong)',
                 borderRadius: '12px',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 fontSize: '1rem',
                 fontWeight: 600,
                 cursor: 'pointer',
@@ -400,10 +400,10 @@ export function AppointmentDetails() {
             <button
               style={{
                 padding: '1rem',
-                background: 'rgba(244, 67, 54, 0.2)',
+                background: 'var(--badge-expired-bg)',
                 border: '1px solid rgba(244, 67, 54, 0.5)',
                 borderRadius: '12px',
-                color: '#F44336',
+                color: 'var(--badge-expired-text)',
                 fontSize: '1rem',
                 fontWeight: 600,
                 cursor: 'pointer',

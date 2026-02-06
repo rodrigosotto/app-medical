@@ -1,5 +1,108 @@
 :root {
-  /* Colors - Medical App Theme (Blue to Teal/Cyan) */
+  /* ========================================
+     PAGE & LAYOUT COLORS
+     ======================================== */
+  --page-bg: #61a2a9;
+  --page-text: #ffffff;
+  --page-font: 'Plus Jakarta Sans', sans-serif;
+
+  /* ========================================
+     GLASS / CARD EFFECTS (rgba overlays)
+     ======================================== */
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-bg-hover: rgba(255, 255, 255, 0.15);
+  --glass-bg-active: rgba(255, 255, 255, 0.3);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-border-strong: rgba(255, 255, 255, 0.3);
+  --glass-divider: rgba(255, 255, 255, 0.1);
+  --glass-text-muted: rgba(255, 255, 255, 0.7);
+  --glass-text-soft: rgba(255, 255, 255, 0.8);
+  --glass-text-faint: rgba(255, 255, 255, 0.9);
+  --glass-shadow: rgba(255, 255, 255, 0.05);
+  --glass-overlay: rgba(255, 255, 255, 0.25);
+
+  /* ========================================
+     SEMANTIC / STATUS COLORS
+     ======================================== */
+  --color-success: #4CAF50;
+  --color-success-dark: #45a049;
+  --color-success-bg: rgba(76, 175, 80, 0.2);
+  --color-success-bg-strong: rgba(76, 175, 80, 0.5);
+
+  --color-info: #2196F3;
+  --color-info-dark: #1976D2;
+  --color-info-bg: rgba(33, 150, 243, 0.2);
+  --color-info-bg-strong: rgba(33, 150, 243, 0.5);
+
+  --color-danger: #F44336;
+  --color-danger-bg: rgba(244, 67, 54, 0.2);
+  --color-danger-bg-strong: rgba(244, 67, 54, 0.5);
+
+  --color-warning: #FFC107;
+  --color-warning-bg: rgba(255, 193, 7, 0.2);
+
+  --color-orange: #FF5722;
+  --color-purple: #9C27B0;
+
+  /* ========================================
+     STATUS BADGES & BUTTONS (pre-configured)
+     ======================================== */
+  /* 
+    Usage Example:
+    <span style={{
+      background: 'var(--badge-active-bg)',
+      border: '1px solid var(--badge-active-border)',
+      color: 'var(--badge-active-text)',
+      padding: '0.25rem 0.75rem',
+      borderRadius: '8px'
+    }}>
+      Ativa / Confirmado
+    </span>
+  */
+  
+  /* Badge "Ativa" / "Confirmado" / Success States */
+  --badge-active-bg: rgba(76, 175, 80, 0.2);
+  --badge-active-border: rgba(76, 175, 80, 0.5);
+  --badge-active-text: #4CAF50;
+
+  /* Badge "Expirada" / "Cancelado" / Danger States */
+  --badge-expired-bg: rgba(244, 67, 54, 0.2);
+  --badge-expired-border: rgba(244, 67, 54, 0.5);
+  --badge-expired-text: #F44336;
+
+  /* Badge "Pendente" / Warning States */
+  --badge-pending-bg: rgba(255, 193, 7, 0.2);
+  --badge-pending-border: rgba(255, 193, 7, 0.5);
+  --badge-pending-text: #FFC107;
+
+  /* Badge "Info" / Informational States */
+  --badge-info-bg: rgba(33, 150, 243, 0.2);
+  --badge-info-border: rgba(33, 150, 243, 0.5);
+  --badge-info-text: #2196F3;
+
+  /* ========================================
+     BRAND / ACCENT COLORS
+     ======================================== */
+  --color-brand: #88AB8E;
+  --color-brand-dark: #6B9A75;
+  --color-brand-muted: rgba(136, 171, 142, 0.3);
+  --color-brand-soft: rgba(136, 171, 142, 0.4);
+  --color-brand-highlight: rgba(156, 175, 136, 0.5);
+
+  /* ========================================
+     GRADIENTS (buttons, accents)
+     ======================================== */
+  --gradient-brand: linear-gradient(135deg, #88AB8E, #6B9A75);
+  --gradient-brand-full: linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%);
+  --gradient-success: linear-gradient(135deg, #4CAF50, #45a049);
+  --gradient-success-vertical: linear-gradient(180deg, #4CAF50, #45a049);
+  --gradient-info: linear-gradient(135deg, #2196F3, #1976D2);
+  --gradient-dark: linear-gradient(135deg, #1e3c72, #2a5298);
+  --gradient-light: linear-gradient(135deg, #ffffff, #f0f0f0);
+
+  /* ========================================
+     CORE PALETTE
+     ======================================== */
   --color-primary: #4a90e2;
   --color-primary-dark: #3a7bc8;
   --color-primary-light: #5ba5f0;
@@ -12,11 +115,14 @@
   --color-accent-dark: #38a3b5;
   --color-accent-light: #5dd1e0;
 
-  --color-success: #10b981;
-  --color-warning: #f59e0b;
   --color-error: #ef4444;
-  --color-info: #4a90e2;
 
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* ========================================
+     GRAY SCALE
+     ======================================== */
   --color-gray-50: #f9fafb;
   --color-gray-100: #f3f4f6;
   --color-gray-200: #e5e7eb;
@@ -28,26 +134,9 @@
   --color-gray-800: #1f2937;
   --color-gray-900: #111827;
 
-  --color-white: #ffffff;
-  --color-black: #000000;
-
-  /* Gradients */
+  /* Gradients (legacy) */
   --gradient-primary: linear-gradient(135deg, #4a90e2 0%, #50e3c2 100%);
   --gradient-primary-hover: linear-gradient(135deg, #3a7bc8 0%, #3fcfae 100%);
-
-  --color-gray-50: #f9fafb;
-  --color-gray-100: #f3f4f6;
-  --color-gray-200: #e5e7eb;
-  --color-gray-300: #d1d5db;
-  --color-gray-400: #9ca3af;
-  --color-gray-500: #6b7280;
-  --color-gray-600: #4b5563;
-  --color-gray-700: #374151;
-  --color-gray-800: #1f2937;
-  --color-gray-900: #111827;
-
-  --color-white: #ffffff;
-  --color-black: #000000;
 
   /* Spacing */
   --spacing-xs: 0.25rem;

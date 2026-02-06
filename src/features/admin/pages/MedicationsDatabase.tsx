@@ -41,7 +41,7 @@ export function MedicationsDatabase() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -50,7 +50,7 @@ export function MedicationsDatabase() {
           style={{
             fontSize: '2.5rem',
             fontWeight: 700,
-            color: '#ffffff',
+            color: 'var(--page-text)',
             marginBottom: '2rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
           }}
@@ -60,9 +60,9 @@ export function MedicationsDatabase() {
 
         <div
           style={{
-            background: 'rgba(255, 255, 255, 0.1)',
+            background: 'var(--glass-bg)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)',
+            border: '1px solid var(--glass-border)',
             borderRadius: '20px',
             padding: '2rem',
             marginBottom: '2rem',
@@ -72,7 +72,7 @@ export function MedicationsDatabase() {
             style={{
               fontSize: '1.25rem',
               fontWeight: 600,
-              color: '#ffffff',
+              color: 'var(--page-text)',
               marginBottom: '1.5rem',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
             }}
@@ -89,7 +89,7 @@ export function MedicationsDatabase() {
                   display: 'block',
                   fontSize: '0.875rem',
                   fontWeight: 600,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   marginBottom: '0.5rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -102,10 +102,10 @@ export function MedicationsDatabase() {
                 style={{
                   width: '100%',
                   padding: '0.75rem',
-                  background: 'rgba(255, 255, 255, 0.1)',
-                  border: '1px solid rgba(255, 255, 255, 0.2)',
+                  background: 'var(--glass-bg)',
+                  border: '1px solid var(--glass-border)',
                   borderRadius: '8px',
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontSize: '0.938rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -117,7 +117,7 @@ export function MedicationsDatabase() {
                   display: 'block',
                   fontSize: '0.875rem',
                   fontWeight: 600,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   marginBottom: '0.5rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -130,10 +130,10 @@ export function MedicationsDatabase() {
                 style={{
                   width: '100%',
                   padding: '0.75rem',
-                  background: 'rgba(255, 255, 255, 0.1)',
-                  border: '1px solid rgba(255, 255, 255, 0.2)',
+                  background: 'var(--glass-bg)',
+                  border: '1px solid var(--glass-border)',
                   borderRadius: '8px',
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontSize: '0.938rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -145,7 +145,7 @@ export function MedicationsDatabase() {
                   display: 'block',
                   fontSize: '0.875rem',
                   fontWeight: 600,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   marginBottom: '0.5rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -156,10 +156,10 @@ export function MedicationsDatabase() {
                 style={{
                   width: '100%',
                   padding: '0.75rem',
-                  background: 'rgba(255, 255, 255, 0.1)',
-                  border: '1px solid rgba(255, 255, 255, 0.2)',
+                  background: 'var(--glass-bg)',
+                  border: '1px solid var(--glass-border)',
                   borderRadius: '8px',
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontSize: '0.938rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -177,10 +177,10 @@ export function MedicationsDatabase() {
                 style={{
                   width: '100%',
                   padding: '0.75rem',
-                  background: 'linear-gradient(135deg, #4CAF50, #45a049)',
+                  background: 'var(--gradient-success)',
                   border: 'none',
                   borderRadius: '8px',
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontWeight: 600,
                   cursor: 'pointer',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -194,9 +194,9 @@ export function MedicationsDatabase() {
 
         <div
           style={{
-            background: 'rgba(255, 255, 255, 0.1)',
+            background: 'var(--glass-bg)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)',
+            border: '1px solid var(--glass-border)',
             borderRadius: '20px',
             padding: '2rem',
           }}
@@ -213,7 +213,7 @@ export function MedicationsDatabase() {
               style={{
                 fontSize: '1.25rem',
                 fontWeight: 600,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
             >
@@ -224,10 +224,10 @@ export function MedicationsDatabase() {
               placeholder="🔍 Buscar medicamento..."
               style={{
                 padding: '0.75rem',
-                background: 'rgba(255, 255, 255, 0.1)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
+                background: 'var(--glass-bg)',
+                border: '1px solid var(--glass-border)',
                 borderRadius: '8px',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 fontSize: '0.938rem',
                 width: '300px',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -243,8 +243,8 @@ export function MedicationsDatabase() {
                     style={{
                       padding: '1rem',
                       textAlign: 'left',
-                      borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                      color: '#ffffff',
+                      borderBottom: '1px solid var(--glass-border)',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -255,8 +255,8 @@ export function MedicationsDatabase() {
                     style={{
                       padding: '1rem',
                       textAlign: 'left',
-                      borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                      color: '#ffffff',
+                      borderBottom: '1px solid var(--glass-border)',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -267,8 +267,8 @@ export function MedicationsDatabase() {
                     style={{
                       padding: '1rem',
                       textAlign: 'center',
-                      borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                      color: '#ffffff',
+                      borderBottom: '1px solid var(--glass-border)',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -279,8 +279,8 @@ export function MedicationsDatabase() {
                     style={{
                       padding: '1rem',
                       textAlign: 'center',
-                      borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                      color: '#ffffff',
+                      borderBottom: '1px solid var(--glass-border)',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -291,8 +291,8 @@ export function MedicationsDatabase() {
                     style={{
                       padding: '1rem',
                       textAlign: 'center',
-                      borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                      color: '#ffffff',
+                      borderBottom: '1px solid var(--glass-border)',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -307,8 +307,8 @@ export function MedicationsDatabase() {
                     <td
                       style={{
                         padding: '1rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
-                        color: '#ffffff',
+                        borderBottom: '1px solid var(--glass-divider)',
+                        color: 'var(--page-text)',
                         fontWeight: 600,
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
@@ -318,8 +318,8 @@ export function MedicationsDatabase() {
                     <td
                       style={{
                         padding: '1rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
-                        color: '#ffffff',
+                        borderBottom: '1px solid var(--glass-divider)',
+                        color: 'var(--page-text)',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
                     >
@@ -328,7 +328,7 @@ export function MedicationsDatabase() {
                     <td
                       style={{
                         padding: '1rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+                        borderBottom: '1px solid var(--glass-divider)',
                         textAlign: 'center',
                       }}
                     >
@@ -338,8 +338,8 @@ export function MedicationsDatabase() {
                           borderRadius: '8px',
                           fontSize: '0.875rem',
                           fontWeight: 600,
-                          background: 'rgba(33, 150, 243, 0.2)',
-                          color: '#2196F3',
+                          background: 'var(--color-info-bg)',
+                          color: 'var(--color-info)',
                           fontFamily: '"Plus Jakarta Sans", sans-serif',
                         }}
                       >
@@ -349,7 +349,7 @@ export function MedicationsDatabase() {
                     <td
                       style={{
                         padding: '1rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+                        borderBottom: '1px solid var(--glass-divider)',
                         textAlign: 'center',
                       }}
                     >
@@ -360,9 +360,9 @@ export function MedicationsDatabase() {
                           fontSize: '0.875rem',
                           fontWeight: 600,
                           background: med.active
-                            ? 'rgba(76, 175, 80, 0.2)'
-                            : 'rgba(244, 67, 54, 0.2)',
-                          color: med.active ? '#4CAF50' : '#F44336',
+                            ? 'var(--badge-active-bg)'
+                            : 'var(--badge-expired-bg)',
+                          color: med.active ? 'var(--badge-active-text)' : 'var(--badge-expired-text)',
                           fontFamily: '"Plus Jakarta Sans", sans-serif',
                         }}
                       >
@@ -372,17 +372,17 @@ export function MedicationsDatabase() {
                     <td
                       style={{
                         padding: '1rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+                        borderBottom: '1px solid var(--glass-divider)',
                         textAlign: 'center',
                       }}
                     >
                       <button
                         style={{
-                          background: 'rgba(33, 150, 243, 0.2)',
+                          background: 'var(--color-info-bg)',
                           border: 'none',
                           borderRadius: '6px',
                           padding: '0.5rem',
-                          color: '#2196F3',
+                          color: 'var(--color-info)',
                           cursor: 'pointer',
                           fontSize: '1rem',
                           marginRight: '0.5rem',
@@ -392,11 +392,11 @@ export function MedicationsDatabase() {
                       </button>
                       <button
                         style={{
-                          background: 'rgba(244, 67, 54, 0.2)',
+                          background: 'var(--badge-expired-bg)',
                           border: 'none',
                           borderRadius: '6px',
                           padding: '0.5rem',
-                          color: '#F44336',
+                          color: 'var(--badge-expired-text)',
                           cursor: 'pointer',
                           fontSize: '1rem',
                         }}

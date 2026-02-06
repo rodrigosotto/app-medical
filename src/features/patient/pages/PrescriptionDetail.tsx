@@ -39,7 +39,7 @@ export function PrescriptionDetail() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -50,7 +50,7 @@ export function PrescriptionDetail() {
             display: 'inline-flex',
             alignItems: 'center',
             gap: '0.5rem',
-            color: '#ffffff',
+            color: 'var(--page-text)',
             textDecoration: 'none',
             marginBottom: '1rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -62,7 +62,7 @@ export function PrescriptionDetail() {
           style={{
             fontSize: '2.5rem',
             fontWeight: 700,
-            color: '#ffffff',
+            color: 'var(--page-text)',
             marginBottom: '2rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
           }}
@@ -72,9 +72,9 @@ export function PrescriptionDetail() {
 
         <div
           style={{
-            background: 'rgba(255, 255, 255, 0.1)',
+            background: 'var(--glass-bg)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)',
+            border: '1px solid var(--glass-border)',
             borderRadius: '20px',
             padding: '2rem',
           }}
@@ -82,7 +82,7 @@ export function PrescriptionDetail() {
           {/* Cabeçalho da Receita */}
           <div
             style={{
-              borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
+              borderBottom: '1px solid var(--glass-border)',
               paddingBottom: '1.5rem',
               marginBottom: '1.5rem',
             }}
@@ -91,7 +91,7 @@ export function PrescriptionDetail() {
               style={{
                 fontSize: '1.5rem',
                 fontWeight: 700,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 marginBottom: '1rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -101,7 +101,7 @@ export function PrescriptionDetail() {
             <div
               style={{
                 fontSize: '1rem',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 lineHeight: 1.8,
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -116,7 +116,7 @@ export function PrescriptionDetail() {
 
           <div
             style={{
-              borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
+              borderBottom: '1px solid var(--glass-border)',
               paddingBottom: '1.5rem',
               marginBottom: '1.5rem',
             }}
@@ -125,7 +125,7 @@ export function PrescriptionDetail() {
               style={{
                 fontSize: '1.5rem',
                 fontWeight: 700,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 marginBottom: '1rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -135,7 +135,7 @@ export function PrescriptionDetail() {
             <div
               style={{
                 fontSize: '1rem',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 lineHeight: 1.8,
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -154,7 +154,7 @@ export function PrescriptionDetail() {
               style={{
                 fontSize: '1.5rem',
                 fontWeight: 700,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 marginBottom: '1rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -165,7 +165,7 @@ export function PrescriptionDetail() {
               <div
                 key={index}
                 style={{
-                  background: 'rgba(255, 255, 255, 0.1)',
+                  background: 'var(--glass-bg)',
                   borderRadius: '12px',
                   padding: '1.25rem',
                   marginBottom: '1rem',
@@ -175,7 +175,7 @@ export function PrescriptionDetail() {
                   style={{
                     fontSize: '1.125rem',
                     fontWeight: 600,
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     marginBottom: '0.75rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -188,7 +188,7 @@ export function PrescriptionDetail() {
                     gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
                     gap: '0.75rem',
                     fontSize: '0.875rem',
-                    color: 'rgba(255, 255, 255, 0.9)',
+                    color: 'var(--glass-text-faint)',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
                 >
@@ -206,7 +206,7 @@ export function PrescriptionDetail() {
                   style={{
                     marginTop: '0.75rem',
                     fontSize: '0.875rem',
-                    color: 'rgba(255, 255, 255, 0.8)',
+                    color: 'var(--glass-text-soft)',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
                 >
@@ -230,7 +230,7 @@ export function PrescriptionDetail() {
               style={{
                 fontSize: '1.125rem',
                 fontWeight: 600,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 marginBottom: '0.75rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -240,7 +240,7 @@ export function PrescriptionDetail() {
             <div
               style={{
                 fontSize: '0.875rem',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 lineHeight: 1.6,
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -262,7 +262,7 @@ export function PrescriptionDetail() {
             <div
               style={{
                 fontSize: '0.875rem',
-                color: 'rgba(255, 255, 255, 0.7)',
+                color: 'var(--glass-text-muted)',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
             >
@@ -272,10 +272,10 @@ export function PrescriptionDetail() {
             <button
               style={{
                 padding: '0.75rem 1.5rem',
-                background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+                background: 'var(--page-bg)',
                 border: 'none',
                 borderRadius: '8px',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 fontSize: '1rem',
                 fontWeight: 600,
                 cursor: 'pointer',

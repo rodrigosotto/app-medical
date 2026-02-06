@@ -56,7 +56,7 @@ export function PatientDashboard() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -67,7 +67,7 @@ export function PatientDashboard() {
             style={{
               fontSize: '2.5rem',
               fontWeight: 700,
-              color: '#ffffff',
+              color: 'var(--page-text)',
               marginBottom: '0.5rem',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
             }}
@@ -77,7 +77,7 @@ export function PatientDashboard() {
           <p
             style={{
               fontSize: '1.125rem',
-              color: 'rgba(255, 255, 255, 0.9)',
+              color: 'var(--glass-text-faint)',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
             }}
           >
@@ -98,10 +98,10 @@ export function PatientDashboard() {
             <div
               key={index}
               style={{
-                background: 'rgba(255, 255, 255, 0.15)',
+                background: 'var(--glass-bg-hover)',
                 backdropFilter: 'blur(20px)',
                 WebkitBackdropFilter: 'blur(20px)',
-                border: '1px solid rgba(255, 255, 255, 0.3)',
+                border: '1px solid var(--glass-border-strong)',
                 borderRadius: '16px',
                 padding: '1.5rem',
                 boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
@@ -112,7 +112,7 @@ export function PatientDashboard() {
                 style={{
                   fontSize: '2rem',
                   fontWeight: 700,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   marginBottom: '0.25rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -122,7 +122,7 @@ export function PatientDashboard() {
               <div
                 style={{
                   fontSize: '0.875rem',
-                  color: 'rgba(255, 255, 255, 0.8)',
+                  color: 'var(--glass-text-soft)',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
               >
@@ -143,10 +143,10 @@ export function PatientDashboard() {
           {/* Próximas Consultas */}
           <div
             style={{
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'var(--glass-bg)',
               backdropFilter: 'blur(20px)',
               WebkitBackdropFilter: 'blur(20px)',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
+              border: '1px solid var(--glass-border)',
               borderRadius: '20px',
               padding: '2rem',
               boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
@@ -164,7 +164,7 @@ export function PatientDashboard() {
                 style={{
                   fontSize: '1.5rem',
                   fontWeight: 700,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
               >
@@ -174,7 +174,7 @@ export function PatientDashboard() {
                 to="/patient/appointments"
                 style={{
                   fontSize: '0.875rem',
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontWeight: 600,
                   textDecoration: 'none',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -189,8 +189,8 @@ export function PatientDashboard() {
                 <div
                   key={appointment.id}
                   style={{
-                    background: 'rgba(255, 255, 255, 0.1)',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    background: 'var(--glass-bg)',
+                    border: '1px solid var(--glass-border)',
                     borderRadius: '12px',
                     padding: '1.25rem',
                   }}
@@ -207,7 +207,7 @@ export function PatientDashboard() {
                         style={{
                           fontSize: '1.125rem',
                           fontWeight: 600,
-                          color: '#ffffff',
+                          color: 'var(--page-text)',
                           marginBottom: '0.25rem',
                           fontFamily: '"Plus Jakarta Sans", sans-serif',
                         }}
@@ -217,7 +217,7 @@ export function PatientDashboard() {
                       <div
                         style={{
                           fontSize: '0.875rem',
-                          color: 'rgba(255, 255, 255, 0.7)',
+                          color: 'var(--glass-text-muted)',
                           fontFamily: '"Plus Jakarta Sans", sans-serif',
                         }}
                       >
@@ -226,13 +226,13 @@ export function PatientDashboard() {
                     </div>
                     <div
                       style={{
-                        background: 'rgba(76, 175, 80, 0.2)',
-                        border: '1px solid rgba(76, 175, 80, 0.5)',
+                        background: 'var(--badge-active-bg)',
+                        border: '1px solid var(--badge-active-border)',
                         borderRadius: '8px',
                         padding: '0.25rem 0.75rem',
                         fontSize: '0.75rem',
                         fontWeight: 600,
-                        color: '#4CAF50',
+                        color: 'var(--badge-active-text)',
                         height: 'fit-content',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
@@ -245,7 +245,7 @@ export function PatientDashboard() {
                       display: 'flex',
                       gap: '1rem',
                       fontSize: '0.875rem',
-                      color: 'rgba(255, 255, 255, 0.8)',
+                      color: 'var(--glass-text-soft)',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
                   >
@@ -265,8 +265,8 @@ export function PatientDashboard() {
                 marginTop: '1rem',
                 fontSize: '1rem',
                 fontWeight: 600,
-                color: '#ffffff',
-                background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+                color: 'var(--page-text)',
+                background: 'var(--page-bg)',
                 border: 'none',
                 borderRadius: '12px',
                 textAlign: 'center',
@@ -282,10 +282,10 @@ export function PatientDashboard() {
           {/* Receitas Recentes */}
           <div
             style={{
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'var(--glass-bg)',
               backdropFilter: 'blur(20px)',
               WebkitBackdropFilter: 'blur(20px)',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
+              border: '1px solid var(--glass-border)',
               borderRadius: '20px',
               padding: '2rem',
               boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
@@ -303,7 +303,7 @@ export function PatientDashboard() {
                 style={{
                   fontSize: '1.5rem',
                   fontWeight: 700,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
               >
@@ -313,7 +313,7 @@ export function PatientDashboard() {
                 to="/patient/prescriptions"
                 style={{
                   fontSize: '0.875rem',
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontWeight: 600,
                   textDecoration: 'none',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -328,8 +328,8 @@ export function PatientDashboard() {
                 <div
                   key={prescription.id}
                   style={{
-                    background: 'rgba(255, 255, 255, 0.1)',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    background: 'var(--glass-bg)',
+                    border: '1px solid var(--glass-border)',
                     borderRadius: '12px',
                     padding: '1.25rem',
                   }}
@@ -347,7 +347,7 @@ export function PatientDashboard() {
                         style={{
                           fontSize: '1.125rem',
                           fontWeight: 600,
-                          color: '#ffffff',
+                          color: 'var(--page-text)',
                           marginBottom: '0.25rem',
                           fontFamily: '"Plus Jakarta Sans", sans-serif',
                         }}
@@ -357,7 +357,7 @@ export function PatientDashboard() {
                       <div
                         style={{
                           fontSize: '0.875rem',
-                          color: 'rgba(255, 255, 255, 0.7)',
+                          color: 'var(--glass-text-muted)',
                           fontFamily: '"Plus Jakarta Sans", sans-serif',
                         }}
                       >
@@ -366,13 +366,13 @@ export function PatientDashboard() {
                     </div>
                     <div
                       style={{
-                        background: 'rgba(33, 150, 243, 0.2)',
+                        background: 'var(--color-info-bg)',
                         border: '1px solid rgba(33, 150, 243, 0.5)',
                         borderRadius: '8px',
                         padding: '0.25rem 0.75rem',
                         fontSize: '0.75rem',
                         fontWeight: 600,
-                        color: '#2196F3',
+                        color: 'var(--color-info)',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
                     >
@@ -382,7 +382,7 @@ export function PatientDashboard() {
                   <div
                     style={{
                       fontSize: '0.875rem',
-                      color: 'rgba(255, 255, 255, 0.7)',
+                      color: 'var(--glass-text-muted)',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
                   >
@@ -400,7 +400,7 @@ export function PatientDashboard() {
             style={{
               fontSize: '1.5rem',
               fontWeight: 700,
-              color: '#ffffff',
+              color: 'var(--page-text)',
               marginBottom: '1.5rem',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
             }}
@@ -424,9 +424,9 @@ export function PatientDashboard() {
                 key={index}
                 to={action.to}
                 style={{
-                  background: 'rgba(255, 255, 255, 0.1)',
+                  background: 'var(--glass-bg)',
                   backdropFilter: 'blur(10px)',
-                  border: '1px solid rgba(255, 255, 255, 0.2)',
+                  border: '1px solid var(--glass-border)',
                   borderRadius: '12px',
                   padding: '1.5rem',
                   textAlign: 'center',
@@ -447,7 +447,7 @@ export function PatientDashboard() {
                   style={{
                     fontSize: '1rem',
                     fontWeight: 600,
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
                 >

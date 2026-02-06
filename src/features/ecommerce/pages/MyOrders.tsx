@@ -13,7 +13,7 @@ export function MyOrders() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -22,7 +22,7 @@ export function MyOrders() {
           style={{
             fontSize: '2.5rem',
             fontWeight: 700,
-            color: '#ffffff',
+            color: 'var(--page-text)',
             marginBottom: '2rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
           }}
@@ -37,10 +37,10 @@ export function MyOrders() {
               onClick={() => setFilter(f)}
               style={{
                 padding: '0.75rem 1.5rem',
-                background: filter === f ? 'rgba(255, 255, 255, 0.3)' : 'rgba(255, 255, 255, 0.1)',
-                border: '1px solid rgba(255, 255, 255, 0.3)',
+                background: filter === f ? 'var(--glass-bg-active)' : 'var(--glass-bg)',
+                border: '1px solid var(--glass-border-strong)',
                 borderRadius: '12px',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 fontWeight: 600,
                 cursor: 'pointer',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -59,9 +59,9 @@ export function MyOrders() {
             <div
               key={order.id}
               style={{
-                background: 'rgba(255, 255, 255, 0.1)',
+                background: 'var(--glass-bg)',
                 backdropFilter: 'blur(20px)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
+                border: '1px solid var(--glass-border)',
                 borderRadius: '16px',
                 padding: '1.5rem',
               }}
@@ -79,7 +79,7 @@ export function MyOrders() {
                     style={{
                       fontSize: '1.25rem',
                       fontWeight: 600,
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       marginBottom: '0.25rem',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -89,7 +89,7 @@ export function MyOrders() {
                   <div
                     style={{
                       fontSize: '0.875rem',
-                      color: 'rgba(255, 255, 255, 0.7)',
+                      color: 'var(--glass-text-muted)',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
                   >
@@ -105,16 +105,16 @@ export function MyOrders() {
                       fontWeight: 600,
                       background:
                         order.status === 'Em trânsito'
-                          ? 'rgba(33, 150, 243, 0.2)'
+                          ? 'var(--color-info-bg)'
                           : order.status === 'Entregue'
-                            ? 'rgba(76, 175, 80, 0.2)'
-                            : 'rgba(244, 67, 54, 0.2)',
+                            ? 'var(--badge-active-bg)'
+                            : 'var(--badge-expired-bg)',
                       color:
                         order.status === 'Em trânsito'
-                          ? '#2196F3'
+                          ? 'var(--color-info)'
                           : order.status === 'Entregue'
-                            ? '#4CAF50'
-                            : '#F44336',
+                            ? 'var(--badge-active-text)'
+                            : 'var(--badge-expired-text)',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
                   >
@@ -130,7 +130,7 @@ export function MyOrders() {
                   style={{
                     fontSize: '1.5rem',
                     fontWeight: 700,
-                    color: '#4CAF50',
+                    color: 'var(--color-success)',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
                 >
@@ -141,10 +141,10 @@ export function MyOrders() {
                     to={`/ecommerce/orders/${order.id}`}
                     style={{
                       padding: '0.5rem 1rem',
-                      background: 'rgba(33, 150, 243, 0.2)',
+                      background: 'var(--color-info-bg)',
                       border: '1px solid rgba(33, 150, 243, 0.5)',
                       borderRadius: '8px',
-                      color: '#2196F3',
+                      color: 'var(--color-info)',
                       fontSize: '0.875rem',
                       fontWeight: 600,
                       textDecoration: 'none',
@@ -158,10 +158,10 @@ export function MyOrders() {
                       to={`/ecommerce/orders/${order.id}/tracking`}
                       style={{
                         padding: '0.5rem 1rem',
-                        background: 'rgba(76, 175, 80, 0.2)',
+                        background: 'var(--color-success-bg)',
                         border: '1px solid rgba(76, 175, 80, 0.5)',
                         borderRadius: '8px',
-                        color: '#4CAF50',
+                        color: 'var(--color-success)',
                         fontSize: '0.875rem',
                         fontWeight: 600,
                         textDecoration: 'none',

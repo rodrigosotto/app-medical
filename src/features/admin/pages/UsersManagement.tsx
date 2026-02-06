@@ -35,7 +35,7 @@ export function UsersManagement() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -44,7 +44,7 @@ export function UsersManagement() {
           style={{
             fontSize: '2.5rem',
             fontWeight: 700,
-            color: '#ffffff',
+            color: 'var(--page-text)',
             marginBottom: '2rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
           }}
@@ -61,10 +61,10 @@ export function UsersManagement() {
             style={{
               flex: 1,
               padding: '0.75rem 1rem',
-              background: 'rgba(255, 255, 255, 0.1)',
-              border: '1px solid rgba(255, 255, 255, 0.3)',
+              background: 'var(--glass-bg)',
+              border: '1px solid var(--glass-border-strong)',
               borderRadius: '12px',
-              color: '#ffffff',
+              color: 'var(--page-text)',
               fontSize: '1rem',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
             }}
@@ -77,10 +77,10 @@ export function UsersManagement() {
                 style={{
                   padding: '0.75rem 1rem',
                   background:
-                    filter === f ? 'rgba(255, 255, 255, 0.3)' : 'rgba(255, 255, 255, 0.1)',
-                  border: '1px solid rgba(255, 255, 255, 0.3)',
+                    filter === f ? 'var(--glass-bg-active)' : 'var(--glass-bg)',
+                  border: '1px solid var(--glass-border-strong)',
                   borderRadius: '12px',
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontWeight: 600,
                   cursor: 'pointer',
                   whiteSpace: 'nowrap',
@@ -95,9 +95,9 @@ export function UsersManagement() {
 
         <div
           style={{
-            background: 'rgba(255, 255, 255, 0.1)',
+            background: 'var(--glass-bg)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)',
+            border: '1px solid var(--glass-border)',
             borderRadius: '20px',
             padding: '2rem',
           }}
@@ -110,8 +110,8 @@ export function UsersManagement() {
                     style={{
                       padding: '1rem',
                       textAlign: 'left',
-                      borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                      color: '#ffffff',
+                      borderBottom: '1px solid var(--glass-border)',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -122,8 +122,8 @@ export function UsersManagement() {
                     style={{
                       padding: '1rem',
                       textAlign: 'left',
-                      borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                      color: '#ffffff',
+                      borderBottom: '1px solid var(--glass-border)',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -134,8 +134,8 @@ export function UsersManagement() {
                     style={{
                       padding: '1rem',
                       textAlign: 'center',
-                      borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                      color: '#ffffff',
+                      borderBottom: '1px solid var(--glass-border)',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -146,8 +146,8 @@ export function UsersManagement() {
                     style={{
                       padding: '1rem',
                       textAlign: 'center',
-                      borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                      color: '#ffffff',
+                      borderBottom: '1px solid var(--glass-border)',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -158,8 +158,8 @@ export function UsersManagement() {
                     style={{
                       padding: '1rem',
                       textAlign: 'center',
-                      borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                      color: '#ffffff',
+                      borderBottom: '1px solid var(--glass-border)',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -170,8 +170,8 @@ export function UsersManagement() {
                     style={{
                       padding: '1rem',
                       textAlign: 'center',
-                      borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                      color: '#ffffff',
+                      borderBottom: '1px solid var(--glass-border)',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -186,8 +186,8 @@ export function UsersManagement() {
                     <td
                       style={{
                         padding: '1rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
-                        color: '#ffffff',
+                        borderBottom: '1px solid var(--glass-divider)',
+                        color: 'var(--page-text)',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
                     >
@@ -196,8 +196,8 @@ export function UsersManagement() {
                     <td
                       style={{
                         padding: '1rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
-                        color: '#ffffff',
+                        borderBottom: '1px solid var(--glass-divider)',
+                        color: 'var(--page-text)',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
                     >
@@ -206,7 +206,7 @@ export function UsersManagement() {
                     <td
                       style={{
                         padding: '1rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+                        borderBottom: '1px solid var(--glass-divider)',
                         textAlign: 'center',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
@@ -219,9 +219,9 @@ export function UsersManagement() {
                           fontWeight: 600,
                           background:
                             user.type === 'Médico'
-                              ? 'rgba(33, 150, 243, 0.2)'
-                              : 'rgba(76, 175, 80, 0.2)',
-                          color: user.type === 'Médico' ? '#2196F3' : '#4CAF50',
+                              ? 'var(--color-info-bg)'
+                              : 'var(--color-success-bg)',
+                          color: user.type === 'Médico' ? 'var(--color-info)' : 'var(--color-success)',
                         }}
                       >
                         {user.type}
@@ -230,7 +230,7 @@ export function UsersManagement() {
                     <td
                       style={{
                         padding: '1rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+                        borderBottom: '1px solid var(--glass-divider)',
                         textAlign: 'center',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
@@ -243,9 +243,9 @@ export function UsersManagement() {
                           fontWeight: 600,
                           background:
                             user.status === 'ativo'
-                              ? 'rgba(76, 175, 80, 0.2)'
-                              : 'rgba(244, 67, 54, 0.2)',
-                          color: user.status === 'ativo' ? '#4CAF50' : '#F44336',
+                              ? 'var(--badge-active-bg)'
+                              : 'var(--badge-expired-bg)',
+                          color: user.status === 'ativo' ? 'var(--badge-active-text)' : 'var(--badge-expired-text)',
                         }}
                       >
                         {user.status.charAt(0).toUpperCase() + user.status.slice(1)}
@@ -254,9 +254,9 @@ export function UsersManagement() {
                     <td
                       style={{
                         padding: '1rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+                        borderBottom: '1px solid var(--glass-divider)',
                         textAlign: 'center',
-                        color: '#ffffff',
+                        color: 'var(--page-text)',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
                     >
@@ -265,13 +265,14 @@ export function UsersManagement() {
                     <td
                       style={{
                         padding: '1rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+                        borderBottom: '1px solid var(--glass-divider)',
                         textAlign: 'center',
                       }}
                     >
                       <Link
-                        to={`/admin/users/${user.id}`}
-                        style={{ color: '#2196F3', textDecoration: 'none', fontSize: '1.25rem' }}
+                        to="/admin/users/$id"
+                        params={{ id: String(user.id) }}
+                        style={{ color: 'var(--color-info)', textDecoration: 'none', fontSize: '1.25rem' }}
                       >
                         👁️
                       </Link>

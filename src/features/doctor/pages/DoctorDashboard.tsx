@@ -2,10 +2,10 @@ import { Link } from '@tanstack/react-router';
 
 export function DoctorDashboard() {
   const stats = [
-    { label: 'Consultas Hoje', value: '8', icon: '📅', color: '#2196F3' },
-    { label: 'Pacientes Ativos', value: '156', icon: '👥', color: '#4CAF50' },
-    { label: 'Receita Mensal', value: 'R$ 48.5k', icon: '💰', color: '#FFC107' },
-    { label: 'Avaliação', value: '4.9', icon: '⭐', color: '#FF9800' },
+    { label: 'Consultas Hoje', value: '8', icon: '📅', color: 'var(--color-info)' },
+    { label: 'Pacientes Ativos', value: '156', icon: '👥', color: 'var(--color-success)' },
+    { label: 'Receita Mensal', value: 'R$ 48.5k', icon: '💰', color: 'var(--color-warning)' },
+    { label: 'Avaliação', value: '4.9', icon: '⭐', color: 'var(--color-warning)' },
   ];
 
   const todayAppointments = [
@@ -24,7 +24,7 @@ export function DoctorDashboard() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -33,7 +33,7 @@ export function DoctorDashboard() {
           style={{
             fontSize: '2.5rem',
             fontWeight: 700,
-            color: '#ffffff',
+            color: 'var(--page-text)',
             marginBottom: '0.5rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
           }}
@@ -43,7 +43,7 @@ export function DoctorDashboard() {
         <p
           style={{
             fontSize: '1.125rem',
-            color: 'rgba(255, 255, 255, 0.9)',
+            color: 'var(--glass-text-faint)',
             marginBottom: '2rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
           }}
@@ -64,9 +64,9 @@ export function DoctorDashboard() {
             <div
               key={index}
               style={{
-                background: 'rgba(255, 255, 255, 0.15)',
+                background: 'var(--glass-bg-hover)',
                 backdropFilter: 'blur(20px)',
-                border: '1px solid rgba(255, 255, 255, 0.3)',
+                border: '1px solid var(--glass-border-strong)',
                 borderRadius: '16px',
                 padding: '1.5rem',
               }}
@@ -76,7 +76,7 @@ export function DoctorDashboard() {
                 style={{
                   fontSize: '2rem',
                   fontWeight: 700,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   marginBottom: '0.25rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -86,7 +86,7 @@ export function DoctorDashboard() {
               <div
                 style={{
                   fontSize: '0.875rem',
-                  color: 'rgba(255, 255, 255, 0.8)',
+                  color: 'var(--glass-text-soft)',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
               >
@@ -99,9 +99,9 @@ export function DoctorDashboard() {
         {/* Today's Schedule */}
         <div
           style={{
-            background: 'rgba(255, 255, 255, 0.1)',
+            background: 'var(--glass-bg)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)',
+            border: '1px solid var(--glass-border)',
             borderRadius: '20px',
             padding: '2rem',
           }}
@@ -118,7 +118,7 @@ export function DoctorDashboard() {
               style={{
                 fontSize: '1.5rem',
                 fontWeight: 700,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
             >
@@ -127,7 +127,7 @@ export function DoctorDashboard() {
             <Link
               to={'/doctor/consultations' as string}
               style={{
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 fontWeight: 600,
                 textDecoration: 'none',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -141,7 +141,7 @@ export function DoctorDashboard() {
               <div
                 key={apt.id}
                 style={{
-                  background: 'rgba(255, 255, 255, 0.1)',
+                  background: 'var(--glass-bg)',
                   borderRadius: '12px',
                   padding: '1.25rem',
                   display: 'flex',
@@ -154,7 +154,7 @@ export function DoctorDashboard() {
                     style={{
                       fontSize: '1.125rem',
                       fontWeight: 600,
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       marginBottom: '0.25rem',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -164,7 +164,7 @@ export function DoctorDashboard() {
                   <div
                     style={{
                       fontSize: '0.875rem',
-                      color: 'rgba(255, 255, 255, 0.7)',
+                      color: 'var(--glass-text-muted)',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
                   >
@@ -175,9 +175,9 @@ export function DoctorDashboard() {
                   to={`/doctor/consultations/${apt.id}` as string}
                   style={{
                     padding: '0.5rem 1rem',
-                    background: 'linear-gradient(135deg, #88AB8E, #6B9A75)',
+                    background: 'var(--gradient-brand)',
                     borderRadius: '8px',
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     fontWeight: 600,
                     textDecoration: 'none',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',

@@ -10,7 +10,7 @@ export function DoctorProfile() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -19,7 +19,7 @@ export function DoctorProfile() {
           style={{
             fontSize: '2.5rem',
             fontWeight: 700,
-            color: '#ffffff',
+            color: 'var(--page-text)',
             marginBottom: '2rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
           }}
@@ -29,9 +29,9 @@ export function DoctorProfile() {
 
         <div
           style={{
-            background: 'rgba(255, 255, 255, 0.1)',
+            background: 'var(--glass-bg)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)',
+            border: '1px solid var(--glass-border)',
             borderRadius: '20px',
             padding: '2rem',
             marginBottom: '2rem',
@@ -61,9 +61,9 @@ export function DoctorProfile() {
                   width: '36px',
                   height: '36px',
                   borderRadius: '50%',
-                  background: '#4CAF50',
+                  background: 'var(--color-success)',
                   border: 'none',
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontSize: '1rem',
                   cursor: 'pointer',
                 }}
@@ -76,7 +76,7 @@ export function DoctorProfile() {
                 style={{
                   fontSize: '1.75rem',
                   fontWeight: 700,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   marginBottom: '0.25rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -86,7 +86,7 @@ export function DoctorProfile() {
               <div
                 style={{
                   fontSize: '1rem',
-                  color: 'rgba(255, 255, 255, 0.8)',
+                  color: 'var(--glass-text-soft)',
                   marginBottom: '0.5rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -94,12 +94,12 @@ export function DoctorProfile() {
                 Cardiologista | CRM: 12345-SP
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <span style={{ color: '#FFC107', fontSize: '1.25rem' }}>⭐</span>
+                <span style={{ color: 'var(--color-warning)', fontSize: '1.25rem' }}>⭐</span>
                 <span
                   style={{
                     fontSize: '1rem',
                     fontWeight: 600,
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
                 >
@@ -108,7 +108,7 @@ export function DoctorProfile() {
                 <span
                   style={{
                     fontSize: '0.875rem',
-                    color: 'rgba(255, 255, 255, 0.7)',
+                    color: 'var(--glass-text-muted)',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
                 >
@@ -122,9 +122,9 @@ export function DoctorProfile() {
         <form
           onSubmit={handleSubmit}
           style={{
-            background: 'rgba(255, 255, 255, 0.1)',
+            background: 'var(--glass-bg)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)',
+            border: '1px solid var(--glass-border)',
             borderRadius: '20px',
             padding: '2rem',
           }}
@@ -133,7 +133,7 @@ export function DoctorProfile() {
             style={{
               fontSize: '1.25rem',
               fontWeight: 600,
-              color: '#ffffff',
+              color: 'var(--page-text)',
               marginBottom: '1.5rem',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
             }}
@@ -155,7 +155,7 @@ export function DoctorProfile() {
                   display: 'block',
                   fontSize: '0.875rem',
                   fontWeight: 600,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   marginBottom: '0.5rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -169,10 +169,10 @@ export function DoctorProfile() {
                 style={{
                   width: '100%',
                   padding: '0.75rem',
-                  background: 'rgba(255, 255, 255, 0.1)',
-                  border: '1px solid rgba(255, 255, 255, 0.2)',
+                  background: 'var(--glass-bg)',
+                  border: '1px solid var(--glass-border)',
                   borderRadius: '8px',
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontSize: '0.938rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -184,7 +184,7 @@ export function DoctorProfile() {
                   display: 'block',
                   fontSize: '0.875rem',
                   fontWeight: 600,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   marginBottom: '0.5rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -198,10 +198,10 @@ export function DoctorProfile() {
                 style={{
                   width: '100%',
                   padding: '0.75rem',
-                  background: 'rgba(255, 255, 255, 0.1)',
-                  border: '1px solid rgba(255, 255, 255, 0.2)',
+                  background: 'var(--glass-bg)',
+                  border: '1px solid var(--glass-border)',
                   borderRadius: '8px',
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontSize: '0.938rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -213,7 +213,7 @@ export function DoctorProfile() {
                   display: 'block',
                   fontSize: '0.875rem',
                   fontWeight: 600,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   marginBottom: '0.5rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -225,10 +225,10 @@ export function DoctorProfile() {
                 style={{
                   width: '100%',
                   padding: '0.75rem',
-                  background: 'rgba(255, 255, 255, 0.1)',
-                  border: '1px solid rgba(255, 255, 255, 0.2)',
+                  background: 'var(--glass-bg)',
+                  border: '1px solid var(--glass-border)',
                   borderRadius: '8px',
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontSize: '0.938rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -244,7 +244,7 @@ export function DoctorProfile() {
                   display: 'block',
                   fontSize: '0.875rem',
                   fontWeight: 600,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   marginBottom: '0.5rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -258,10 +258,10 @@ export function DoctorProfile() {
                 style={{
                   width: '100%',
                   padding: '0.75rem',
-                  background: 'rgba(255, 255, 255, 0.1)',
-                  border: '1px solid rgba(255, 255, 255, 0.2)',
+                  background: 'var(--glass-bg)',
+                  border: '1px solid var(--glass-border)',
                   borderRadius: '8px',
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontSize: '0.938rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -273,7 +273,7 @@ export function DoctorProfile() {
                   display: 'block',
                   fontSize: '0.875rem',
                   fontWeight: 600,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   marginBottom: '0.5rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -287,10 +287,10 @@ export function DoctorProfile() {
                 style={{
                   width: '100%',
                   padding: '0.75rem',
-                  background: 'rgba(255, 255, 255, 0.1)',
-                  border: '1px solid rgba(255, 255, 255, 0.2)',
+                  background: 'var(--glass-bg)',
+                  border: '1px solid var(--glass-border)',
                   borderRadius: '8px',
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontSize: '0.938rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -302,7 +302,7 @@ export function DoctorProfile() {
             style={{
               fontSize: '1.25rem',
               fontWeight: 600,
-              color: '#ffffff',
+              color: 'var(--page-text)',
               marginTop: '2rem',
               marginBottom: '1rem',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -316,10 +316,10 @@ export function DoctorProfile() {
               width: '100%',
               height: '100px',
               padding: '0.75rem',
-              background: 'rgba(255, 255, 255, 0.1)',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
+              background: 'var(--glass-bg)',
+              border: '1px solid var(--glass-border)',
               borderRadius: '8px',
-              color: '#ffffff',
+              color: 'var(--page-text)',
               fontSize: '0.938rem',
               resize: 'vertical',
               marginBottom: '1.5rem',
@@ -332,10 +332,10 @@ export function DoctorProfile() {
             style={{
               width: '100%',
               padding: '1rem',
-              background: 'linear-gradient(135deg, #4CAF50, #45a049)',
+              background: 'var(--gradient-success)',
               border: 'none',
               borderRadius: '12px',
-              color: '#ffffff',
+              color: 'var(--page-text)',
               fontSize: '1.125rem',
               fontWeight: 700,
               cursor: 'pointer',

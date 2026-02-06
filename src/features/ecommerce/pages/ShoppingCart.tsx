@@ -24,7 +24,7 @@ export function ShoppingCart() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -33,7 +33,7 @@ export function ShoppingCart() {
           style={{
             fontSize: '2.5rem',
             fontWeight: 700,
-            color: '#ffffff',
+            color: 'var(--page-text)',
             marginBottom: '2rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
           }}
@@ -46,9 +46,9 @@ export function ShoppingCart() {
             {items.length === 0 ? (
               <div
                 style={{
-                  background: 'rgba(255, 255, 255, 0.1)',
+                  background: 'var(--glass-bg)',
                   backdropFilter: 'blur(20px)',
-                  border: '1px solid rgba(255, 255, 255, 0.2)',
+                  border: '1px solid var(--glass-border)',
                   borderRadius: '20px',
                   padding: '3rem',
                   textAlign: 'center',
@@ -59,7 +59,7 @@ export function ShoppingCart() {
                   style={{
                     fontSize: '1.5rem',
                     fontWeight: 600,
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     marginBottom: '1rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -71,10 +71,10 @@ export function ShoppingCart() {
                   style={{
                     display: 'inline-block',
                     padding: '0.75rem 1.5rem',
-                    background: 'linear-gradient(135deg, #4CAF50, #45a049)',
+                    background: 'var(--gradient-success)',
                     border: 'none',
                     borderRadius: '12px',
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     fontWeight: 600,
                     textDecoration: 'none',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -86,9 +86,9 @@ export function ShoppingCart() {
             ) : (
               <div
                 style={{
-                  background: 'rgba(255, 255, 255, 0.1)',
+                  background: 'var(--glass-bg)',
                   backdropFilter: 'blur(20px)',
-                  border: '1px solid rgba(255, 255, 255, 0.2)',
+                  border: '1px solid var(--glass-border)',
                   borderRadius: '20px',
                   padding: '2rem',
                 }}
@@ -100,7 +100,7 @@ export function ShoppingCart() {
                       display: 'flex',
                       gap: '1.5rem',
                       padding: '1.5rem',
-                      background: 'rgba(255, 255, 255, 0.05)',
+                      background: 'var(--glass-shadow)',
                       borderRadius: '12px',
                       marginBottom: '1rem',
                     }}
@@ -111,7 +111,7 @@ export function ShoppingCart() {
                         style={{
                           fontSize: '1.125rem',
                           fontWeight: 600,
-                          color: '#ffffff',
+                          color: 'var(--page-text)',
                           marginBottom: '0.5rem',
                           fontFamily: '"Plus Jakarta Sans", sans-serif',
                         }}
@@ -122,7 +122,7 @@ export function ShoppingCart() {
                         style={{
                           fontSize: '1.25rem',
                           fontWeight: 700,
-                          color: '#4CAF50',
+                          color: 'var(--color-success)',
                           fontFamily: '"Plus Jakarta Sans", sans-serif',
                         }}
                       >
@@ -147,7 +147,7 @@ export function ShoppingCart() {
                             background: 'rgba(255, 255, 255, 0.2)',
                             border: 'none',
                             borderRadius: '6px',
-                            color: '#ffffff',
+                            color: 'var(--page-text)',
                             fontSize: '1rem',
                             cursor: 'pointer',
                           }}
@@ -158,7 +158,7 @@ export function ShoppingCart() {
                           style={{
                             fontSize: '1rem',
                             fontWeight: 600,
-                            color: '#ffffff',
+                            color: 'var(--page-text)',
                             minWidth: '30px',
                             textAlign: 'center',
                             fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -174,7 +174,7 @@ export function ShoppingCart() {
                             background: 'rgba(255, 255, 255, 0.2)',
                             border: 'none',
                             borderRadius: '6px',
-                            color: '#ffffff',
+                            color: 'var(--page-text)',
                             fontSize: '1rem',
                             cursor: 'pointer',
                           }}
@@ -185,7 +185,7 @@ export function ShoppingCart() {
                       <button
                         onClick={() => updateQuantity(item.id, 0)}
                         style={{
-                          color: '#F44336',
+                          color: 'var(--badge-expired-text)',
                           background: 'none',
                           border: 'none',
                           fontSize: '1.25rem',
@@ -203,9 +203,9 @@ export function ShoppingCart() {
 
           <div
             style={{
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'var(--glass-bg)',
               backdropFilter: 'blur(20px)',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
+              border: '1px solid var(--glass-border)',
               borderRadius: '20px',
               padding: '2rem',
               height: 'fit-content',
@@ -215,7 +215,7 @@ export function ShoppingCart() {
               style={{
                 fontSize: '1.5rem',
                 fontWeight: 600,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 marginBottom: '1.5rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -226,7 +226,7 @@ export function ShoppingCart() {
             <div
               style={{
                 fontSize: '0.938rem',
-                color: 'rgba(255, 255, 255, 0.9)',
+                color: 'var(--glass-text-faint)',
                 marginBottom: '1.5rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -260,11 +260,11 @@ export function ShoppingCart() {
                   justifyContent: 'space-between',
                   fontSize: '1.25rem',
                   fontWeight: 700,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                 }}
               >
                 <span>Total:</span>
-                <span style={{ color: '#4CAF50' }}>R$ {total.toFixed(2)}</span>
+                <span style={{ color: 'var(--color-success)' }}>R$ {total.toFixed(2)}</span>
               </div>
             </div>
 
@@ -274,10 +274,10 @@ export function ShoppingCart() {
                 display: 'block',
                 width: '100%',
                 padding: '1rem',
-                background: 'linear-gradient(135deg, #4CAF50, #45a049)',
+                background: 'var(--gradient-success)',
                 border: 'none',
                 borderRadius: '12px',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 fontSize: '1.125rem',
                 fontWeight: 700,
                 textAlign: 'center',
@@ -295,10 +295,10 @@ export function ShoppingCart() {
                 width: '100%',
                 padding: '0.75rem',
                 marginTop: '1rem',
-                background: 'rgba(255, 255, 255, 0.1)',
-                border: '1px solid rgba(255, 255, 255, 0.3)',
+                background: 'var(--glass-bg)',
+                border: '1px solid var(--glass-border-strong)',
                 borderRadius: '12px',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 fontSize: '1rem',
                 fontWeight: 600,
                 textAlign: 'center',

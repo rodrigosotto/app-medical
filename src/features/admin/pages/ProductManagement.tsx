@@ -27,7 +27,7 @@ export function ProductManagement() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -44,7 +44,7 @@ export function ProductManagement() {
             style={{
               fontSize: '2.5rem',
               fontWeight: 700,
-              color: '#ffffff',
+              color: 'var(--page-text)',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
             }}
           >
@@ -54,10 +54,10 @@ export function ProductManagement() {
             to="/admin/products/add"
             style={{
               padding: '0.75rem 1.5rem',
-              background: 'linear-gradient(135deg, #4CAF50, #45a049)',
+              background: 'var(--gradient-success)',
               border: 'none',
               borderRadius: '12px',
-              color: '#ffffff',
+              color: 'var(--page-text)',
               fontWeight: 600,
               textDecoration: 'none',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -76,10 +76,10 @@ export function ProductManagement() {
             width: '100%',
             padding: '0.75rem 1rem',
             marginBottom: '2rem',
-            background: 'rgba(255, 255, 255, 0.1)',
-            border: '1px solid rgba(255, 255, 255, 0.3)',
+            background: 'var(--glass-bg)',
+            border: '1px solid var(--glass-border-strong)',
             borderRadius: '12px',
-            color: '#ffffff',
+            color: 'var(--page-text)',
             fontSize: '1rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
           }}
@@ -87,9 +87,9 @@ export function ProductManagement() {
 
         <div
           style={{
-            background: 'rgba(255, 255, 255, 0.1)',
+            background: 'var(--glass-bg)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)',
+            border: '1px solid var(--glass-border)',
             borderRadius: '20px',
             padding: '2rem',
           }}
@@ -102,8 +102,8 @@ export function ProductManagement() {
                     style={{
                       padding: '1rem',
                       textAlign: 'left',
-                      borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                      color: '#ffffff',
+                      borderBottom: '1px solid var(--glass-border)',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -114,8 +114,8 @@ export function ProductManagement() {
                     style={{
                       padding: '1rem',
                       textAlign: 'left',
-                      borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                      color: '#ffffff',
+                      borderBottom: '1px solid var(--glass-border)',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -126,8 +126,8 @@ export function ProductManagement() {
                     style={{
                       padding: '1rem',
                       textAlign: 'center',
-                      borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                      color: '#ffffff',
+                      borderBottom: '1px solid var(--glass-border)',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -138,8 +138,8 @@ export function ProductManagement() {
                     style={{
                       padding: '1rem',
                       textAlign: 'center',
-                      borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                      color: '#ffffff',
+                      borderBottom: '1px solid var(--glass-border)',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -150,8 +150,8 @@ export function ProductManagement() {
                     style={{
                       padding: '1rem',
                       textAlign: 'center',
-                      borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                      color: '#ffffff',
+                      borderBottom: '1px solid var(--glass-border)',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -162,8 +162,8 @@ export function ProductManagement() {
                     style={{
                       padding: '1rem',
                       textAlign: 'center',
-                      borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                      color: '#ffffff',
+                      borderBottom: '1px solid var(--glass-border)',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -178,8 +178,8 @@ export function ProductManagement() {
                     <td
                       style={{
                         padding: '1rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
-                        color: '#ffffff',
+                        borderBottom: '1px solid var(--glass-divider)',
+                        color: 'var(--page-text)',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
                     >
@@ -188,8 +188,8 @@ export function ProductManagement() {
                     <td
                       style={{
                         padding: '1rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
-                        color: '#ffffff',
+                        borderBottom: '1px solid var(--glass-divider)',
+                        color: 'var(--page-text)',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
                     >
@@ -198,9 +198,9 @@ export function ProductManagement() {
                     <td
                       style={{
                         padding: '1rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+                        borderBottom: '1px solid var(--glass-divider)',
                         textAlign: 'center',
-                        color: '#4CAF50',
+                        color: 'var(--color-success)',
                         fontWeight: 600,
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
@@ -210,7 +210,7 @@ export function ProductManagement() {
                     <td
                       style={{
                         padding: '1rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+                        borderBottom: '1px solid var(--glass-divider)',
                         textAlign: 'center',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
@@ -223,9 +223,9 @@ export function ProductManagement() {
                           fontWeight: 600,
                           background:
                             product.stock < 10
-                              ? 'rgba(244, 67, 54, 0.2)'
-                              : 'rgba(76, 175, 80, 0.2)',
-                          color: product.stock < 10 ? '#F44336' : '#4CAF50',
+                              ? 'var(--color-danger-bg)'
+                              : 'var(--color-success-bg)',
+                          color: product.stock < 10 ? 'var(--color-danger)' : 'var(--color-success)',
                         }}
                       >
                         {product.stock}
@@ -234,7 +234,7 @@ export function ProductManagement() {
                     <td
                       style={{
                         padding: '1rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+                        borderBottom: '1px solid var(--glass-divider)',
                         textAlign: 'center',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
@@ -245,8 +245,8 @@ export function ProductManagement() {
                           borderRadius: '8px',
                           fontSize: '0.875rem',
                           fontWeight: 600,
-                          background: 'rgba(76, 175, 80, 0.2)',
-                          color: '#4CAF50',
+                          background: 'var(--color-success-bg)',
+                          color: 'var(--color-success)',
                         }}
                       >
                         Ativo
@@ -255,7 +255,7 @@ export function ProductManagement() {
                     <td
                       style={{
                         padding: '1rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+                        borderBottom: '1px solid var(--glass-divider)',
                         textAlign: 'center',
                       }}
                     >
@@ -264,11 +264,11 @@ export function ProductManagement() {
                           to={'/admin/products/$productId/edit' as string}
                           params={{ productId: String(product.id) } as any}
                           style={{
-                            background: 'rgba(33, 150, 243, 0.2)',
+                            background: 'var(--color-info-bg)',
                             border: 'none',
                             borderRadius: '6px',
                             padding: '0.5rem',
-                            color: '#2196F3',
+                            color: 'var(--color-info)',
                             fontSize: '1rem',
                             textDecoration: 'none',
                           }}
@@ -277,11 +277,11 @@ export function ProductManagement() {
                         </Link>
                         <button
                           style={{
-                            background: 'rgba(244, 67, 54, 0.2)',
+                            background: 'var(--badge-expired-bg)',
                             border: 'none',
                             borderRadius: '6px',
                             padding: '0.5rem',
-                            color: '#F44336',
+                            color: 'var(--badge-expired-text)',
                             cursor: 'pointer',
                             fontSize: '1rem',
                           }}

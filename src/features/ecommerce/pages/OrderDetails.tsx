@@ -25,7 +25,7 @@ export function OrderDetails() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -34,7 +34,7 @@ export function OrderDetails() {
           to="/ecommerce/orders"
           style={{
             display: 'inline-flex',
-            color: '#ffffff',
+            color: 'var(--page-text)',
             textDecoration: 'none',
             marginBottom: '1rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -55,7 +55,7 @@ export function OrderDetails() {
               style={{
                 fontSize: '2.5rem',
                 fontWeight: 700,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 marginBottom: '0.5rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -65,7 +65,7 @@ export function OrderDetails() {
             <p
               style={{
                 fontSize: '1rem',
-                color: 'rgba(255, 255, 255, 0.8)',
+                color: 'var(--glass-text-soft)',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
             >
@@ -78,8 +78,8 @@ export function OrderDetails() {
               borderRadius: '12px',
               fontSize: '1rem',
               fontWeight: 600,
-              background: 'rgba(33, 150, 243, 0.2)',
-              color: '#2196F3',
+              background: 'var(--color-info-bg)',
+              color: 'var(--color-info)',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
             }}
           >
@@ -90,9 +90,9 @@ export function OrderDetails() {
         <div style={{ display: 'grid', gap: '2rem' }}>
           <div
             style={{
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'var(--glass-bg)',
               backdropFilter: 'blur(20px)',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
+              border: '1px solid var(--glass-border)',
               borderRadius: '20px',
               padding: '2rem',
             }}
@@ -101,7 +101,7 @@ export function OrderDetails() {
               style={{
                 fontSize: '1.25rem',
                 fontWeight: 600,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 marginBottom: '1.5rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -115,7 +115,7 @@ export function OrderDetails() {
                   display: 'flex',
                   gap: '1.5rem',
                   padding: '1rem',
-                  background: 'rgba(255, 255, 255, 0.05)',
+                  background: 'var(--glass-shadow)',
                   borderRadius: '12px',
                   marginBottom: '1rem',
                 }}
@@ -126,7 +126,7 @@ export function OrderDetails() {
                     style={{
                       fontSize: '1.125rem',
                       fontWeight: 600,
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       marginBottom: '0.25rem',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -136,7 +136,7 @@ export function OrderDetails() {
                   <div
                     style={{
                       fontSize: '0.875rem',
-                      color: 'rgba(255, 255, 255, 0.7)',
+                      color: 'var(--glass-text-muted)',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
                   >
@@ -147,7 +147,7 @@ export function OrderDetails() {
                   style={{
                     fontSize: '1.25rem',
                     fontWeight: 700,
-                    color: '#4CAF50',
+                    color: 'var(--color-success)',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
                 >
@@ -163,7 +163,7 @@ export function OrderDetails() {
             <div
               style={{
                 fontSize: '0.938rem',
-                color: 'rgba(255, 255, 255, 0.9)',
+                color: 'var(--glass-text-faint)',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
             >
@@ -196,11 +196,11 @@ export function OrderDetails() {
                   justifyContent: 'space-between',
                   fontSize: '1.25rem',
                   fontWeight: 700,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                 }}
               >
                 <span>Total:</span>
-                <span style={{ color: '#4CAF50' }}>R$ {order.total.toFixed(2)}</span>
+                <span style={{ color: 'var(--color-success)' }}>R$ {order.total.toFixed(2)}</span>
               </div>
             </div>
           </div>
@@ -208,9 +208,9 @@ export function OrderDetails() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '2rem' }}>
             <div
               style={{
-                background: 'rgba(255, 255, 255, 0.1)',
+                background: 'var(--glass-bg)',
                 backdropFilter: 'blur(20px)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
+                border: '1px solid var(--glass-border)',
                 borderRadius: '20px',
                 padding: '2rem',
               }}
@@ -219,7 +219,7 @@ export function OrderDetails() {
                 style={{
                   fontSize: '1.125rem',
                   fontWeight: 600,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   marginBottom: '1rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -229,7 +229,7 @@ export function OrderDetails() {
               <div
                 style={{
                   fontSize: '0.938rem',
-                  color: 'rgba(255, 255, 255, 0.9)',
+                  color: 'var(--glass-text-faint)',
                   lineHeight: 1.8,
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -242,9 +242,9 @@ export function OrderDetails() {
 
             <div
               style={{
-                background: 'rgba(255, 255, 255, 0.1)',
+                background: 'var(--glass-bg)',
                 backdropFilter: 'blur(20px)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
+                border: '1px solid var(--glass-border)',
                 borderRadius: '20px',
                 padding: '2rem',
               }}
@@ -253,7 +253,7 @@ export function OrderDetails() {
                 style={{
                   fontSize: '1.125rem',
                   fontWeight: 600,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   marginBottom: '1rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -263,13 +263,13 @@ export function OrderDetails() {
               <div
                 style={{
                   fontSize: '0.938rem',
-                  color: 'rgba(255, 255, 255, 0.9)',
+                  color: 'var(--glass-text-faint)',
                   lineHeight: 1.8,
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
               >
                 <div>💳 {order.payment}</div>
-                <div style={{ color: '#4CAF50', fontWeight: 600 }}>✓ Pagamento aprovado</div>
+                <div style={{ color: 'var(--color-success)', fontWeight: 600 }}>✓ Pagamento aprovado</div>
               </div>
             </div>
           </div>
@@ -280,10 +280,10 @@ export function OrderDetails() {
               style={{
                 display: 'block',
                 padding: '1rem',
-                background: 'linear-gradient(135deg, #2196F3, #1976D2)',
+                background: 'var(--gradient-info)',
                 border: 'none',
                 borderRadius: '12px',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 fontSize: '1.125rem',
                 fontWeight: 700,
                 textAlign: 'center',

@@ -30,7 +30,7 @@ export function BlogPostsManagement() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -47,7 +47,7 @@ export function BlogPostsManagement() {
             style={{
               fontSize: '2.5rem',
               fontWeight: 700,
-              color: '#ffffff',
+              color: 'var(--page-text)',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
             }}
           >
@@ -57,10 +57,10 @@ export function BlogPostsManagement() {
             href="/doctor/blog-posts/create"
             style={{
               padding: '0.75rem 1.5rem',
-              background: 'linear-gradient(135deg, #ffffff, #f0f0f0)',
+              background: 'var(--gradient-light)',
               border: 'none',
               borderRadius: '12px',
-              color: '#88AB8E',
+              color: 'var(--color-brand)',
               fontWeight: 600,
               textDecoration: 'none',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -72,9 +72,9 @@ export function BlogPostsManagement() {
 
         <div
           style={{
-            background: 'rgba(255, 255, 255, 0.1)',
+            background: 'var(--glass-bg)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)',
+            border: '1px solid var(--glass-border)',
             borderRadius: '20px',
             padding: '2rem',
           }}
@@ -87,8 +87,8 @@ export function BlogPostsManagement() {
                     style={{
                       padding: '1rem',
                       textAlign: 'left',
-                      borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                      color: '#ffffff',
+                      borderBottom: '1px solid var(--glass-border)',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -99,8 +99,8 @@ export function BlogPostsManagement() {
                     style={{
                       padding: '1rem',
                       textAlign: 'left',
-                      borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                      color: '#ffffff',
+                      borderBottom: '1px solid var(--glass-border)',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -111,8 +111,8 @@ export function BlogPostsManagement() {
                     style={{
                       padding: '1rem',
                       textAlign: 'left',
-                      borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                      color: '#ffffff',
+                      borderBottom: '1px solid var(--glass-border)',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -123,8 +123,8 @@ export function BlogPostsManagement() {
                     style={{
                       padding: '1rem',
                       textAlign: 'center',
-                      borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                      color: '#ffffff',
+                      borderBottom: '1px solid var(--glass-border)',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -135,8 +135,8 @@ export function BlogPostsManagement() {
                     style={{
                       padding: '1rem',
                       textAlign: 'center',
-                      borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                      color: '#ffffff',
+                      borderBottom: '1px solid var(--glass-border)',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -147,8 +147,8 @@ export function BlogPostsManagement() {
                     style={{
                       padding: '1rem',
                       textAlign: 'center',
-                      borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                      color: '#ffffff',
+                      borderBottom: '1px solid var(--glass-border)',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -163,8 +163,8 @@ export function BlogPostsManagement() {
                     <td
                       style={{
                         padding: '1rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
-                        color: '#ffffff',
+                        borderBottom: '1px solid var(--glass-divider)',
+                        color: 'var(--page-text)',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
                     >
@@ -173,8 +173,8 @@ export function BlogPostsManagement() {
                     <td
                       style={{
                         padding: '1rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
-                        color: '#ffffff',
+                        borderBottom: '1px solid var(--glass-divider)',
+                        color: 'var(--page-text)',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
                     >
@@ -183,8 +183,8 @@ export function BlogPostsManagement() {
                     <td
                       style={{
                         padding: '1rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
-                        color: '#ffffff',
+                        borderBottom: '1px solid var(--glass-divider)',
+                        color: 'var(--page-text)',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
                     >
@@ -193,9 +193,9 @@ export function BlogPostsManagement() {
                     <td
                       style={{
                         padding: '1rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+                        borderBottom: '1px solid var(--glass-divider)',
                         textAlign: 'center',
-                        color: '#ffffff',
+                        color: 'var(--page-text)',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
                     >
@@ -204,7 +204,7 @@ export function BlogPostsManagement() {
                     <td
                       style={{
                         padding: '1rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+                        borderBottom: '1px solid var(--glass-divider)',
                         textAlign: 'center',
                       }}
                     >
@@ -216,9 +216,9 @@ export function BlogPostsManagement() {
                           fontWeight: 600,
                           background:
                             post.status === 'publicado'
-                              ? 'rgba(76, 175, 80, 0.2)'
-                              : 'rgba(255, 193, 7, 0.2)',
-                          color: post.status === 'publicado' ? '#4CAF50' : '#FFC107',
+                              ? 'var(--badge-active-bg)'
+                              : 'var(--color-warning-bg)',
+                          color: post.status === 'publicado' ? 'var(--badge-active-text)' : 'var(--color-warning)',
                           fontFamily: '"Plus Jakarta Sans", sans-serif',
                         }}
                       >
@@ -228,18 +228,18 @@ export function BlogPostsManagement() {
                     <td
                       style={{
                         padding: '1rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+                        borderBottom: '1px solid var(--glass-divider)',
                         textAlign: 'center',
                       }}
                     >
                       <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center' }}>
                         <button
                           style={{
-                            background: 'rgba(33, 150, 243, 0.2)',
+                            background: 'var(--color-info-bg)',
                             border: 'none',
                             borderRadius: '6px',
                             padding: '0.5rem',
-                            color: '#2196F3',
+                            color: 'var(--color-info)',
                             cursor: 'pointer',
                             fontSize: '1rem',
                           }}
@@ -248,11 +248,11 @@ export function BlogPostsManagement() {
                         </button>
                         <button
                           style={{
-                            background: 'rgba(244, 67, 54, 0.2)',
+                            background: 'var(--badge-expired-bg)',
                             border: 'none',
                             borderRadius: '6px',
                             padding: '0.5rem',
-                            color: '#F44336',
+                            color: 'var(--badge-expired-text)',
                             cursor: 'pointer',
                             fontSize: '1rem',
                           }}

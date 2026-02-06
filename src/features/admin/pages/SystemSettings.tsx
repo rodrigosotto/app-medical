@@ -10,7 +10,7 @@ export function SystemSettings() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -19,7 +19,7 @@ export function SystemSettings() {
           style={{
             fontSize: '2.5rem',
             fontWeight: 700,
-            color: '#ffffff',
+            color: 'var(--page-text)',
             marginBottom: '2rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
           }}
@@ -30,9 +30,9 @@ export function SystemSettings() {
         <form onSubmit={handleSubmit}>
           <div
             style={{
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'var(--glass-bg)',
               backdropFilter: 'blur(20px)',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
+              border: '1px solid var(--glass-border)',
               borderRadius: '20px',
               padding: '2rem',
               marginBottom: '1.5rem',
@@ -42,7 +42,7 @@ export function SystemSettings() {
               style={{
                 fontSize: '1.25rem',
                 fontWeight: 600,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 marginBottom: '1.5rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -56,7 +56,7 @@ export function SystemSettings() {
                     display: 'block',
                     fontSize: '0.875rem',
                     fontWeight: 600,
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     marginBottom: '0.5rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -69,10 +69,10 @@ export function SystemSettings() {
                   style={{
                     width: '100%',
                     padding: '0.75rem',
-                    background: 'rgba(255, 255, 255, 0.1)',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    background: 'var(--glass-bg)',
+                    border: '1px solid var(--glass-border)',
                     borderRadius: '8px',
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     fontSize: '0.938rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -84,7 +84,7 @@ export function SystemSettings() {
                     display: 'block',
                     fontSize: '0.875rem',
                     fontWeight: 600,
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     marginBottom: '0.5rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -97,10 +97,10 @@ export function SystemSettings() {
                   style={{
                     width: '100%',
                     padding: '0.75rem',
-                    background: 'rgba(255, 255, 255, 0.1)',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    background: 'var(--glass-bg)',
+                    border: '1px solid var(--glass-border)',
                     borderRadius: '8px',
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     fontSize: '0.938rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -111,9 +111,9 @@ export function SystemSettings() {
 
           <div
             style={{
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'var(--glass-bg)',
               backdropFilter: 'blur(20px)',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
+              border: '1px solid var(--glass-border)',
               borderRadius: '20px',
               padding: '2rem',
               marginBottom: '1.5rem',
@@ -123,7 +123,7 @@ export function SystemSettings() {
               style={{
                 fontSize: '1.25rem',
                 fontWeight: 600,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 marginBottom: '1.5rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -144,7 +144,7 @@ export function SystemSettings() {
                     alignItems: 'center',
                     gap: '0.75rem',
                     padding: '1rem',
-                    background: 'rgba(255, 255, 255, 0.05)',
+                    background: 'var(--glass-shadow)',
                     borderRadius: '8px',
                     cursor: 'pointer',
                   }}
@@ -157,7 +157,7 @@ export function SystemSettings() {
                   <span
                     style={{
                       fontSize: '0.938rem',
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
                   >
@@ -170,9 +170,9 @@ export function SystemSettings() {
 
           <div
             style={{
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'var(--glass-bg)',
               backdropFilter: 'blur(20px)',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
+              border: '1px solid var(--glass-border)',
               borderRadius: '20px',
               padding: '2rem',
               marginBottom: '1.5rem',
@@ -182,7 +182,7 @@ export function SystemSettings() {
               style={{
                 fontSize: '1.25rem',
                 fontWeight: 600,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 marginBottom: '1.5rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -196,7 +196,7 @@ export function SystemSettings() {
                   alignItems: 'center',
                   gap: '0.75rem',
                   padding: '1rem',
-                  background: 'rgba(255, 255, 255, 0.05)',
+                  background: 'var(--glass-shadow)',
                   borderRadius: '8px',
                   cursor: 'pointer',
                 }}
@@ -208,7 +208,7 @@ export function SystemSettings() {
                 <span
                   style={{
                     fontSize: '0.938rem',
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
                 >
@@ -223,10 +223,10 @@ export function SystemSettings() {
             style={{
               width: '100%',
               padding: '1rem',
-              background: 'linear-gradient(135deg, #4CAF50, #45a049)',
+              background: 'var(--gradient-success)',
               border: 'none',
               borderRadius: '12px',
-              color: '#ffffff',
+              color: 'var(--page-text)',
               fontSize: '1.125rem',
               fontWeight: 700,
               cursor: 'pointer',

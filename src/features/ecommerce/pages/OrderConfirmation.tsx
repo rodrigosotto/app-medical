@@ -17,7 +17,7 @@ export function OrderConfirmation() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -27,9 +27,9 @@ export function OrderConfirmation() {
       <div style={{ maxWidth: '600px', width: '100%' }}>
         <div
           style={{
-            background: 'rgba(255, 255, 255, 0.1)',
+            background: 'var(--glass-bg)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)',
+            border: '1px solid var(--glass-border)',
             borderRadius: '20px',
             padding: '3rem',
             textAlign: 'center',
@@ -40,7 +40,7 @@ export function OrderConfirmation() {
             style={{
               fontSize: '2rem',
               fontWeight: 700,
-              color: '#ffffff',
+              color: 'var(--page-text)',
               marginBottom: '0.5rem',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
             }}
@@ -50,7 +50,7 @@ export function OrderConfirmation() {
           <p
             style={{
               fontSize: '1rem',
-              color: 'rgba(255, 255, 255, 0.8)',
+              color: 'var(--glass-text-soft)',
               marginBottom: '2rem',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
             }}
@@ -60,7 +60,7 @@ export function OrderConfirmation() {
 
           <div
             style={{
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'var(--glass-bg)',
               borderRadius: '12px',
               padding: '1.5rem',
               marginBottom: '2rem',
@@ -71,7 +71,7 @@ export function OrderConfirmation() {
               <span
                 style={{
                   fontSize: '0.875rem',
-                  color: 'rgba(255, 255, 255, 0.7)',
+                  color: 'var(--glass-text-muted)',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
               >
@@ -81,7 +81,7 @@ export function OrderConfirmation() {
                 style={{
                   fontSize: '1rem',
                   fontWeight: 600,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
               >
@@ -92,7 +92,7 @@ export function OrderConfirmation() {
               <span
                 style={{
                   fontSize: '0.875rem',
-                  color: 'rgba(255, 255, 255, 0.7)',
+                  color: 'var(--glass-text-muted)',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
               >
@@ -102,7 +102,7 @@ export function OrderConfirmation() {
                 style={{
                   fontSize: '1rem',
                   fontWeight: 600,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
               >
@@ -113,7 +113,7 @@ export function OrderConfirmation() {
               <span
                 style={{
                   fontSize: '0.875rem',
-                  color: 'rgba(255, 255, 255, 0.7)',
+                  color: 'var(--glass-text-muted)',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
               >
@@ -123,7 +123,7 @@ export function OrderConfirmation() {
                 style={{
                   fontSize: '1.25rem',
                   fontWeight: 700,
-                  color: '#4CAF50',
+                  color: 'var(--color-success)',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
               >
@@ -144,7 +144,7 @@ export function OrderConfirmation() {
             <p
               style={{
                 fontSize: '0.875rem',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 margin: 0,
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -159,10 +159,10 @@ export function OrderConfirmation() {
               style={{
                 flex: 1,
                 padding: '0.75rem',
-                background: 'linear-gradient(135deg, #2196F3, #1976D2)',
+                background: 'var(--gradient-info)',
                 border: 'none',
                 borderRadius: '12px',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 fontWeight: 600,
                 textDecoration: 'none',
                 textAlign: 'center',
@@ -176,10 +176,10 @@ export function OrderConfirmation() {
               style={{
                 flex: 1,
                 padding: '0.75rem',
-                background: 'rgba(255, 255, 255, 0.1)',
-                border: '1px solid rgba(255, 255, 255, 0.3)',
+                background: 'var(--glass-bg)',
+                border: '1px solid var(--glass-border-strong)',
                 borderRadius: '12px',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 fontWeight: 600,
                 textDecoration: 'none',
                 textAlign: 'center',

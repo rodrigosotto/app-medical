@@ -23,7 +23,7 @@ export function Checkout() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -32,7 +32,7 @@ export function Checkout() {
           style={{
             fontSize: '2.5rem',
             fontWeight: 700,
-            color: '#ffffff',
+            color: 'var(--page-text)',
             marginBottom: '2rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
           }}
@@ -47,9 +47,9 @@ export function Checkout() {
           <div>
             <div
               style={{
-                background: 'rgba(255, 255, 255, 0.1)',
+                background: 'var(--glass-bg)',
                 backdropFilter: 'blur(20px)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
+                border: '1px solid var(--glass-border)',
                 borderRadius: '20px',
                 padding: '2rem',
                 marginBottom: '1.5rem',
@@ -59,7 +59,7 @@ export function Checkout() {
                 style={{
                   fontSize: '1.25rem',
                   fontWeight: 600,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   marginBottom: '1.5rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -73,7 +73,7 @@ export function Checkout() {
                       display: 'block',
                       fontSize: '0.875rem',
                       fontWeight: 600,
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       marginBottom: '0.5rem',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -86,10 +86,10 @@ export function Checkout() {
                     style={{
                       width: '100%',
                       padding: '0.75rem',
-                      background: 'rgba(255, 255, 255, 0.1)',
-                      border: '1px solid rgba(255, 255, 255, 0.2)',
+                      background: 'var(--glass-bg)',
+                      border: '1px solid var(--glass-border)',
                       borderRadius: '8px',
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       fontSize: '0.938rem',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -101,7 +101,7 @@ export function Checkout() {
                       display: 'block',
                       fontSize: '0.875rem',
                       fontWeight: 600,
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       marginBottom: '0.5rem',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -115,10 +115,10 @@ export function Checkout() {
                     style={{
                       width: '100%',
                       padding: '0.75rem',
-                      background: 'rgba(255, 255, 255, 0.1)',
-                      border: '1px solid rgba(255, 255, 255, 0.2)',
+                      background: 'var(--glass-bg)',
+                      border: '1px solid var(--glass-border)',
                       borderRadius: '8px',
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       fontSize: '0.938rem',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -130,7 +130,7 @@ export function Checkout() {
                       display: 'block',
                       fontSize: '0.875rem',
                       fontWeight: 600,
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       marginBottom: '0.5rem',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -143,10 +143,10 @@ export function Checkout() {
                     style={{
                       width: '100%',
                       padding: '0.75rem',
-                      background: 'rgba(255, 255, 255, 0.1)',
-                      border: '1px solid rgba(255, 255, 255, 0.2)',
+                      background: 'var(--glass-bg)',
+                      border: '1px solid var(--glass-border)',
                       borderRadius: '8px',
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       fontSize: '0.938rem',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -157,9 +157,9 @@ export function Checkout() {
 
             <div
               style={{
-                background: 'rgba(255, 255, 255, 0.1)',
+                background: 'var(--glass-bg)',
                 backdropFilter: 'blur(20px)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
+                border: '1px solid var(--glass-border)',
                 borderRadius: '20px',
                 padding: '2rem',
                 marginBottom: '1.5rem',
@@ -169,7 +169,7 @@ export function Checkout() {
                 style={{
                   fontSize: '1.25rem',
                   fontWeight: 600,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   marginBottom: '1.5rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -183,7 +183,7 @@ export function Checkout() {
                       display: 'block',
                       fontSize: '0.875rem',
                       fontWeight: 600,
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       marginBottom: '0.5rem',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -197,10 +197,10 @@ export function Checkout() {
                     style={{
                       width: '100%',
                       padding: '0.75rem',
-                      background: 'rgba(255, 255, 255, 0.1)',
-                      border: '1px solid rgba(255, 255, 255, 0.2)',
+                      background: 'var(--glass-bg)',
+                      border: '1px solid var(--glass-border)',
                       borderRadius: '8px',
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       fontSize: '0.938rem',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -213,7 +213,7 @@ export function Checkout() {
                         display: 'block',
                         fontSize: '0.875rem',
                         fontWeight: 600,
-                        color: '#ffffff',
+                        color: 'var(--page-text)',
                         marginBottom: '0.5rem',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
@@ -226,10 +226,10 @@ export function Checkout() {
                       style={{
                         width: '100%',
                         padding: '0.75rem',
-                        background: 'rgba(255, 255, 255, 0.1)',
-                        border: '1px solid rgba(255, 255, 255, 0.2)',
+                        background: 'var(--glass-bg)',
+                        border: '1px solid var(--glass-border)',
                         borderRadius: '8px',
-                        color: '#ffffff',
+                        color: 'var(--page-text)',
                         fontSize: '0.938rem',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
@@ -241,7 +241,7 @@ export function Checkout() {
                         display: 'block',
                         fontSize: '0.875rem',
                         fontWeight: 600,
-                        color: '#ffffff',
+                        color: 'var(--page-text)',
                         marginBottom: '0.5rem',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
@@ -254,10 +254,10 @@ export function Checkout() {
                       style={{
                         width: '100%',
                         padding: '0.75rem',
-                        background: 'rgba(255, 255, 255, 0.1)',
-                        border: '1px solid rgba(255, 255, 255, 0.2)',
+                        background: 'var(--glass-bg)',
+                        border: '1px solid var(--glass-border)',
                         borderRadius: '8px',
-                        color: '#ffffff',
+                        color: 'var(--page-text)',
                         fontSize: '0.938rem',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
@@ -269,9 +269,9 @@ export function Checkout() {
 
             <div
               style={{
-                background: 'rgba(255, 255, 255, 0.1)',
+                background: 'var(--glass-bg)',
                 backdropFilter: 'blur(20px)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
+                border: '1px solid var(--glass-border)',
                 borderRadius: '20px',
                 padding: '2rem',
               }}
@@ -280,7 +280,7 @@ export function Checkout() {
                 style={{
                   fontSize: '1.25rem',
                   fontWeight: 600,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   marginBottom: '1.5rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -304,7 +304,7 @@ export function Checkout() {
                         paymentMethod === method.id
                           ? 'rgba(255, 255, 255, 0.2)'
                           : 'rgba(255, 255, 255, 0.05)',
-                      border: `2px solid ${paymentMethod === method.id ? '#4CAF50' : 'rgba(255, 255, 255, 0.2)'}`,
+                      border: `2px solid ${paymentMethod === method.id ? 'var(--badge-active-text)' : 'rgba(255, 255, 255, 0.2)'}`,
                       borderRadius: '12px',
                       cursor: 'pointer',
                     }}
@@ -322,7 +322,7 @@ export function Checkout() {
                       style={{
                         fontSize: '1rem',
                         fontWeight: 600,
-                        color: '#ffffff',
+                        color: 'var(--page-text)',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
                     >
@@ -340,7 +340,7 @@ export function Checkout() {
                         display: 'block',
                         fontSize: '0.875rem',
                         fontWeight: 600,
-                        color: '#ffffff',
+                        color: 'var(--page-text)',
                         marginBottom: '0.5rem',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
@@ -354,10 +354,10 @@ export function Checkout() {
                       style={{
                         width: '100%',
                         padding: '0.75rem',
-                        background: 'rgba(255, 255, 255, 0.1)',
-                        border: '1px solid rgba(255, 255, 255, 0.2)',
+                        background: 'var(--glass-bg)',
+                        border: '1px solid var(--glass-border)',
                         borderRadius: '8px',
-                        color: '#ffffff',
+                        color: 'var(--page-text)',
                         fontSize: '0.938rem',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
@@ -370,7 +370,7 @@ export function Checkout() {
                           display: 'block',
                           fontSize: '0.875rem',
                           fontWeight: 600,
-                          color: '#ffffff',
+                          color: 'var(--page-text)',
                           marginBottom: '0.5rem',
                           fontFamily: '"Plus Jakarta Sans", sans-serif',
                         }}
@@ -384,10 +384,10 @@ export function Checkout() {
                         style={{
                           width: '100%',
                           padding: '0.75rem',
-                          background: 'rgba(255, 255, 255, 0.1)',
-                          border: '1px solid rgba(255, 255, 255, 0.2)',
+                          background: 'var(--glass-bg)',
+                          border: '1px solid var(--glass-border)',
                           borderRadius: '8px',
-                          color: '#ffffff',
+                          color: 'var(--page-text)',
                           fontSize: '0.938rem',
                           fontFamily: '"Plus Jakarta Sans", sans-serif',
                         }}
@@ -399,7 +399,7 @@ export function Checkout() {
                           display: 'block',
                           fontSize: '0.875rem',
                           fontWeight: 600,
-                          color: '#ffffff',
+                          color: 'var(--page-text)',
                           marginBottom: '0.5rem',
                           fontFamily: '"Plus Jakarta Sans", sans-serif',
                         }}
@@ -413,10 +413,10 @@ export function Checkout() {
                         style={{
                           width: '100%',
                           padding: '0.75rem',
-                          background: 'rgba(255, 255, 255, 0.1)',
-                          border: '1px solid rgba(255, 255, 255, 0.2)',
+                          background: 'var(--glass-bg)',
+                          border: '1px solid var(--glass-border)',
                           borderRadius: '8px',
-                          color: '#ffffff',
+                          color: 'var(--page-text)',
                           fontSize: '0.938rem',
                           fontFamily: '"Plus Jakarta Sans", sans-serif',
                         }}
@@ -431,9 +431,9 @@ export function Checkout() {
           <div>
             <div
               style={{
-                background: 'rgba(255, 255, 255, 0.1)',
+                background: 'var(--glass-bg)',
                 backdropFilter: 'blur(20px)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
+                border: '1px solid var(--glass-border)',
                 borderRadius: '20px',
                 padding: '2rem',
                 position: 'sticky',
@@ -444,7 +444,7 @@ export function Checkout() {
                 style={{
                   fontSize: '1.25rem',
                   fontWeight: 600,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   marginBottom: '1.5rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -460,7 +460,7 @@ export function Checkout() {
                       display: 'flex',
                       justifyContent: 'space-between',
                       fontSize: '0.875rem',
-                      color: 'rgba(255, 255, 255, 0.9)',
+                      color: 'var(--glass-text-faint)',
                       marginBottom: '0.75rem',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -484,7 +484,7 @@ export function Checkout() {
               <div
                 style={{
                   fontSize: '0.938rem',
-                  color: 'rgba(255, 255, 255, 0.9)',
+                  color: 'var(--glass-text-faint)',
                   marginBottom: '1.5rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -522,11 +522,11 @@ export function Checkout() {
                     justifyContent: 'space-between',
                     fontSize: '1.25rem',
                     fontWeight: 700,
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                   }}
                 >
                   <span>Total:</span>
-                  <span style={{ color: '#4CAF50' }}>R$ {total.toFixed(2)}</span>
+                  <span style={{ color: 'var(--color-success)' }}>R$ {total.toFixed(2)}</span>
                 </div>
               </div>
 
@@ -535,10 +535,10 @@ export function Checkout() {
                 style={{
                   width: '100%',
                   padding: '1rem',
-                  background: 'linear-gradient(135deg, #4CAF50, #45a049)',
+                  background: 'var(--gradient-success)',
                   border: 'none',
                   borderRadius: '12px',
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   fontSize: '1.125rem',
                   fontWeight: 700,
                   cursor: 'pointer',

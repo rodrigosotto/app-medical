@@ -63,23 +63,23 @@ export function MedicalHistory() {
     switch (type) {
       case 'Consulta':
         return {
-          bg: 'rgba(33, 150, 243, 0.2)',
-          border: 'rgba(33, 150, 243, 0.5)',
-          text: '#2196F3',
+          bg: 'var(--color-info-bg)',
+          border: 'var(--color-info-bg-strong)',
+          text: 'var(--color-info)',
         };
       case 'Exame':
         return {
           bg: 'rgba(156, 39, 176, 0.2)',
           border: 'rgba(156, 39, 176, 0.5)',
-          text: '#9C27B0',
+          text: 'var(--color-purple)',
         };
       case 'Receita':
-        return { bg: 'rgba(76, 175, 80, 0.2)', border: 'rgba(76, 175, 80, 0.5)', text: '#4CAF50' };
+        return { bg: 'var(--color-success-bg)', border: 'var(--color-success-bg-strong)', text: 'var(--color-success)' };
       default:
         return {
           bg: 'rgba(158, 158, 158, 0.2)',
           border: 'rgba(158, 158, 158, 0.5)',
-          text: '#9E9E9E',
+          text: 'var(--color-gray-400)',
         };
     }
   };
@@ -88,7 +88,7 @@ export function MedicalHistory() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -101,7 +101,7 @@ export function MedicalHistory() {
               display: 'inline-flex',
               alignItems: 'center',
               gap: '0.5rem',
-              color: '#ffffff',
+              color: 'var(--page-text)',
               textDecoration: 'none',
               marginBottom: '1rem',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -113,7 +113,7 @@ export function MedicalHistory() {
             style={{
               fontSize: '2.5rem',
               fontWeight: 700,
-              color: '#ffffff',
+              color: 'var(--page-text)',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
             }}
           >
@@ -122,7 +122,7 @@ export function MedicalHistory() {
           <p
             style={{
               fontSize: '1.125rem',
-              color: 'rgba(255, 255, 255, 0.9)',
+              color: 'var(--glass-text-faint)',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
             }}
           >
@@ -140,7 +140,7 @@ export function MedicalHistory() {
               top: '40px',
               bottom: '40px',
               width: '2px',
-              background: 'rgba(255, 255, 255, 0.3)',
+              background: 'var(--glass-bg-active)',
             }}
           />
 
@@ -179,9 +179,9 @@ export function MedicalHistory() {
                   {/* Card do item */}
                   <div
                     style={{
-                      background: 'rgba(255, 255, 255, 0.1)',
+                      background: 'var(--glass-bg)',
                       backdropFilter: 'blur(20px)',
-                      border: '1px solid rgba(255, 255, 255, 0.2)',
+                      border: '1px solid var(--glass-border)',
                       borderRadius: '16px',
                       padding: '1.5rem',
                     }}
@@ -207,7 +207,7 @@ export function MedicalHistory() {
                             style={{
                               fontSize: '1.25rem',
                               fontWeight: 600,
-                              color: '#ffffff',
+                              color: 'var(--page-text)',
                               fontFamily: '"Plus Jakarta Sans", sans-serif',
                             }}
                           >
@@ -232,7 +232,7 @@ export function MedicalHistory() {
                           <div
                             style={{
                               fontSize: '0.875rem',
-                              color: 'rgba(255, 255, 255, 0.7)',
+                              color: 'var(--glass-text-muted)',
                               marginBottom: '0.5rem',
                               fontFamily: '"Plus Jakarta Sans", sans-serif',
                             }}
@@ -244,7 +244,7 @@ export function MedicalHistory() {
                       <div
                         style={{
                           fontSize: '0.875rem',
-                          color: 'rgba(255, 255, 255, 0.7)',
+                          color: 'var(--glass-text-muted)',
                           whiteSpace: 'nowrap',
                           fontFamily: '"Plus Jakarta Sans", sans-serif',
                         }}
@@ -256,7 +256,7 @@ export function MedicalHistory() {
                     <div
                       style={{
                         fontSize: '1rem',
-                        color: 'rgba(255, 255, 255, 0.9)',
+                        color: 'var(--glass-text-faint)',
                         lineHeight: 1.6,
                         marginBottom: '1rem',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -268,7 +268,7 @@ export function MedicalHistory() {
                     {'diagnosis' in item && (
                       <div
                         style={{
-                          background: 'rgba(255, 255, 255, 0.1)',
+                          background: 'var(--glass-bg)',
                           borderRadius: '8px',
                           padding: '0.75rem',
                           marginBottom: '0.5rem',
@@ -278,7 +278,7 @@ export function MedicalHistory() {
                           style={{
                             fontSize: '0.75rem',
                             fontWeight: 600,
-                            color: 'rgba(255, 255, 255, 0.7)',
+                            color: 'var(--glass-text-muted)',
                             marginBottom: '0.25rem',
                             fontFamily: '"Plus Jakarta Sans", sans-serif',
                           }}
@@ -288,7 +288,7 @@ export function MedicalHistory() {
                         <div
                           style={{
                             fontSize: '0.875rem',
-                            color: '#ffffff',
+                            color: 'var(--page-text)',
                             fontFamily: '"Plus Jakarta Sans", sans-serif',
                           }}
                         >
@@ -300,7 +300,7 @@ export function MedicalHistory() {
                     {'treatment' in item && (
                       <div
                         style={{
-                          background: 'rgba(255, 255, 255, 0.1)',
+                          background: 'var(--glass-bg)',
                           borderRadius: '8px',
                           padding: '0.75rem',
                         }}
@@ -309,7 +309,7 @@ export function MedicalHistory() {
                           style={{
                             fontSize: '0.75rem',
                             fontWeight: 600,
-                            color: 'rgba(255, 255, 255, 0.7)',
+                            color: 'var(--glass-text-muted)',
                             marginBottom: '0.25rem',
                             fontFamily: '"Plus Jakarta Sans", sans-serif',
                           }}
@@ -319,7 +319,7 @@ export function MedicalHistory() {
                         <div
                           style={{
                             fontSize: '0.875rem',
-                            color: '#ffffff',
+                            color: 'var(--page-text)',
                             fontFamily: '"Plus Jakarta Sans", sans-serif',
                           }}
                         >
@@ -341,7 +341,7 @@ export function MedicalHistory() {
                           style={{
                             fontSize: '0.75rem',
                             fontWeight: 600,
-                            color: 'rgba(255, 255, 255, 0.7)',
+                            color: 'var(--glass-text-muted)',
                             marginBottom: '0.25rem',
                             fontFamily: '"Plus Jakarta Sans", sans-serif',
                           }}
@@ -351,7 +351,7 @@ export function MedicalHistory() {
                         <div
                           style={{
                             fontSize: '0.875rem',
-                            color: '#ffffff',
+                            color: 'var(--page-text)',
                             fontFamily: '"Plus Jakarta Sans", sans-serif',
                           }}
                         >

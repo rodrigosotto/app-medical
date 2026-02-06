@@ -19,7 +19,7 @@ export function PermissionsControl() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -28,7 +28,7 @@ export function PermissionsControl() {
           style={{
             fontSize: '2.5rem',
             fontWeight: 700,
-            color: '#ffffff',
+            color: 'var(--page-text)',
             marginBottom: '2rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
           }}
@@ -41,9 +41,9 @@ export function PermissionsControl() {
             <div
               key={role.id}
               style={{
-                background: 'rgba(255, 255, 255, 0.1)',
+                background: 'var(--glass-bg)',
                 backdropFilter: 'blur(20px)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
+                border: '1px solid var(--glass-border)',
                 borderRadius: '20px',
                 padding: '2rem',
               }}
@@ -61,7 +61,7 @@ export function PermissionsControl() {
                     style={{
                       fontSize: '1.5rem',
                       fontWeight: 600,
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       marginBottom: '0.25rem',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -71,7 +71,7 @@ export function PermissionsControl() {
                   <div
                     style={{
                       fontSize: '0.875rem',
-                      color: 'rgba(255, 255, 255, 0.7)',
+                      color: 'var(--glass-text-muted)',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
                   >
@@ -81,10 +81,10 @@ export function PermissionsControl() {
                 <button
                   style={{
                     padding: '0.75rem 1.5rem',
-                    background: 'rgba(33, 150, 243, 0.2)',
+                    background: 'var(--color-info-bg)',
                     border: '1px solid rgba(33, 150, 243, 0.5)',
                     borderRadius: '12px',
-                    color: '#2196F3',
+                    color: 'var(--color-info)',
                     fontWeight: 600,
                     cursor: 'pointer',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -96,7 +96,7 @@ export function PermissionsControl() {
 
               <div
                 style={{
-                  background: 'rgba(255, 255, 255, 0.05)',
+                  background: 'var(--glass-shadow)',
                   borderRadius: '12px',
                   padding: '1.5rem',
                 }}
@@ -105,7 +105,7 @@ export function PermissionsControl() {
                   style={{
                     fontSize: '1rem',
                     fontWeight: 600,
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     marginBottom: '1rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -118,11 +118,11 @@ export function PermissionsControl() {
                       key={index}
                       style={{
                         padding: '0.5rem 1rem',
-                        background: 'rgba(76, 175, 80, 0.2)',
+                        background: 'var(--color-success-bg)',
                         border: '1px solid rgba(76, 175, 80, 0.5)',
                         borderRadius: '8px',
                         fontSize: '0.875rem',
-                        color: '#4CAF50',
+                        color: 'var(--color-success)',
                         fontWeight: 600,
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}

@@ -51,7 +51,7 @@ export function ProductCatalog() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -68,7 +68,7 @@ export function ProductCatalog() {
             style={{
               fontSize: '2.5rem',
               fontWeight: 700,
-              color: '#ffffff',
+              color: 'var(--page-text)',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
             }}
           >
@@ -79,9 +79,9 @@ export function ProductCatalog() {
             style={{
               padding: '0.75rem 1.5rem',
               background: 'rgba(255, 255, 255, 0.2)',
-              border: '1px solid rgba(255, 255, 255, 0.3)',
+              border: '1px solid var(--glass-border-strong)',
               borderRadius: '12px',
-              color: '#ffffff',
+              color: 'var(--page-text)',
               fontWeight: 600,
               textDecoration: 'none',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -106,10 +106,10 @@ export function ProductCatalog() {
               style={{
                 padding: '0.75rem 1.5rem',
                 background:
-                  category === cat ? 'rgba(255, 255, 255, 0.3)' : 'rgba(255, 255, 255, 0.1)',
-                border: '1px solid rgba(255, 255, 255, 0.3)',
+                  category === cat ? 'var(--glass-bg-active)' : 'var(--glass-bg)',
+                border: '1px solid var(--glass-border-strong)',
                 borderRadius: '12px',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 fontWeight: 600,
                 cursor: 'pointer',
                 whiteSpace: 'nowrap',
@@ -136,9 +136,9 @@ export function ProductCatalog() {
             >
               <div
                 style={{
-                  background: 'rgba(255, 255, 255, 0.1)',
+                  background: 'var(--glass-bg)',
                   backdropFilter: 'blur(20px)',
-                  border: '1px solid rgba(255, 255, 255, 0.2)',
+                  border: '1px solid var(--glass-border)',
                   borderRadius: '16px',
                   padding: '1.5rem',
                   cursor: 'pointer',
@@ -152,7 +152,7 @@ export function ProductCatalog() {
                   style={{
                     fontSize: '1.125rem',
                     fontWeight: 600,
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     marginBottom: '0.5rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -167,11 +167,11 @@ export function ProductCatalog() {
                     marginBottom: '1rem',
                   }}
                 >
-                  <span style={{ color: '#FFC107' }}>⭐</span>
+                  <span style={{ color: 'var(--color-warning)' }}>⭐</span>
                   <span
                     style={{
                       fontSize: '0.875rem',
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
                   >
@@ -182,7 +182,7 @@ export function ProductCatalog() {
                   style={{
                     fontSize: '1.75rem',
                     fontWeight: 700,
-                    color: '#4CAF50',
+                    color: 'var(--color-success)',
                     marginBottom: '1rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -193,10 +193,10 @@ export function ProductCatalog() {
                   style={{
                     width: '100%',
                     padding: '0.75rem',
-                    background: 'linear-gradient(135deg, #4CAF50, #45a049)',
+                    background: 'var(--gradient-success)',
                     border: 'none',
                     borderRadius: '8px',
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     fontWeight: 600,
                     cursor: 'pointer',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',

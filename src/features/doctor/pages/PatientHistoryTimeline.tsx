@@ -16,7 +16,7 @@ export function PatientHistoryTimeline() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -25,7 +25,7 @@ export function PatientHistoryTimeline() {
           to={`/doctor/patients/${patientId}/file`}
           style={{
             display: 'inline-flex',
-            color: '#ffffff',
+            color: 'var(--page-text)',
             textDecoration: 'none',
             marginBottom: '1rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -37,7 +37,7 @@ export function PatientHistoryTimeline() {
           style={{
             fontSize: '2.5rem',
             fontWeight: 700,
-            color: '#ffffff',
+            color: 'var(--page-text)',
             marginBottom: '2rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
           }}
@@ -53,7 +53,7 @@ export function PatientHistoryTimeline() {
               top: '40px',
               bottom: '40px',
               width: '2px',
-              background: 'rgba(255, 255, 255, 0.3)',
+              background: 'var(--glass-bg-active)',
             }}
           />
           {history.map((item, index) => (
@@ -72,9 +72,9 @@ export function PatientHistoryTimeline() {
               />
               <div
                 style={{
-                  background: 'rgba(255, 255, 255, 0.1)',
+                  background: 'var(--glass-bg)',
                   backdropFilter: 'blur(20px)',
-                  border: '1px solid rgba(255, 255, 255, 0.2)',
+                  border: '1px solid var(--glass-border)',
                   borderRadius: '16px',
                   padding: '1.5rem',
                 }}
@@ -82,7 +82,7 @@ export function PatientHistoryTimeline() {
                 <div
                   style={{
                     fontSize: '0.875rem',
-                    color: 'rgba(255, 255, 255, 0.7)',
+                    color: 'var(--glass-text-muted)',
                     marginBottom: '0.5rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -93,7 +93,7 @@ export function PatientHistoryTimeline() {
                   style={{
                     fontSize: '1.25rem',
                     fontWeight: 600,
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     marginBottom: '0.5rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -103,7 +103,7 @@ export function PatientHistoryTimeline() {
                 <div
                   style={{
                     fontSize: '1rem',
-                    color: 'rgba(255, 255, 255, 0.9)',
+                    color: 'var(--glass-text-faint)',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
                 >

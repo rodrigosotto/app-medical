@@ -2,10 +2,10 @@ import { Link } from '@tanstack/react-router';
 
 export function AdminDashboard() {
   const stats = [
-    { label: 'Usuários Ativos', value: '2,547', icon: '👥', color: '#2196F3', change: '+12%' },
-    { label: 'Médicos Cadastrados', value: '342', icon: '👨‍⚕️', color: '#4CAF50', change: '+8%' },
-    { label: 'Consultas Hoje', value: '127', icon: '📅', color: '#FFC107', change: '+5%' },
-    { label: 'Receita Mensal', value: 'R$ 145K', icon: '💰', color: '#FF5722', change: '+18%' },
+    { label: 'Usuários Ativos', value: '2,547', icon: '👥', color: 'var(--color-info)', change: '+12%' },
+    { label: 'Médicos Cadastrados', value: '342', icon: '👨‍⚕️', color: 'var(--color-success)', change: '+8%' },
+    { label: 'Consultas Hoje', value: '127', icon: '📅', color: 'var(--color-warning)', change: '+5%' },
+    { label: 'Receita Mensal', value: 'R$ 145K', icon: '💰', color: 'var(--color-orange)', change: '+18%' },
   ];
 
   const recentActivity = [
@@ -28,7 +28,7 @@ export function AdminDashboard() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -37,7 +37,7 @@ export function AdminDashboard() {
           style={{
             fontSize: '2.5rem',
             fontWeight: 700,
-            color: '#ffffff',
+            color: 'var(--page-text)',
             marginBottom: '2rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
           }}
@@ -57,9 +57,9 @@ export function AdminDashboard() {
             <div
               key={index}
               style={{
-                background: 'rgba(255, 255, 255, 0.1)',
+                background: 'var(--glass-bg)',
                 backdropFilter: 'blur(20px)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
+                border: '1px solid var(--glass-border)',
                 borderRadius: '20px',
                 padding: '1.5rem',
               }}
@@ -79,8 +79,8 @@ export function AdminDashboard() {
                     borderRadius: '8px',
                     fontSize: '0.875rem',
                     fontWeight: 600,
-                    background: 'rgba(76, 175, 80, 0.2)',
-                    color: '#4CAF50',
+                    background: 'var(--color-success-bg)',
+                    color: 'var(--color-success)',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
                 >
@@ -90,7 +90,7 @@ export function AdminDashboard() {
               <div
                 style={{
                   fontSize: '0.875rem',
-                  color: 'rgba(255, 255, 255, 0.7)',
+                  color: 'var(--glass-text-muted)',
                   marginBottom: '0.5rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -114,9 +114,9 @@ export function AdminDashboard() {
         <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '2rem' }}>
           <div
             style={{
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'var(--glass-bg)',
               backdropFilter: 'blur(20px)',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
+              border: '1px solid var(--glass-border)',
               borderRadius: '20px',
               padding: '2rem',
             }}
@@ -125,7 +125,7 @@ export function AdminDashboard() {
               style={{
                 fontSize: '1.25rem',
                 fontWeight: 600,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 marginBottom: '1.5rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -140,7 +140,7 @@ export function AdminDashboard() {
                     display: 'flex',
                     gap: '1rem',
                     padding: '1rem',
-                    background: 'rgba(255, 255, 255, 0.05)',
+                    background: 'var(--glass-shadow)',
                     borderRadius: '12px',
                   }}
                 >
@@ -155,7 +155,7 @@ export function AdminDashboard() {
                     <div
                       style={{
                         fontSize: '0.938rem',
-                        color: '#ffffff',
+                        color: 'var(--page-text)',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
                     >
@@ -179,9 +179,9 @@ export function AdminDashboard() {
 
           <div
             style={{
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'var(--glass-bg)',
               backdropFilter: 'blur(20px)',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
+              border: '1px solid var(--glass-border)',
               borderRadius: '20px',
               padding: '2rem',
             }}
@@ -190,7 +190,7 @@ export function AdminDashboard() {
               style={{
                 fontSize: '1.25rem',
                 fontWeight: 600,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 marginBottom: '1.5rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -202,10 +202,10 @@ export function AdminDashboard() {
                 href="/admin/users"
                 style={{
                   padding: '1rem',
-                  background: 'rgba(33, 150, 243, 0.2)',
+                  background: 'var(--color-info-bg)',
                   border: '1px solid rgba(33, 150, 243, 0.5)',
                   borderRadius: '12px',
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   textDecoration: 'none',
                   textAlign: 'center',
                   fontWeight: 600,
@@ -218,10 +218,10 @@ export function AdminDashboard() {
                 href="/admin/doctors-approval"
                 style={{
                   padding: '1rem',
-                  background: 'rgba(76, 175, 80, 0.2)',
+                  background: 'var(--color-success-bg)',
                   border: '1px solid rgba(76, 175, 80, 0.5)',
                   borderRadius: '12px',
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   textDecoration: 'none',
                   textAlign: 'center',
                   fontWeight: 600,
@@ -234,10 +234,10 @@ export function AdminDashboard() {
                 href="/admin/products"
                 style={{
                   padding: '1rem',
-                  background: 'rgba(255, 193, 7, 0.2)',
+                  background: 'var(--color-warning-bg)',
                   border: '1px solid rgba(255, 193, 7, 0.5)',
                   borderRadius: '12px',
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   textDecoration: 'none',
                   textAlign: 'center',
                   fontWeight: 600,
@@ -253,7 +253,7 @@ export function AdminDashboard() {
                   background: 'rgba(255, 87, 34, 0.2)',
                   border: '1px solid rgba(255, 87, 34, 0.5)',
                   borderRadius: '12px',
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   textDecoration: 'none',
                   textAlign: 'center',
                   fontWeight: 600,

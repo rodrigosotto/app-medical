@@ -16,7 +16,7 @@ export function FinancialReports() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -25,7 +25,7 @@ export function FinancialReports() {
           style={{
             fontSize: '2.5rem',
             fontWeight: 700,
-            color: '#ffffff',
+            color: 'var(--page-text)',
             marginBottom: '2rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
           }}
@@ -46,28 +46,28 @@ export function FinancialReports() {
               label: 'Receita Total',
               value: `R$ ${stats.totalRevenue.toLocaleString('pt-BR')}`,
               icon: '💰',
-              color: '#4CAF50',
+              color: 'var(--color-success)',
             },
             {
               label: 'Consultas',
               value: `R$ ${stats.consultations.toLocaleString('pt-BR')}`,
               icon: '📅',
-              color: '#2196F3',
+              color: 'var(--color-info)',
             },
             {
               label: 'Produtos',
               value: `R$ ${stats.products.toLocaleString('pt-BR')}`,
               icon: '📦',
-              color: '#FFC107',
+              color: 'var(--color-warning)',
             },
-            { label: 'Crescimento', value: stats.growth, icon: '📈', color: '#FF5722' },
+            { label: 'Crescimento', value: stats.growth, icon: '📈', color: 'var(--color-orange)' },
           ].map((stat, index) => (
             <div
               key={index}
               style={{
-                background: 'rgba(255, 255, 255, 0.1)',
+                background: 'var(--glass-bg)',
                 backdropFilter: 'blur(20px)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
+                border: '1px solid var(--glass-border)',
                 borderRadius: '20px',
                 padding: '1.5rem',
               }}
@@ -76,7 +76,7 @@ export function FinancialReports() {
               <div
                 style={{
                   fontSize: '0.875rem',
-                  color: 'rgba(255, 255, 255, 0.7)',
+                  color: 'var(--glass-text-muted)',
                   marginBottom: '0.5rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -99,9 +99,9 @@ export function FinancialReports() {
 
         <div
           style={{
-            background: 'rgba(255, 255, 255, 0.1)',
+            background: 'var(--glass-bg)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)',
+            border: '1px solid var(--glass-border)',
             borderRadius: '20px',
             padding: '2rem',
           }}
@@ -110,7 +110,7 @@ export function FinancialReports() {
             style={{
               fontSize: '1.25rem',
               fontWeight: 600,
-              color: '#ffffff',
+              color: 'var(--page-text)',
               marginBottom: '1.5rem',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
             }}
@@ -133,7 +133,7 @@ export function FinancialReports() {
                   style={{
                     width: '100%',
                     height: `${(data.revenue / 150000) * 100}%`,
-                    background: 'linear-gradient(180deg, #4CAF50, #45a049)',
+                    background: 'var(--gradient-success-vertical)',
                     borderRadius: '12px 12px 0 0',
                     display: 'flex',
                     alignItems: 'flex-start',
@@ -145,7 +145,7 @@ export function FinancialReports() {
                     style={{
                       fontSize: '0.875rem',
                       fontWeight: 600,
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
                   >
@@ -157,7 +157,7 @@ export function FinancialReports() {
                     marginTop: '1rem',
                     fontSize: '1rem',
                     fontWeight: 600,
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
                 >

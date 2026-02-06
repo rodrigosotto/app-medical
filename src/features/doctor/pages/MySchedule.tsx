@@ -13,7 +13,7 @@ export function MySchedule() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -30,7 +30,7 @@ export function MySchedule() {
             style={{
               fontSize: '2.5rem',
               fontWeight: 700,
-              color: '#ffffff',
+              color: 'var(--page-text)',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
             }}
           >
@@ -40,10 +40,10 @@ export function MySchedule() {
             to="/" // Temporarily navigate to home until route is defined
             style={{
               padding: '0.75rem 1.5rem',
-              background: 'linear-gradient(135deg, #ffffff, #f0f0f0)',
+              background: 'var(--gradient-light)',
               border: 'none',
               borderRadius: '12px',
-              color: '#88AB8E',
+              color: 'var(--color-brand)',
               fontWeight: 600,
               textDecoration: 'none',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -56,9 +56,9 @@ export function MySchedule() {
         <div style={{ display: 'grid', gridTemplateColumns: '300px 1fr', gap: '2rem' }}>
           <div
             style={{
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'var(--glass-bg)',
               backdropFilter: 'blur(20px)',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
+              border: '1px solid var(--glass-border)',
               borderRadius: '20px',
               padding: '1.5rem',
               height: 'fit-content',
@@ -68,7 +68,7 @@ export function MySchedule() {
               style={{
                 fontSize: '1.125rem',
                 fontWeight: 600,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 marginBottom: '1rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -81,10 +81,10 @@ export function MySchedule() {
               style={{
                 width: '100%',
                 padding: '0.75rem',
-                background: 'rgba(255, 255, 255, 0.1)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
+                background: 'var(--glass-bg)',
+                border: '1px solid var(--glass-border)',
                 borderRadius: '12px',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 fontSize: '0.938rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -93,14 +93,14 @@ export function MySchedule() {
               style={{
                 marginTop: '1.5rem',
                 fontSize: '0.938rem',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
             >
               <div
                 style={{
                   padding: '0.75rem',
-                  background: 'rgba(76, 175, 80, 0.2)',
+                  background: 'var(--color-success-bg)',
                   borderRadius: '8px',
                   marginBottom: '0.5rem',
                 }}
@@ -112,9 +112,9 @@ export function MySchedule() {
 
           <div
             style={{
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'var(--glass-bg)',
               backdropFilter: 'blur(20px)',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
+              border: '1px solid var(--glass-border)',
               borderRadius: '20px',
               padding: '2rem',
             }}
@@ -123,7 +123,7 @@ export function MySchedule() {
               style={{
                 fontSize: '1.5rem',
                 fontWeight: 600,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 marginBottom: '1.5rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -138,16 +138,16 @@ export function MySchedule() {
                     display: 'flex',
                     gap: '1rem',
                     padding: '1.5rem',
-                    background: 'rgba(255, 255, 255, 0.1)',
+                    background: 'var(--glass-bg)',
                     borderRadius: '16px',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    border: '1px solid var(--glass-border)',
                   }}
                 >
                   <div
                     style={{
                       fontSize: '1rem',
                       fontWeight: 600,
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       minWidth: '60px',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -159,7 +159,7 @@ export function MySchedule() {
                       style={{
                         fontSize: '1.125rem',
                         fontWeight: 600,
-                        color: '#ffffff',
+                        color: 'var(--page-text)',
                         marginBottom: '0.25rem',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
@@ -169,7 +169,7 @@ export function MySchedule() {
                     <div
                       style={{
                         fontSize: '0.875rem',
-                        color: 'rgba(255, 255, 255, 0.7)',
+                        color: 'var(--glass-text-muted)',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
                     >
@@ -180,10 +180,10 @@ export function MySchedule() {
                     to="/"
                     style={{
                       padding: '0.5rem 1rem',
-                      background: 'linear-gradient(135deg, #4CAF50, #45a049)',
+                      background: 'var(--gradient-success)',
                       border: 'none',
                       borderRadius: '8px',
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       fontWeight: 600,
                       textDecoration: 'none',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',

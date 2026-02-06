@@ -50,7 +50,7 @@ export function AppointmentBooking() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -63,7 +63,7 @@ export function AppointmentBooking() {
               display: 'inline-flex',
               alignItems: 'center',
               gap: '0.5rem',
-              color: '#ffffff',
+              color: 'var(--page-text)',
               textDecoration: 'none',
               marginBottom: '1rem',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -75,7 +75,7 @@ export function AppointmentBooking() {
             style={{
               fontSize: '2.5rem',
               fontWeight: 700,
-              color: '#ffffff',
+              color: 'var(--page-text)',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
             }}
           >
@@ -84,7 +84,7 @@ export function AppointmentBooking() {
           <p
             style={{
               fontSize: '1.125rem',
-              color: 'rgba(255, 255, 255, 0.9)',
+              color: 'var(--glass-text-faint)',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
             }}
           >
@@ -97,9 +97,9 @@ export function AppointmentBooking() {
             {/* Sidebar - Filtros */}
             <div
               style={{
-                background: 'rgba(255, 255, 255, 0.1)',
+                background: 'var(--glass-bg)',
                 backdropFilter: 'blur(20px)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
+                border: '1px solid var(--glass-border)',
                 borderRadius: '20px',
                 padding: '2rem',
                 height: 'fit-content',
@@ -109,7 +109,7 @@ export function AppointmentBooking() {
                 style={{
                   fontSize: '1.25rem',
                   fontWeight: 700,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   marginBottom: '1.5rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -128,9 +128,9 @@ export function AppointmentBooking() {
                         selectedSpecialty === specialty
                           ? 'rgba(255, 255, 255, 0.25)'
                           : 'rgba(255, 255, 255, 0.1)',
-                      border: `1px solid ${selectedSpecialty === specialty ? '#ffffff' : 'rgba(255, 255, 255, 0.2)'}`,
+                      border: `1px solid ${selectedSpecialty === specialty ? 'var(--page-text)' : 'rgba(255, 255, 255, 0.2)'}`,
                       borderRadius: '8px',
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       fontSize: '0.875rem',
                       fontWeight: selectedSpecialty === specialty ? 600 : 400,
                       cursor: 'pointer',
@@ -149,9 +149,9 @@ export function AppointmentBooking() {
               {/* Médicos Disponíveis */}
               <div
                 style={{
-                  background: 'rgba(255, 255, 255, 0.1)',
+                  background: 'var(--glass-bg)',
                   backdropFilter: 'blur(20px)',
-                  border: '1px solid rgba(255, 255, 255, 0.2)',
+                  border: '1px solid var(--glass-border)',
                   borderRadius: '20px',
                   padding: '2rem',
                 }}
@@ -160,7 +160,7 @@ export function AppointmentBooking() {
                   style={{
                     fontSize: '1.5rem',
                     fontWeight: 700,
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     marginBottom: '1.5rem',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -177,7 +177,7 @@ export function AppointmentBooking() {
                           selectedDoctor === doctor.name
                             ? 'rgba(255, 255, 255, 0.2)'
                             : 'rgba(255, 255, 255, 0.1)',
-                        border: `1px solid ${selectedDoctor === doctor.name ? '#ffffff' : 'rgba(255, 255, 255, 0.2)'}`,
+                        border: `1px solid ${selectedDoctor === doctor.name ? 'var(--page-text)' : 'rgba(255, 255, 255, 0.2)'}`,
                         borderRadius: '12px',
                         padding: '1.5rem',
                         cursor: 'pointer',
@@ -196,7 +196,7 @@ export function AppointmentBooking() {
                             style={{
                               fontSize: '1.25rem',
                               fontWeight: 600,
-                              color: '#ffffff',
+                              color: 'var(--page-text)',
                               marginBottom: '0.25rem',
                               fontFamily: '"Plus Jakarta Sans", sans-serif',
                             }}
@@ -206,7 +206,7 @@ export function AppointmentBooking() {
                           <div
                             style={{
                               fontSize: '0.875rem',
-                              color: 'rgba(255, 255, 255, 0.7)',
+                              color: 'var(--glass-text-muted)',
                               marginBottom: '0.5rem',
                               fontFamily: '"Plus Jakarta Sans", sans-serif',
                             }}
@@ -216,7 +216,7 @@ export function AppointmentBooking() {
                           <div
                             style={{
                               fontSize: '0.875rem',
-                              color: 'rgba(255, 255, 255, 0.8)',
+                              color: 'var(--glass-text-soft)',
                               fontFamily: '"Plus Jakarta Sans", sans-serif',
                             }}
                           >
@@ -225,7 +225,7 @@ export function AppointmentBooking() {
                         </div>
                         <div
                           style={{
-                            background: 'rgba(255, 193, 7, 0.2)',
+                            background: 'var(--color-warning-bg)',
                             border: '1px solid rgba(255, 193, 7, 0.5)',
                             borderRadius: '8px',
                             padding: '0.25rem 0.75rem',
@@ -234,10 +234,10 @@ export function AppointmentBooking() {
                             gap: '0.25rem',
                           }}
                         >
-                          <span style={{ color: '#FFC107', fontSize: '1rem' }}>★</span>
+                          <span style={{ color: 'var(--color-warning)', fontSize: '1rem' }}>★</span>
                           <span
                             style={{
-                              color: '#FFC107',
+                              color: 'var(--color-warning)',
                               fontSize: '0.875rem',
                               fontWeight: 600,
                               fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -256,9 +256,9 @@ export function AppointmentBooking() {
               {selectedDoctor && (
                 <div
                   style={{
-                    background: 'rgba(255, 255, 255, 0.1)',
+                    background: 'var(--glass-bg)',
                     backdropFilter: 'blur(20px)',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    border: '1px solid var(--glass-border)',
                     borderRadius: '20px',
                     padding: '2rem',
                   }}
@@ -267,7 +267,7 @@ export function AppointmentBooking() {
                     style={{
                       fontSize: '1.5rem',
                       fontWeight: 700,
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       marginBottom: '1.5rem',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -281,7 +281,7 @@ export function AppointmentBooking() {
                         display: 'block',
                         fontSize: '0.875rem',
                         fontWeight: 600,
-                        color: '#ffffff',
+                        color: 'var(--page-text)',
                         marginBottom: '0.5rem',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
@@ -296,10 +296,10 @@ export function AppointmentBooking() {
                       style={{
                         width: '100%',
                         padding: '0.75rem',
-                        background: 'rgba(255, 255, 255, 0.1)',
-                        border: '1px solid rgba(255, 255, 255, 0.3)',
+                        background: 'var(--glass-bg)',
+                        border: '1px solid var(--glass-border-strong)',
                         borderRadius: '8px',
-                        color: '#ffffff',
+                        color: 'var(--page-text)',
                         fontSize: '1rem',
                         fontFamily: '"Plus Jakarta Sans", sans-serif',
                       }}
@@ -313,7 +313,7 @@ export function AppointmentBooking() {
                           display: 'block',
                           fontSize: '0.875rem',
                           fontWeight: 600,
-                          color: '#ffffff',
+                          color: 'var(--page-text)',
                           marginBottom: '1rem',
                           fontFamily: '"Plus Jakarta Sans", sans-serif',
                         }}
@@ -338,9 +338,9 @@ export function AppointmentBooking() {
                                 selectedTime === time
                                   ? 'rgba(255, 255, 255, 0.25)'
                                   : 'rgba(255, 255, 255, 0.1)',
-                              border: `1px solid ${selectedTime === time ? '#ffffff' : 'rgba(255, 255, 255, 0.2)'}`,
+                              border: `1px solid ${selectedTime === time ? 'var(--page-text)' : 'rgba(255, 255, 255, 0.2)'}`,
                               borderRadius: '8px',
-                              color: '#ffffff',
+                              color: 'var(--page-text)',
                               fontSize: '0.875rem',
                               fontWeight: selectedTime === time ? 600 : 400,
                               cursor: 'pointer',
@@ -365,8 +365,8 @@ export function AppointmentBooking() {
                     padding: '1rem',
                     fontSize: '1.125rem',
                     fontWeight: 600,
-                    color: '#ffffff',
-                    background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+                    color: 'var(--page-text)',
+                    background: 'var(--page-bg)',
                     border: 'none',
                     borderRadius: '12px',
                     cursor: 'pointer',

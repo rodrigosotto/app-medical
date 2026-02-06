@@ -27,7 +27,7 @@ export function CreatePrescription() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -37,7 +37,7 @@ export function CreatePrescription() {
           to={`/doctor/patients/${patientId}/file`}
           style={{
             display: 'inline-flex',
-            color: '#ffffff',
+            color: 'var(--page-text)',
             textDecoration: 'none',
             marginBottom: '1rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -49,7 +49,7 @@ export function CreatePrescription() {
           style={{
             fontSize: '2.5rem',
             fontWeight: 700,
-            color: '#ffffff',
+            color: 'var(--page-text)',
             marginBottom: '2rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
           }}
@@ -60,9 +60,9 @@ export function CreatePrescription() {
         <form
           onSubmit={handleSubmit}
           style={{
-            background: 'rgba(255, 255, 255, 0.1)',
+            background: 'var(--glass-bg)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)',
+            border: '1px solid var(--glass-border)',
             borderRadius: '20px',
             padding: '2rem',
           }}
@@ -73,7 +73,7 @@ export function CreatePrescription() {
                 display: 'block',
                 fontSize: '0.938rem',
                 fontWeight: 600,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 marginBottom: '0.5rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -87,10 +87,10 @@ export function CreatePrescription() {
               style={{
                 width: '100%',
                 padding: '0.75rem',
-                background: 'rgba(255, 255, 255, 0.05)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
+                background: 'var(--glass-shadow)',
+                border: '1px solid var(--glass-border)',
                 borderRadius: '12px',
-                color: 'rgba(255, 255, 255, 0.7)',
+                color: 'var(--glass-text-muted)',
                 fontSize: '1rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -101,7 +101,7 @@ export function CreatePrescription() {
             style={{
               fontSize: '1.25rem',
               fontWeight: 600,
-              color: '#ffffff',
+              color: 'var(--page-text)',
               marginBottom: '1rem',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
             }}
@@ -112,7 +112,7 @@ export function CreatePrescription() {
             <div
               key={med.id}
               style={{
-                background: 'rgba(255, 255, 255, 0.05)',
+                background: 'var(--glass-shadow)',
                 borderRadius: '12px',
                 padding: '1rem',
                 marginBottom: '1rem',
@@ -124,7 +124,7 @@ export function CreatePrescription() {
                     style={{
                       display: 'block',
                       fontSize: '0.875rem',
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       marginBottom: '0.5rem',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -138,10 +138,10 @@ export function CreatePrescription() {
                     style={{
                       width: '100%',
                       padding: '0.75rem',
-                      background: 'rgba(255, 255, 255, 0.1)',
-                      border: '1px solid rgba(255, 255, 255, 0.2)',
+                      background: 'var(--glass-bg)',
+                      border: '1px solid var(--glass-border)',
                       borderRadius: '8px',
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       fontSize: '0.938rem',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -152,7 +152,7 @@ export function CreatePrescription() {
                     style={{
                       display: 'block',
                       fontSize: '0.875rem',
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       marginBottom: '0.5rem',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -166,10 +166,10 @@ export function CreatePrescription() {
                     style={{
                       width: '100%',
                       padding: '0.75rem',
-                      background: 'rgba(255, 255, 255, 0.1)',
-                      border: '1px solid rgba(255, 255, 255, 0.2)',
+                      background: 'var(--glass-bg)',
+                      border: '1px solid var(--glass-border)',
                       borderRadius: '8px',
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       fontSize: '0.938rem',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -180,7 +180,7 @@ export function CreatePrescription() {
                     style={{
                       display: 'block',
                       fontSize: '0.875rem',
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       marginBottom: '0.5rem',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -194,10 +194,10 @@ export function CreatePrescription() {
                     style={{
                       width: '100%',
                       padding: '0.75rem',
-                      background: 'rgba(255, 255, 255, 0.1)',
-                      border: '1px solid rgba(255, 255, 255, 0.2)',
+                      background: 'var(--glass-bg)',
+                      border: '1px solid var(--glass-border)',
                       borderRadius: '8px',
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       fontSize: '0.938rem',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -208,7 +208,7 @@ export function CreatePrescription() {
                     style={{
                       display: 'block',
                       fontSize: '0.875rem',
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       marginBottom: '0.5rem',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -222,10 +222,10 @@ export function CreatePrescription() {
                     style={{
                       width: '100%',
                       padding: '0.75rem',
-                      background: 'rgba(255, 255, 255, 0.1)',
-                      border: '1px solid rgba(255, 255, 255, 0.2)',
+                      background: 'var(--glass-bg)',
+                      border: '1px solid var(--glass-border)',
                       borderRadius: '8px',
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       fontSize: '0.938rem',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -241,10 +241,10 @@ export function CreatePrescription() {
               width: '100%',
               padding: '0.75rem',
               marginBottom: '1.5rem',
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'var(--glass-bg)',
               border: '1px dashed rgba(255, 255, 255, 0.3)',
               borderRadius: '12px',
-              color: '#ffffff',
+              color: 'var(--page-text)',
               fontWeight: 600,
               cursor: 'pointer',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -259,7 +259,7 @@ export function CreatePrescription() {
                 display: 'block',
                 fontSize: '0.938rem',
                 fontWeight: 600,
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 marginBottom: '0.5rem',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
               }}
@@ -272,10 +272,10 @@ export function CreatePrescription() {
                 width: '100%',
                 height: '100px',
                 padding: '0.75rem',
-                background: 'rgba(255, 255, 255, 0.1)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
+                background: 'var(--glass-bg)',
+                border: '1px solid var(--glass-border)',
                 borderRadius: '12px',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 fontSize: '1rem',
                 resize: 'vertical',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -288,10 +288,10 @@ export function CreatePrescription() {
             style={{
               width: '100%',
               padding: '1rem',
-              background: 'linear-gradient(135deg, #4CAF50, #45a049)',
+              background: 'var(--gradient-success)',
               border: 'none',
               borderRadius: '12px',
-              color: '#ffffff',
+              color: 'var(--page-text)',
               fontSize: '1.125rem',
               fontWeight: 700,
               cursor: 'pointer',

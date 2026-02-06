@@ -9,7 +9,7 @@ export function DoctorVideoRoom() {
     <div
       style={{
         minHeight: '100vh',
-        background: '#191919',
+        background: 'var(--page-bg)',
         display: 'flex',
         flexDirection: 'column',
       }}
@@ -28,7 +28,7 @@ export function DoctorVideoRoom() {
             style={{
               fontSize: '1.25rem',
               fontWeight: 600,
-              color: '#ffffff',
+              color: 'var(--page-text)',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
             }}
           >
@@ -37,7 +37,7 @@ export function DoctorVideoRoom() {
           <div
             style={{
               fontSize: '0.875rem',
-              color: 'rgba(255, 255, 255, 0.7)',
+              color: 'var(--glass-text-muted)',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
             }}
           >
@@ -48,7 +48,7 @@ export function DoctorVideoRoom() {
           style={{
             fontSize: '1.125rem',
             fontWeight: 600,
-            color: '#4CAF50',
+            color: 'var(--color-success)',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
           }}
         >
@@ -56,17 +56,17 @@ export function DoctorVideoRoom() {
         </div>
       </div>
 
-      <div style={{ flex: 1, display: 'flex', background: '#000' }}>
+      <div style={{ flex: 1, display: 'flex', background: 'var(--color-black)' }}>
         <div
           style={{
             flex: 1,
-            background: 'linear-gradient(135deg, #1e3c72, #2a5298)',
+            background: 'var(--gradient-dark)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
           }}
         >
-          <div style={{ textAlign: 'center', color: '#ffffff' }}>
+          <div style={{ textAlign: 'center', color: 'var(--page-text)' }}>
             <div style={{ fontSize: '6rem', marginBottom: '1rem' }}>👤</div>
             <div
               style={{
@@ -92,7 +92,7 @@ export function DoctorVideoRoom() {
             style={{
               fontSize: '1.125rem',
               fontWeight: 600,
-              color: '#ffffff',
+              color: 'var(--page-text)',
               marginBottom: '1rem',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
             }}
@@ -105,10 +105,10 @@ export function DoctorVideoRoom() {
               width: '100%',
               height: '200px',
               padding: '0.75rem',
-              background: 'rgba(255, 255, 255, 0.1)',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
+              background: 'var(--glass-bg)',
+              border: '1px solid var(--glass-border)',
               borderRadius: '8px',
-              color: '#ffffff',
+              color: 'var(--page-text)',
               fontSize: '0.875rem',
               resize: 'vertical',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -119,10 +119,10 @@ export function DoctorVideoRoom() {
               width: '100%',
               padding: '0.75rem',
               marginTop: '1rem',
-              background: 'linear-gradient(135deg, #88AB8E, #6B9A75)',
+              background: 'var(--gradient-brand)',
               border: 'none',
               borderRadius: '8px',
-              color: '#ffffff',
+              color: 'var(--page-text)',
               fontWeight: 600,
               cursor: 'pointer',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -148,9 +148,9 @@ export function DoctorVideoRoom() {
             width: '56px',
             height: '56px',
             borderRadius: '50%',
-            background: isMicOn ? 'rgba(255, 255, 255, 0.1)' : '#F44336',
+            background: isMicOn ? 'rgba(255, 255, 255, 0.1)' : 'var(--badge-expired-text)',
             border: 'none',
-            color: '#ffffff',
+            color: 'var(--page-text)',
             fontSize: '1.5rem',
             cursor: 'pointer',
           }}
@@ -163,9 +163,9 @@ export function DoctorVideoRoom() {
             width: '56px',
             height: '56px',
             borderRadius: '50%',
-            background: isCameraOn ? 'rgba(255, 255, 255, 0.1)' : '#F44336',
+            background: isCameraOn ? 'rgba(255, 255, 255, 0.1)' : 'var(--badge-expired-text)',
             border: 'none',
-            color: '#ffffff',
+            color: 'var(--page-text)',
             fontSize: '1.5rem',
             cursor: 'pointer',
           }}
@@ -178,11 +178,11 @@ export function DoctorVideoRoom() {
             width: '56px',
             height: '56px',
             borderRadius: '50%',
-            background: '#F44336',
+            background: 'var(--badge-expired-text)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            color: '#ffffff',
+            color: 'var(--page-text)',
             fontSize: '1.5rem',
             textDecoration: 'none',
           }}

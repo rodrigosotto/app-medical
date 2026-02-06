@@ -10,7 +10,7 @@ export function VideoConsultation() {
     <div
       style={{
         minHeight: '100vh',
-        background: '#191919',
+        background: 'var(--page-bg)',
         display: 'flex',
         flexDirection: 'column',
       }}
@@ -30,7 +30,7 @@ export function VideoConsultation() {
             style={{
               fontSize: '1.25rem',
               fontWeight: 600,
-              color: '#ffffff',
+              color: 'var(--page-text)',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
             }}
           >
@@ -39,7 +39,7 @@ export function VideoConsultation() {
           <div
             style={{
               fontSize: '0.875rem',
-              color: 'rgba(255, 255, 255, 0.7)',
+              color: 'var(--glass-text-muted)',
               fontFamily: '"Plus Jakarta Sans", sans-serif',
             }}
           >
@@ -50,7 +50,7 @@ export function VideoConsultation() {
           style={{
             fontSize: '1.125rem',
             fontWeight: 600,
-            color: '#4CAF50',
+            color: 'var(--color-success)',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
           }}
         >
@@ -63,7 +63,7 @@ export function VideoConsultation() {
         style={{
           flex: 1,
           position: 'relative',
-          background: '#000',
+          background: 'var(--color-black)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
@@ -74,13 +74,13 @@ export function VideoConsultation() {
           style={{
             width: '100%',
             height: '100%',
-            background: 'linear-gradient(135deg, #1e3c72, #2a5298)',
+            background: 'var(--gradient-dark)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
           }}
         >
-          <div style={{ textAlign: 'center', color: '#ffffff' }}>
+          <div style={{ textAlign: 'center', color: 'var(--page-text)' }}>
             <div style={{ fontSize: '6rem', marginBottom: '1rem' }}>👨‍⚕️</div>
             <div
               style={{
@@ -102,7 +102,7 @@ export function VideoConsultation() {
             right: '2rem',
             width: '280px',
             height: '210px',
-            background: 'linear-gradient(135deg, #88AB8E, #6B9A75)',
+            background: 'var(--gradient-brand)',
             borderRadius: '12px',
             border: '2px solid #ffffff',
             display: 'flex',
@@ -111,7 +111,7 @@ export function VideoConsultation() {
             boxShadow: '0 8px 32px rgba(0, 0, 0, 0.5)',
           }}
         >
-          <div style={{ textAlign: 'center', color: '#ffffff' }}>
+          <div style={{ textAlign: 'center', color: 'var(--page-text)' }}>
             <div style={{ fontSize: '3rem', marginBottom: '0.5rem' }}>👤</div>
             <div
               style={{
@@ -142,9 +142,9 @@ export function VideoConsultation() {
             width: '56px',
             height: '56px',
             borderRadius: '50%',
-            background: isMicOn ? 'rgba(255, 255, 255, 0.1)' : '#F44336',
+            background: isMicOn ? 'rgba(255, 255, 255, 0.1)' : 'var(--badge-expired-text)',
             border: 'none',
-            color: '#ffffff',
+            color: 'var(--page-text)',
             fontSize: '1.5rem',
             cursor: 'pointer',
             display: 'flex',
@@ -162,9 +162,9 @@ export function VideoConsultation() {
             width: '56px',
             height: '56px',
             borderRadius: '50%',
-            background: isCameraOn ? 'rgba(255, 255, 255, 0.1)' : '#F44336',
+            background: isCameraOn ? 'rgba(255, 255, 255, 0.1)' : 'var(--badge-expired-text)',
             border: 'none',
-            color: '#ffffff',
+            color: 'var(--page-text)',
             fontSize: '1.5rem',
             cursor: 'pointer',
             display: 'flex',
@@ -182,9 +182,9 @@ export function VideoConsultation() {
             width: '56px',
             height: '56px',
             borderRadius: '50%',
-            background: isScreenSharing ? '#4CAF50' : 'rgba(255, 255, 255, 0.1)',
+            background: isScreenSharing ? 'var(--badge-active-text)' : 'rgba(255, 255, 255, 0.1)',
             border: 'none',
-            color: '#ffffff',
+            color: 'var(--page-text)',
             fontSize: '1.5rem',
             cursor: 'pointer',
             display: 'flex',
@@ -201,9 +201,9 @@ export function VideoConsultation() {
             width: '56px',
             height: '56px',
             borderRadius: '50%',
-            background: 'rgba(255, 255, 255, 0.1)',
+            background: 'var(--glass-bg)',
             border: 'none',
-            color: '#ffffff',
+            color: 'var(--page-text)',
             fontSize: '1.5rem',
             cursor: 'pointer',
             display: 'flex',
@@ -221,9 +221,9 @@ export function VideoConsultation() {
             width: '56px',
             height: '56px',
             borderRadius: '50%',
-            background: '#F44336',
+            background: 'var(--badge-expired-text)',
             border: 'none',
-            color: '#ffffff',
+            color: 'var(--page-text)',
             fontSize: '1.5rem',
             cursor: 'pointer',
             display: 'flex',

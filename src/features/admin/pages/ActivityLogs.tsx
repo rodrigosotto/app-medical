@@ -49,7 +49,7 @@ export function ActivityLogs() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -58,7 +58,7 @@ export function ActivityLogs() {
           style={{
             fontSize: '2.5rem',
             fontWeight: 700,
-            color: '#ffffff',
+            color: 'var(--page-text)',
             marginBottom: '2rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
           }}
@@ -73,10 +73,10 @@ export function ActivityLogs() {
               onClick={() => setFilter(f)}
               style={{
                 padding: '0.75rem 1rem',
-                background: filter === f ? 'rgba(255, 255, 255, 0.3)' : 'rgba(255, 255, 255, 0.1)',
-                border: '1px solid rgba(255, 255, 255, 0.3)',
+                background: filter === f ? 'var(--glass-bg-active)' : 'var(--glass-bg)',
+                border: '1px solid var(--glass-border-strong)',
                 borderRadius: '12px',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 fontWeight: 600,
                 cursor: 'pointer',
                 whiteSpace: 'nowrap',
@@ -90,9 +90,9 @@ export function ActivityLogs() {
 
         <div
           style={{
-            background: 'rgba(255, 255, 255, 0.1)',
+            background: 'var(--glass-bg)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)',
+            border: '1px solid var(--glass-border)',
             borderRadius: '20px',
             padding: '2rem',
           }}
@@ -102,7 +102,7 @@ export function ActivityLogs() {
               <div
                 key={log.id}
                 style={{
-                  background: 'rgba(255, 255, 255, 0.05)',
+                  background: 'var(--glass-shadow)',
                   borderRadius: '12px',
                   padding: '1.5rem',
                   display: 'flex',
@@ -116,14 +116,14 @@ export function ActivityLogs() {
                     height: '48px',
                     background:
                       log.type === 'criacao'
-                        ? 'rgba(76, 175, 80, 0.2)'
+                        ? 'var(--badge-active-bg)'
                         : log.type === 'edicao'
-                          ? 'rgba(33, 150, 243, 0.2)'
+                          ? 'var(--color-info-bg)'
                           : log.type === 'exclusao'
-                            ? 'rgba(244, 67, 54, 0.2)'
+                            ? 'var(--color-danger-bg)'
                             : log.type === 'aprovacao'
                               ? 'rgba(156, 39, 176, 0.2)'
-                              : 'rgba(255, 193, 7, 0.2)',
+                              : 'var(--color-warning-bg)',
                     borderRadius: '12px',
                     display: 'flex',
                     alignItems: 'center',
@@ -148,7 +148,7 @@ export function ActivityLogs() {
                     style={{
                       fontSize: '1rem',
                       fontWeight: 600,
-                      color: '#ffffff',
+                      color: 'var(--page-text)',
                       marginBottom: '0.25rem',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -158,7 +158,7 @@ export function ActivityLogs() {
                   <div
                     style={{
                       fontSize: '0.875rem',
-                      color: 'rgba(255, 255, 255, 0.7)',
+                      color: 'var(--glass-text-muted)',
                       marginBottom: '0.5rem',
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                     }}
@@ -184,24 +184,24 @@ export function ActivityLogs() {
                     fontWeight: 600,
                     background:
                       log.type === 'criacao'
-                        ? 'rgba(76, 175, 80, 0.2)'
+                        ? 'var(--badge-active-bg)'
                         : log.type === 'edicao'
-                          ? 'rgba(33, 150, 243, 0.2)'
+                          ? 'var(--color-info-bg)'
                           : log.type === 'exclusao'
-                            ? 'rgba(244, 67, 54, 0.2)'
+                            ? 'var(--color-danger-bg)'
                             : log.type === 'aprovacao'
                               ? 'rgba(156, 39, 176, 0.2)'
-                              : 'rgba(255, 193, 7, 0.2)',
+                              : 'var(--color-warning-bg)',
                     color:
                       log.type === 'criacao'
-                        ? '#4CAF50'
+                        ? 'var(--badge-active-text)'
                         : log.type === 'edicao'
-                          ? '#2196F3'
+                          ? 'var(--color-info)'
                           : log.type === 'exclusao'
-                            ? '#F44336'
+                            ? 'var(--color-danger)'
                             : log.type === 'aprovacao'
-                              ? '#9C27B0'
-                              : '#FFC107',
+                              ? 'var(--color-purple)'
+                              : 'var(--color-warning)',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                     whiteSpace: 'nowrap',
                   }}

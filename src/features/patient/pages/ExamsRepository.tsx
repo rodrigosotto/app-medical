@@ -38,7 +38,7 @@ export function ExamsRepository() {
     <div
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+        background: 'var(--page-bg)',
         padding: '2rem',
       }}
     >
@@ -47,7 +47,7 @@ export function ExamsRepository() {
           to="/patient/dashboard"
           style={{
             display: 'inline-flex',
-            color: '#ffffff',
+            color: 'var(--page-text)',
             textDecoration: 'none',
             marginBottom: '1rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -59,7 +59,7 @@ export function ExamsRepository() {
           style={{
             fontSize: '2.5rem',
             fontWeight: 700,
-            color: '#ffffff',
+            color: 'var(--page-text)',
             marginBottom: '2rem',
             fontFamily: '"Plus Jakarta Sans", sans-serif',
           }}
@@ -69,9 +69,9 @@ export function ExamsRepository() {
 
         <div
           style={{
-            background: 'rgba(255, 255, 255, 0.1)',
+            background: 'var(--glass-bg)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)',
+            border: '1px solid var(--glass-border)',
             borderRadius: '16px',
             padding: '1.5rem',
             marginBottom: '2rem',
@@ -87,9 +87,9 @@ export function ExamsRepository() {
                     padding: '0.5rem 1rem',
                     background:
                       filter === f ? 'rgba(255, 255, 255, 0.25)' : 'rgba(255, 255, 255, 0.1)',
-                    border: `1px solid ${filter === f ? '#ffffff' : 'rgba(255, 255, 255, 0.2)'}`,
+                    border: `1px solid ${filter === f ? 'var(--page-text)' : 'rgba(255, 255, 255, 0.2)'}`,
                     borderRadius: '8px',
-                    color: '#ffffff',
+                    color: 'var(--page-text)',
                     cursor: 'pointer',
                     fontFamily: '"Plus Jakarta Sans", sans-serif',
                   }}
@@ -102,9 +102,9 @@ export function ExamsRepository() {
               to="/patient/upload-exam"
               style={{
                 padding: '0.75rem 1.5rem',
-                background: 'linear-gradient(135deg, #88AB8E 0%, #6B9A75 100%)',
+                background: 'var(--page-bg)',
                 borderRadius: '8px',
-                color: '#ffffff',
+                color: 'var(--page-text)',
                 fontWeight: 600,
                 textDecoration: 'none',
                 fontFamily: '"Plus Jakarta Sans", sans-serif',
@@ -126,9 +126,9 @@ export function ExamsRepository() {
             <div
               key={exam.id}
               style={{
-                background: 'rgba(255, 255, 255, 0.1)',
+                background: 'var(--glass-bg)',
                 backdropFilter: 'blur(20px)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
+                border: '1px solid var(--glass-border)',
                 borderRadius: '16px',
                 padding: '1.5rem',
               }}
@@ -138,7 +138,7 @@ export function ExamsRepository() {
                 style={{
                   fontSize: '1.125rem',
                   fontWeight: 600,
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   marginBottom: '0.5rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -148,7 +148,7 @@ export function ExamsRepository() {
               <div
                 style={{
                   fontSize: '0.875rem',
-                  color: 'rgba(255, 255, 255, 0.7)',
+                  color: 'var(--glass-text-muted)',
                   marginBottom: '1rem',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                 }}
@@ -165,10 +165,10 @@ export function ExamsRepository() {
                   display: 'block',
                   width: '100%',
                   padding: '0.75rem',
-                  background: 'rgba(255, 255, 255, 0.1)',
-                  border: '1px solid rgba(255, 255, 255, 0.3)',
+                  background: 'var(--glass-bg)',
+                  border: '1px solid var(--glass-border-strong)',
                   borderRadius: '8px',
-                  color: '#ffffff',
+                  color: 'var(--page-text)',
                   textAlign: 'center',
                   textDecoration: 'none',
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
