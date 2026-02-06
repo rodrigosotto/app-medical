@@ -212,7 +212,8 @@ export function PrescriptionManagement() {
                       }}
                     >
                       <Link
-                        to={`/doctor/prescriptions/${p.id}`}
+                        to="/doctor/prescriptions/$id"
+                        params={{ id: p.id.toString() }}
                         style={{
                           color: 'var(--page-text)',
                           textDecoration: 'none',

@@ -160,7 +160,8 @@ export function ExamsRepository() {
                 <div>👨‍⚕️ {exam.doctor}</div>
               </div>
               <Link
-                to={`/patient/exams/${exam.id}`}
+                to="/patient/exams/$id"
+                params={{ id: exam.id.toString() }}
                 style={{
                   display: 'block',
                   width: '100%',

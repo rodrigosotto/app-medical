@@ -111,7 +111,8 @@ export function BlogArticles() {
           {articles.map((article) => (
             <Link
               key={article.id}
-              to={`/patient/blog/${article.id}`}
+              to="/patient/blog/$id"
+              params={{ id: article.id.toString() }}
               style={{
                 background: 'var(--glass-bg)',
                 backdropFilter: 'blur(20px)',

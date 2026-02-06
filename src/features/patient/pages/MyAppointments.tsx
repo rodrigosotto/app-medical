@@ -349,7 +349,8 @@ export function MyAppointments() {
 
                     <div style={{ display: 'flex', gap: '0.75rem' }}>
                       <Link
-                        to={`/patient/appointments/${appointment.id}`}
+                        to="/patient/appointments/$id"
+                        params={{ id: appointment.id.toString() }}
                         style={{
                           padding: '0.5rem 1rem',
                           background: 'var(--glass-bg)',
