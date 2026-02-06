@@ -1,4 +1,5 @@
 import { useState, FormEvent } from 'react';
+import { Link } from '@tanstack/react-router';
 import { useLogin } from '../hooks/useLogin';
 
 /**
@@ -324,7 +325,7 @@ export function LoginForm() {
                 </span>
               </label>
               <a
-                href="#"
+                href="/forgot-password"
                 style={{
                   fontSize: '0.875rem',
                   color: 'rgba(255, 255, 255, 0.8)',
@@ -408,8 +409,8 @@ export function LoginForm() {
           <div style={{ marginTop: '1.5rem', textAlign: 'center' }}>
             <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.875rem' }}>
               Não tem uma conta?{' '}
-              <a
-                href="#"
+              <Link
+                to="/register"
                 style={{
                   color: 'white',
                   fontWeight: '600',
@@ -420,7 +421,7 @@ export function LoginForm() {
                 onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
               >
                 Criar conta
-              </a>
+              </Link>
             </p>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from '@tanstack/react-router';
 
 interface UserTypeSelectionModalProps {
   isOpen: boolean;
@@ -299,6 +300,26 @@ export function UserTypeSelectionModal({
           >
             Continuar
           </button>
+        </div>
+
+        {/* Login Link */}
+        <div style={{ textAlign: 'center', marginTop: '1rem' }}>
+          <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.875rem', margin: 0 }}>
+            Já tem uma conta?{' '}
+            <Link
+              to="/login"
+              style={{
+                color: 'white',
+                fontWeight: '600',
+                textDecoration: 'none',
+                transition: 'all 0.2s',
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
+              onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
+            >
+              Fazer login
+            </Link>
+          </p>
         </div>
       </div>
     </div>
