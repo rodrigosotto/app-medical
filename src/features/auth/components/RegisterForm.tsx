@@ -7,7 +7,7 @@ export interface RegisterFormProps {
 }
 
 /**
- * Componente de formulário de registro
+ * Componente de formulário de registro com design moderno e glass morphism
  */
 export function RegisterForm({ onClose }: RegisterFormProps) {
   const [showTypeSelection, setShowTypeSelection] = useState(true);

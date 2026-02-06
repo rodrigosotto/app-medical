@@ -56,3 +56,27 @@ button {
 input, textarea, select {
   font-family: inherit;
 }
+
+/* Placeholder styling for auth forms */
+input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 1; /* Firefox */
+}
+
+input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+}
+
+input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+input:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+}

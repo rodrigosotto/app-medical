@@ -5,7 +5,7 @@ export interface User {
   id: number;
   name: string;
   email: string;
-  type: 'medico' | 'paciente';
+  role: 'admin' | 'doctor' | 'patient';
   createdAt: string;
 }
 
@@ -19,6 +19,11 @@ export interface RegisterData {
   email: string;
   password: string;
   confirmPassword: string;
+  userType?: 'patient' | 'doctor';
+}
+
+export interface ForgotPasswordData {
+  email: string;
 }
 
 export interface AuthResponse {
