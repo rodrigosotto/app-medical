@@ -48,7 +48,7 @@ const forgotPasswordRoute = createRoute({
 
 /**
  * Árvore de rotas
- * Adicione novas rotas aqui conforme necessário
+ * Adicionar novas rotas aqui conforme necessário
  */
 export const routeTree = rootRoute.addChildren([
   indexRoute,
