@@ -1,7 +1,7 @@
 import { createRootRoute, createRoute, Outlet } from '@tanstack/react-router';
 import { LoginForm } from '@/features/auth/components/LoginForm';
-import { RegisterForm } from '@/features/auth/components/RegisterForm';
-import { ForgotPasswordForm } from '@/features/auth/components/ForgotPasswordForm';
+import { DoctorRegistrationPage, PatientRegistrationPage } from '@/features/auth/pages';
+import { Dashboard } from '@/features/dashboard';
 
 /**
  * Rota raiz da aplicação
@@ -16,7 +16,7 @@ const rootRoute = createRootRoute({
 const indexRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/',
-  component: () => <div>Página Inicial MEDICAL APLICATIVO</div>,
+  component: () => <div>Página Inicial</div>,
 });
 
 /**
@@ -29,21 +29,30 @@ const loginRoute = createRoute({
 });
 
 /**
- * Rota de cadastro/registro
+ * Rota de dashboard (protegida)
  */
-const registerRoute = createRoute({
+const dashboardRoute = createRoute({
   getParentRoute: () => rootRoute,
-  path: '/register',
-  component: RegisterForm,
+  path: '/dashboard',
+  component: Dashboard,
 });
 
 /**
- * Rota de recuperação de senha
+ * Rota de cadastro de médico
  */
-const forgotPasswordRoute = createRoute({
+const doctorRegistrationRoute = createRoute({
   getParentRoute: () => rootRoute,
-  path: '/forgot-password',
-  component: ForgotPasswordForm,
+  path: '/register/doctor',
+  component: DoctorRegistrationPage,
+});
+
+/**
+ * Rota de cadastro de paciente
+ */
+const patientRegistrationRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/register/patient',
+  component: PatientRegistrationPage,
 });
 
 /**
@@ -53,6 +62,7 @@ const forgotPasswordRoute = createRoute({
 export const routeTree = rootRoute.addChildren([
   indexRoute,
   loginRoute,
-  registerRoute,
-  forgotPasswordRoute,
+  dashboardRoute,
+  doctorRegistrationRoute,
+  patientRegistrationRoute,
 ]);
