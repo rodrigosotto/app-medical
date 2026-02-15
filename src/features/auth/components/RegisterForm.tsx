@@ -1,11 +1,15 @@
 import { useState, FormEvent } from 'react';
-import { Link } from '@tanstack/react-router';
+import { Link, useNavigate } from '@tanstack/react-router';
 import { useRegister } from '../hooks/useRegister';
+import { useToast } from '@/hooks/useToast';
+import { ROUTES } from '@/config/routes';
 
 /**
  * Componente de formulário de registro com design moderno e glass morphism
  */
 export function RegisterForm() {
+  const navigate = useNavigate();
+  const { success: showSuccessToast } = useToast();
   const [userType, setUserType] = useState<'patient' | 'doctor'>('patient');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -28,7 +32,10 @@ export function RegisterForm() {
     const result = await register({ name, email, password, confirmPassword, userType });
 
     if (result.success) {
-      console.log('Registro realizado com sucesso!');
+      showSuccessToast('Registrado com sucesso!');
+      setTimeout(() => {
+        navigate({ to: ROUTES.LOGIN });
+      }, 1000);
     }
   };
 

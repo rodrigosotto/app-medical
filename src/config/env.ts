@@ -4,7 +4,7 @@
  */
 
 interface ImportMetaEnv {
-  readonly VITE_API_BASE_URL: string;
+  readonly API_BASE_URL: string;
   readonly VITE_APP_NAME: string;
   readonly VITE_ENABLE_ANALYTICS?: string;
 }
@@ -14,7 +14,7 @@ interface ImportMeta {
 }
 
 export const env = {
-  apiBaseUrl: import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000',
+  apiBaseUrl: import.meta.env.API_BASE_URL || 'http://localhost:3001',
   appName: import.meta.env.VITE_APP_NAME || 'Medical App',
   enableAnalytics: import.meta.env.VITE_ENABLE_ANALYTICS === 'true',
   isDevelopment: import.meta.env.DEV,
