@@ -1,4 +1,4 @@
-import { useUser } from "../hooks/useUser";
+import { useUser } from '../hooks/useUser';
 
 interface UserProfileProps {
   userId: string;
@@ -30,8 +30,7 @@ export function UserProfile({ userId }: UserProfileProps) {
           </p>
         )}
         <p>
-          <strong>Criado em:</strong>{" "}
-          {new Date(user.createdAt).toLocaleDateString()}
+          <strong>Criado em:</strong> {new Date(user.createdAt).toLocaleDateString()}
         </p>
       </div>
     </div>
