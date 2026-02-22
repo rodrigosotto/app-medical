@@ -8,6 +8,8 @@ export interface User {
   phone: any;
   id: number;
   name: string;
+  phone?: string;
+  role: 'admin' | 'test';
   email: string;
   type: 'medico' | 'paciente';
   password?: string;

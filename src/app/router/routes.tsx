@@ -83,7 +83,7 @@ const rootRoute = createRootRoute({
 const indexRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/',
-  component: () => <div>Página Inicial MEDICAL APLICATIVO</div>,
+  component: () => <div>Página Inicial</div>,
 });
 
 const loginRoute = createRoute({
@@ -94,14 +94,23 @@ const loginRoute = createRoute({
 
 const registerRoute = createRoute({
   getParentRoute: () => rootRoute,
-  path: '/register',
-  component: RegisterForm,
+  path: '/dashboard',
+  component: Dashboard,
 });
 
 const forgotPasswordRoute = createRoute({
   getParentRoute: () => rootRoute,
-  path: '/forgot-password',
-  component: ForgotPasswordForm,
+  path: '/register/doctor',
+  component: DoctorRegistrationPage,
+});
+
+/**
+ * Rota de cadastro de paciente
+ */
+const patientRegistrationRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/register/patient',
+  component: PatientRegistrationPage,
 });
 
 // ─── Rotas de Autenticação ───────────────────────────────────────────────────
